@@ -164,6 +164,24 @@
     .services,
     .portfolio {
         padding-bottom: 7rem;
+        
+    }
+
+    .services .services-container {
+        display: grid;
+        gap: 2px;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    
+    .services-box i {
+        font-size: 700%;
+        color: var(--text-color);
+        transition: .5s ease;
+    }
+
+    .services-box h3 {
+        font-size: 20px;
     }
 
     .contact {
@@ -322,6 +340,26 @@
     .portfolio .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .portfolio-layer h4 {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+
+    .portfolio-layer p {
+        font-size: 14px;
+        margin: 0 0 4px;
+        height: 170px;
+        padding-bottom: 0;
+    }
+
+    .portfolio-layer a {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        top: 20px;
+    } 
+    
 }
 
 @media (max-width: 617px) {
