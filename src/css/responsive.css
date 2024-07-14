@@ -212,7 +212,7 @@
         top: 100%;
         /* left: 0; */
         width: 100%;
-        padding: 1rem 3%;
+        padding: 1rem 5%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -363,9 +363,79 @@
 }
 
 @media (max-width: 617px) {
+
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-50px, -280px);
+        padding: 20px;
+        
+    }
+
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(5px, -335px);
+        padding: 20px;
+        
+    }
+
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-95px, -415px);
+        
+    }
+
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-80px, -335px);
+        padding: 20px;
+    }
+
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 820px;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
+    
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
+}
+
+@media (max-width: 582px) {
+
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-50px, -280px);
+        padding: 20px;
+    }
+
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(5px, -335px);
+        padding: 20px;
+        
+    }
+
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-95px, -415px);
+        
+    }
+
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-80px, -335px);
+        padding: 20px;
+    }
+
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 740px;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
+    
+    .portfolio .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media (max-width: 432px) {
@@ -375,6 +445,10 @@
 
     #darkMode-icon {
         right: 6rem;
+    }
+
+    .navbar {
+        padding: 1rem 10%;
     }
 
     .home {
@@ -500,7 +574,7 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 391px) {
     .about-img img {
         width: 60vw;
     }
