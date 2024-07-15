@@ -58,4 +58,20 @@ ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .cont
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
+function leiaMais(){
+    var pontos = document.getElementById("pontos");
+    var maisTexto = document.getElementById("mais");
+    var btnLeiaMais = document.getElementById("btnLeiaMais");
+
+    if(pontos.style.display === "none"){
+        pontos.style.display = "inline";
+        maisTexto.style.display = "none";
+        btnLeiaMais.innerHTML = "Leia Mais";
+    }else{
+        pontos.style.display = "none";
+        maisTexto.style.display = "inline";
+        btnLeiaMais.innerHTML = "Leia Menos";
+    }
+}
+
 

@@ -156,6 +156,8 @@ section {
     font-weight: 600;
     border: .2rem solid transparent;
     transition: .5s ease;
+    cursor: pointer;
+
 }
 
 .btn:hover {
@@ -291,9 +293,9 @@ section {
     /* alterado altura e largura */
 }
 
-span {
+/* span {
     color: var(--main-color);
-}
+} */
 
 .about {
     display: flex;
@@ -310,6 +312,10 @@ span {
     font-size: 45px;
     text-align: center;
     padding: 40px 0;
+}
+
+#mais {
+    display: none;
 }
 
 .about-content h2 {

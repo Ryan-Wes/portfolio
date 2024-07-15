@@ -327,6 +327,10 @@
         text-align: center;
     }
 
+    .about p {
+        text-align: justify;
+    }
+
     .about-img img {
         width: 40vw;
         margin-top: -2rem;
