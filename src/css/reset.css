@@ -10,6 +10,20 @@
 }
 
 :root {
+    --bg-color: #0a0a0a;
+    --text-color: #fdfdfd;
+    --main-color: #008b74;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .7);
+}
+
+.dark-mode {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+/* :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
     --main-color: #754efd;
@@ -21,7 +35,7 @@
     --bg-color: #0b061f;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .7);
-}
+} */
 
 html {
     font-size: 62.5%;
