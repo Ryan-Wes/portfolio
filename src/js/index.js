@@ -41,7 +41,13 @@ navbar.classList.remove('active');
 let darkModeIcon = document.querySelector('#darkMode-icon');
 
 darkModeIcon.onclick = () => {
-    darkModeIcon.classList.toggle('bx-sun');
+    if(darkModeIcon.classList.contains('bx-sun')){
+        darkModeIcon.classList.add('bx-moon')
+        darkModeIcon.classList.remove('bx-sun')
+    } else {
+        darkModeIcon.classList.add('bx-sun')
+        darkModeIcon.classList.remove('bx-moon')
+    }
     document.body.classList.toggle('dark-mode');
 };
 
