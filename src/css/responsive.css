@@ -50,10 +50,10 @@
     }
 
     .home-img img {
-        position: absolute;
-        bottom: 0;
+        position: relative;
+        bottom: 390px;
         /* bottom alterado de 0 para 5.5 */
-        right: 10px;
+        right: 90px;
         pointer-events: none;
         max-width: 800px;
         max-height: 90vh;
@@ -81,10 +81,10 @@
     }
 
     .home-img img {
-        position: absolute;
-        bottom: -18px;
+        position: relative;
+        bottom: 290px;
         /* bottom alterado de 0 para 5.5 */
-        right: 25px;
+        right: 105px;
         pointer-events: none;
         max-width: 480px;
         max-height: 90vh;

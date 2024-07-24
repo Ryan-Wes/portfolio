@@ -105,8 +105,17 @@ section {
     margin-bottom: .3rem;
 }
 
+.home-content h2{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: .3;
+    text-align: end;
+    width: 370px;
+}
+
 .home-content p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .home-content .social-media a {
@@ -282,8 +291,8 @@ section {
 }
 
 .home-img img {
-    position: absolute;
-    bottom: 5.5px;
+    position: relative;
+    bottom: 310px;
     /* bottom alterado de 0 para 5.5 */
     right: 70px;
     pointer-events: none;
