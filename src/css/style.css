@@ -110,12 +110,12 @@ section {
     font-weight: 300;
     line-height: .3;
     text-align: end;
-    width: 370px;
+    width: 76.5%;
 }
 
 .home-content p {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
 .home-content .social-media a {
@@ -292,7 +292,7 @@ section {
 
 .home-img img {
     position: relative;
-    bottom: 310px;
+    bottom: 44vh;
     /* bottom alterado de 0 para 5.5 */
     right: 70px;
     pointer-events: none;
@@ -305,6 +305,17 @@ section {
 /* span {
     color: var(--main-color);
 } */
+
+::-webkit-scrollbar {
+    width: 15px;
+ }
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border: 2px solid var(--bg-color);
+ }
+
+
 
 .about {
     display: flex;
