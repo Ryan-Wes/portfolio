@@ -260,6 +260,12 @@
         font-size: 5rem;
     }
 
+    .home-content h2 {
+        text-align: end;
+        width: 84%;
+        font-size: 12px;
+    }
+
     .home-content .social-media a {
         margin: 2.5rem .75rem 3rem;
     }
@@ -473,6 +479,7 @@
 
     .home-content h2 {
         text-align: center;
+        width: 100%;
         font-size: 10px;
     }
 
@@ -487,19 +494,16 @@
 
     .home .profession-box .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-50px, -280px);
-        padding: 20px;
-        
+        padding: 20px;        
     }
 
     .home .profession-box .profession:nth-child(2) {
         transform: rotate(0deg) translate(5px, -335px);
         padding: 20px;
-        
     }
 
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-95px, -415px);
-        
+        transform: rotate(90deg) translate(-85px, -415px);
     }
 
     .home .profession-box .profession:nth-child(4) {
@@ -509,7 +513,7 @@
 
     .home .profession-container .overlay {
         position: fixed;
-        top: 699px;
+        top: 649px;
         left: 50%;
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
@@ -553,8 +557,7 @@
 
     .home .profession-box .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-50px, -280px);
-        padding: 20px;
-        
+        padding: 20px;        
     }
 
     .home .profession-box .profession:nth-child(2) {
