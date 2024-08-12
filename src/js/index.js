@@ -1,55 +1,50 @@
 // MENU ICON NAVBAR
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
+menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-};
+});
 
 // SCROLL SECTIONS ACTIVE LINK
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
 
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+    sections.forEach((sec) => {
+        const offset = sec.offsetTop - 150;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
+
+        if (scrollPosition >= offset && scrollPosition < offset + height) {
+            navLinks.forEach((link) => {
+                link.classList.remove('active');
+                document.querySelector(`header nav a[href*=${id}]`).classList.add('active');
             });
-        };
+        }
     });
 
+    // STICKY NAVBAR    
+    const header = document.querySelector('.header');
+    header.classList.toggle('sticky', scrollPosition > 100);
 
-// STICKY NAVBAR    
-let header = document.querySelector('.header');
-
-header.classList.toggle('sticky', window.scrollY > 100);
-
-// REMOVE MENU ICON NAVBAR WHEN CLICK NAVBAR LINK (SCROLL)
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
-};
+    // REMOVE MENU ICON NAVBAR WHEN CLICK NAVBAR LINK (SCROLL)
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+});
 
 // DARK LIGHT MODE
-let darkModeIcon = document.querySelector('#darkMode-icon');
+const darkModeIcon = document.querySelector('#darkMode-icon');
 
-darkModeIcon.onclick = () => {
-    if(darkModeIcon.classList.contains('bx-sun')){
-        darkModeIcon.classList.add('bx-moon')
-        darkModeIcon.classList.remove('bx-sun')
-    } else {
-        darkModeIcon.classList.add('bx-sun')
-        darkModeIcon.classList.remove('bx-moon')
-    }
+darkModeIcon.addEventListener('click', () => {
+    const isSun = darkModeIcon.classList.contains('bx-sun');
+    darkModeIcon.classList.toggle('bx-moon', isSun);
+    darkModeIcon.classList.toggle('bx-sun', !isSun);
     document.body.classList.toggle('dark-mode');
-};
+});
 
 // SCROLL REVEAL
 ScrollReveal({ 
@@ -64,20 +59,14 @@ ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .cont
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
-function leiaMais(){
-    var pontos = document.getElementById("pontos");
-    var maisTexto = document.getElementById("mais");
-    var btnLeiaMais = document.getElementById("btnLeiaMais");
+function leiaMais() {
+    const pontos = document.getElementById("pontos");
+    const maisTexto = document.getElementById("mais");
+    const btnLeiaMais = document.getElementById("btnLeiaMais");
 
-    if(pontos.style.display === "none"){
-        pontos.style.display = "inline";
-        maisTexto.style.display = "none";
-        btnLeiaMais.innerHTML = "Leia Mais";
-    }else{
-        pontos.style.display = "none";
-        maisTexto.style.display = "inline";
-        btnLeiaMais.innerHTML = "Leia Menos";
-    }
+    const isHidden = pontos.style.display === "none";
+    pontos.style.display = isHidden ? "inline" : "none";
+    maisTexto.style.display = isHidden ? "none" : "inline";
+    btnLeiaMais.innerHTML = isHidden ? "Leia Mais" : "Leia Menos";
 }
-
 
