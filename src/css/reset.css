@@ -25,20 +25,6 @@
     --shadow-color: rgba(0, 0, 0, .2);
 }
 
-/* :root {
-    --bg-color: #fdfdfd;
-    --text-color: #333;
-    --main-color: #754efd;
-    --white-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .2);
-}
-
-.dark-mode {
-    --bg-color: #0b061f;
-    --text-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .7);
-} */
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;

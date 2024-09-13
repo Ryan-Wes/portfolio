@@ -440,16 +440,16 @@ section {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     overflow: hidden;
-
+    height: 300px;
 }
 
 .portfolio-box img {
-    width: 100%;
     transition: .5s ease;
+    height: 100%;
 }
 
 .portfolio-box:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .portfolio-box .portfolio-layer {
@@ -458,7 +458,8 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.772), var(--main-color));
+    backdrop-filter: blur(8px);
     color: var(--white-color);
     display: flex;
     justify-content: center;
@@ -476,7 +477,6 @@ section {
 
 .portfolio-layer h4 {
     font-size: 25px;
-    /* padding-bottom: 10%; */
     padding-bottom: 20px;
 }
 
@@ -491,30 +491,22 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 50px;
+    width: 110px;
+    height: 30px;
     background: var(--white-color);
-    border-radius: 6%;
     color: var(--main-color);
-    font-size: 20px;
+    border-radius: 2.5rem;
+    font-size: 15px;
     top: 10px;
+    transition: .5s ease;
+
     
 } 
 
-/* .portfolio-layer a {
-    
-    color: var(--main-color);
-} */
-
-/* perguntar a comunidade como que adiciono um hover em cima de um hover */
-
 .portfolio-layer a:hover {
-    background-color: var(--main-color);
+    background: #650093;
     color: var(--white-color);
-    border: .3rem solid var(--white-color);
-    
-
-    
+    border: .3rem solid var(--white-color);   
 }
 
 .portfolio-layer .icons {
