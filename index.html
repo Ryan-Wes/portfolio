@@ -253,18 +253,18 @@
 
         <form action="https://api.staticforms.xyz/submit" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Nome completo" required>
-                <input type="email" placeholder="Endereço de email" required>
+                <input type="text" name="name" placeholder="Nome completo" required>
+                <input type="email" name="email" placeholder="Endereço de email" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Número de celular" required>
-                <input type="text" placeholder="Assunto do email" required>
+                <input type="number" name="number" placeholder="Número de celular" required>
+                <input type="text" name="text" placeholder="Assunto" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
             <input type="submit" value="Enviar mensagem" class="btn">
 
             <input type="hidden" name="accessKey" value="31e536b4-135e-420a-8776-2ca63eb6ef22">
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html#portfolio">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
         </form>
     </section>
 

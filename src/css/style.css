@@ -597,20 +597,18 @@ section {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: var(--white-color);
     flex-direction: column;
 }
 
 .text-obrigado {
-    font-size: 45px;
+    font-size: 85px;
     color: var(--main-color);
     margin-bottom: 30px;
 }
 
 .paragrafo-obrigado {
-    color: var(--text-color);
     margin-bottom: 50px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 
