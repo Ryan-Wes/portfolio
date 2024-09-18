@@ -386,7 +386,7 @@
     }
 
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-80px, -335px);
+        transform: rotate(180deg) translate(-160px, -335px);
         padding: 20px;
     }
 
@@ -423,7 +423,7 @@
     }
 
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-80px, -335px);
+        transform: rotate(180deg) translate(-165px, -335px);
         padding: 20px;
     }
 
@@ -498,7 +498,7 @@
     }
 
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-80px, -335px);
+        transform: rotate(180deg) translate(-155px, -335px);
         padding: 20px;
     }
 
@@ -563,7 +563,7 @@
     }
 
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-80px, -335px);
+        transform: rotate(180deg) translate(-150px, -335px);
         padding: 20px;
     }
 
