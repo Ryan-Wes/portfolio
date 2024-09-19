@@ -605,7 +605,13 @@
     }
 }
 
-@media (max-width: 361px) {
+@media (max-width: 390px) {
+    .home {
+        padding: 0 3% 33rem;
+        justify-content: center;
+        text-align: center;
+    }
+
     .home .profession-container .overlay {
         position: fixed;
         top: 715px;
