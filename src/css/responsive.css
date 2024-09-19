@@ -604,3 +604,23 @@
         margin-top: 2rem;
     }
 }
+
+@media (max-width: 361px) {
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 715px;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
+
+    .home .profession-container .profession-box {
+        position: fixed;
+        top: 74%;
+        left: 0;
+        border-radius: 0;
+        width: 100%;
+        /* background-color: red; */
+    }
+}
