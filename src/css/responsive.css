@@ -345,6 +345,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .portfolio-container .portfolio-box {
+        height: 360px;
+    }
+
     .portfolio-layer h4 {
         font-size: 20px;
         padding-bottom: 0px;
@@ -435,11 +439,8 @@
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
     }
-    
-    .portfolio .portfolio-container {
-        grid-template-columns: 1fr;
-    }
 
+    
 }
 
 @media (max-width: 432px) {
@@ -511,12 +512,16 @@
         border-width: 23.9rem;
     }
 
+    .portfolio-container .portfolio-box {
+        height: 270px;
+    }
+
     .contat form .input-box input {
         width: 100%;
     }
 }
 
-@media (max-width: 392px) {
+@media (max-width: 393px) {
     html {
         font-size: 50%;
     }
@@ -576,6 +581,10 @@
         border-width: 23.9rem;
     }
 
+    .portfolio-container .portfolio-box {
+        height: 250px;
+    }
+
     .contat form .input-box input {
         width: 100%;
     }
@@ -593,6 +602,10 @@
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
+    }
+
+    .portfolio-container .portfolio-box {
+        height: 230px;
     }
 
     .footer {
