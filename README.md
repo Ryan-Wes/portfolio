@@ -1,39 +1,53 @@
-# My Personal Portfolio
+# WRyan's Portfolio
 
-Welcome to my portfolio! Here you'll find a collection of the projects I've developed and the skills I've acquired throughout my programming journey.
+Welcome to my portfolio! Here you will find information about me, my skills, and projects I have developed.
 
 ## About Me
 
-I am a technology enthusiast with a strong passion for programming. I have experience in HTML and CSS, and I am continuously improving my skills in JavaScript. Recently, I started studying React and am always looking for ways to enhance my abilities and add value to a development team.
+Hello, my name is **Wesley Ryan** and I am a **Front-End Web Developer**. Since starting my journey in web development, I have been dedicated to creating and improving websites, always keeping up with new trends and technologies. My goal is to create efficient, responsive, accessible, and visually appealing sites.
+
+I am fascinated by technology and programming. When I was younger, I took my first steps in programming using **VBA** to automate **Excel** spreadsheets. I am currently studying **Systems Analysis and Development** and plan to pursue a master's in **Software Engineering**.
+
+I have a keen interest in **robotics** and **artificial intelligence**, and in 2018 I enrolled at UFPel in the **Mechatronics Engineering** program. I am also passionate about cars and music; I play several instruments, including guitar, drums, and flute.
+
+## Skills
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **React**
+- **Git**
+- **Figma**
 
 ## Projects
 
-### [Project Name 1](link-to-project-1)
-- **Description**: A brief description of the project, its features, and the technologies used.
-- **Skills**: HTML, CSS, JavaScript.
+### [Mental Health Guide](https://ryan-wes.github.io/guia-de-saude-mental/)
+A web application that offers solutions for different feelings. Developed with HTML, CSS, and JavaScript, it features a responsive interface and online emotional support resources.
 
-### [Project Name 2](link-to-project-2)
-- **Description**: A brief description of the project, its features, and the technologies used.
-- **Skills**: HTML, CSS, React.
+### [ExpoCar](https://ryan-wes.github.io/expo-car/)
+A presentation website for high-performance cars, where users can view information and images of the vehicles. Built with HTML, CSS, and JavaScript.
 
-### [Project Name 3](link-to-project-3)
-- **Description**: A brief description of the project, its features, and the technologies used.
-- **Skills**: JavaScript, API, etc.
+### [The Hunger Snake](https://ryan-wes.github.io/jogoDaCobrinha-JS/)
+A game where the player controls a snake to capture food and score points. The highest score is saved in localStorage. Created with HTML, CSS, and JavaScript.
 
-## Technical Skills
+### [Dev Friends Cards](https://ryan-wes.github.io/dev-friends/)
+Parody cards of the series Friends as if they were programmers, with clickable buttons to change the images and texts. Utilizes HTML, CSS, and JavaScript.
 
-- **Languages**: HTML, CSS, JavaScript, React
-- **Tools**: Git, VS Code, Figma (or other tools you use)
-- **Methodologies**: Agile Development, Team Collaboration
+### [GitHub API](https://ryan-wes.github.io/github-api/)
+An application that searches GitHub profiles and displays information about repositories and events. Developed with HTML, CSS, and JavaScript, it uses Fetch to integrate data from the API.
+
+### [One Piece Characters](https://ryan-wes.github.io/projeto-one-piece/)
+A responsive page showcasing characters from the anime One Piece, with interactive buttons that change the background image and corresponding description. Built with HTML, CSS, and JavaScript.
 
 ## Contact
 
-Feel free to reach out to me through the following social networks:
+Feel free to reach out to me:
 
-- [LinkedIn](your-linkedin-link)
-- [GitHub](your-github-link)
-- [Email](your-email)
+- [GitHub](https://github.com/Ryan-Wes)
+- [LinkedIn](https://www.linkedin.com/in/wesley-ryanl/)
+- [Email](mailto:wesley.ryan03@gmail.com)
+- [WhatsApp](https://api.whatsapp.com/send/?phone=5551995321057&text&type=phone_number&app_absent=0)
 
 ---
 
-Thank you for visiting my portfolio! I am excited to continue learning and contributing to future projects.
+Copyright &copy; 2024 by WRyan | All Rights Reserved
