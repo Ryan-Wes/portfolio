@@ -1,4 +1,56 @@
-# WRyan's Portfolio
+# Meu Portfólio
+
+Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre mim, minhas habilidades e os projetos que desenvolvi.
+
+## Sobre Mim
+
+Olá, meu nome é Wesley Ryan e sou um Desenvolvedor Web Front-End. Desde que comecei minha jornada no desenvolvimento web, tenho me dedicado a criar e melhorar sites, sempre me mantendo atualizado com as novas tendências e tecnologias. Meu objetivo é criar sites eficientes, responsivos, acessíveis e visualmente atraentes.
+
+Sou fascinado por tecnologia e programação. Quando era mais jovem, dei meus primeiros passos na programação utilizando VBA para automatizar planilhas do Excel. Atualmente, estou estudando Análise e Desenvolvimento de Sistemas e planejo seguir um mestrado em Engenharia de Software.
+
+Tenho um grande interesse por robótica e inteligência artificial e, em 2018, ingressei na UFPel no curso de Engenharia Mecatrônica. Também sou apaixonado por carros e música; toco vários instrumentos, incluindo guitarra, bateria e flauta.
+
+## Habilidades
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Git
+- Figma
+
+## Projetos
+
+### Guia de Saúde Mental
+Uma aplicação web que oferece soluções para diferentes sentimentos. Desenvolvida com HTML, CSS e JavaScript, conta com uma interface responsiva e recursos de apoio emocional online.
+
+### ExpoCar
+Um site de apresentação de carros de alto desempenho, onde os usuários podem visualizar informações e imagens dos veículos. Construído com HTML, CSS e JavaScript.
+
+### A Cobra Faminta
+Um jogo onde o jogador controla uma cobra para capturar alimentos e marcar pontos. A maior pontuação é salva no localStorage. Criado com HTML, CSS e JavaScript.
+
+### Dev Friends Cards
+Cartas paródia da série Friends como se fossem programadores, com botões clicáveis para alterar as imagens e textos. Utiliza HTML, CSS e JavaScript.
+
+### API do GitHub
+Uma aplicação que busca perfis do GitHub e exibe informações sobre repositórios e eventos. Desenvolvida com HTML, CSS e JavaScript, utiliza Fetch para integrar dados da API.
+
+### Personagens de One Piece
+Uma página responsiva que exibe personagens do anime One Piece, com botões interativos que mudam a imagem de fundo e a descrição correspondente. Construída com HTML, CSS e JavaScript.
+
+## Contato
+
+Sinta-se à vontade para entrar em contato comigo:
+
+- [GitHub](#)
+- [LinkedIn](#)
+- [Email](#)
+- [WhatsApp](#)
+
+
+
+# My Portfolio
 
 Welcome to my portfolio! Here you will find information about me, my skills, and projects I have developed.
 
