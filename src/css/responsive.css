@@ -362,10 +362,13 @@
     }
 
     .portfolio-layer a {
-        width: 80px;
-        height: 30px;
+        width: 100px;
+        height: 40px;
         font-size: 14px;
-        top: 20px;
+        top: -12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     } 
     
 }
