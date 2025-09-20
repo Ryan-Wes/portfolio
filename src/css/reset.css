@@ -15,6 +15,9 @@
     --main-color: #b005ff;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .7);
+
+    --icon-size: clamp(48px, 8vw, 96px);
+
 }
 
 .dark-mode {

@@ -423,18 +423,20 @@ section {
     margin: 10px 0 30px;
 }
 
-.services-box .n8n-logo {
-  width: 100px;
-  height: 100px;
-  transition: .3s ease;
+.n8n-logo {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: filter .5s ease;
+  filter: brightness(0) invert(1); /* começa branco */
 }
 
 .services-box:hover .n8n-logo {
-  content: url("https://cdn.simpleicons.org/n8n/b005ff"); /* use sua --main-color em hex */
+  filter: brightness(0) saturate(100%) invert(16%) sepia(95%) saturate(6866%) 
+          hue-rotate(274deg) brightness(97%) contrast(101%);
+  /* isso pinta do roxo #b005ff */
 }
-
-
-
 
 
 .portfolio {
