@@ -423,6 +423,20 @@ section {
     margin: 10px 0 30px;
 }
 
+.services-box .n8n-logo {
+  width: 100px;
+  height: 100px;
+  transition: .3s ease;
+}
+
+.services-box:hover .n8n-logo {
+  content: url("https://cdn.simpleicons.org/n8n/b005ff"); /* use sua --main-color em hex */
+}
+
+
+
+
+
 .portfolio {
     padding-bottom: 100px;
 }
