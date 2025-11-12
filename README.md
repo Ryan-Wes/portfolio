@@ -1,105 +1,99 @@
-# Meu Portfólio
+<h1 align="center">🎨 Portfólio Pessoal — WRyan</h1>
 
-Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre mim, minhas habilidades e os projetos que desenvolvi.
+<p align="center">
+  <b>Website pessoal desenvolvido para apresentar meus projetos, habilidades e trajetória na área de tecnologia e automação.</b>
+</p>
 
-## Sobre Mim
-
-Olá, meu nome é Wesley Ryan e sou um Desenvolvedor Web Front-End. Desde que comecei minha jornada no desenvolvimento web, tenho me dedicado a criar e melhorar sites, sempre me mantendo atualizado com as novas tendências e tecnologias. Meu objetivo é criar sites eficientes, responsivos, acessíveis e visualmente atraentes.
-
-Sou fascinado por tecnologia e programação. Quando era mais jovem, dei meus primeiros passos na programação utilizando VBA para automatizar planilhas do Excel. Atualmente, estou estudando Análise e Desenvolvimento de Sistemas e planejo seguir um mestrado em Engenharia de Software.
-
-Tenho um grande interesse por robótica e inteligência artificial e, em 2018, ingressei na UFPel no curso de Engenharia Mecatrônica. Também sou apaixonado por carros e música; toco vários instrumentos, incluindo guitarra, bateria e flauta.
-
-## Habilidades
-
-- HTML
-- CSS
-- JavaScript
-- React
-- Git
-- Figma
-
-## Projetos
-
-### Guia de Saúde Mental
-Uma aplicação web que oferece soluções para diferentes sentimentos. Desenvolvida com HTML, CSS e JavaScript, conta com uma interface responsiva e recursos de apoio emocional online.
-
-### ExpoCar
-Um site de apresentação de carros de alto desempenho, onde os usuários podem visualizar informações e imagens dos veículos. Construído com HTML, CSS e JavaScript.
-
-### A Cobra Faminta
-Um jogo onde o jogador controla uma cobra para capturar alimentos e marcar pontos. A maior pontuação é salva no localStorage. Criado com HTML, CSS e JavaScript.
-
-### Dev Friends Cards
-Cartas paródia da série Friends como se fossem programadores, com botões clicáveis para alterar as imagens e textos. Utiliza HTML, CSS e JavaScript.
-
-### API do GitHub
-Uma aplicação que busca perfis do GitHub e exibe informações sobre repositórios e eventos. Desenvolvida com HTML, CSS e JavaScript, utiliza Fetch para integrar dados da API.
-
-### Personagens de One Piece
-Uma página responsiva que exibe personagens do anime One Piece, com botões interativos que mudam a imagem de fundo e a descrição correspondente. Construída com HTML, CSS e JavaScript.
-
-## Contato
-
-Sinta-se à vontade para entrar em contato comigo:
-
-- [GitHub](#)
-- [LinkedIn](#)
-- [Email](#)
-- [WhatsApp](#)
-
-
-
-# My Portfolio
-
-Welcome to my portfolio! Here you will find information about me, my skills, and projects I have developed.
-
-## About Me
-
-Hello, my name is **Wesley Ryan** and I am a **Front-End Web Developer**. Since starting my journey in web development, I have been dedicated to creating and improving websites, always keeping up with new trends and technologies. My goal is to create efficient, responsive, accessible, and visually appealing sites.
-
-I am fascinated by technology and programming. When I was younger, I took my first steps in programming using **VBA** to automate **Excel** spreadsheets. I am currently studying **Systems Analysis and Development** and plan to pursue a master's in **Software Engineering**.
-
-I have a keen interest in **robotics** and **artificial intelligence**, and in 2018 I enrolled at UFPel in the **Mechatronics Engineering** program. I am also passionate about cars and music; I play several instruments, including guitar, drums, and flute.
-
-## Skills
-
-- **HTML**
-- **CSS**
-- **JavaScript**
-- **React**
-- **Git**
-- **Figma**
-
-## Projects
-
-### [Mental Health Guide](https://ryan-wes.github.io/guia-de-saude-mental/)
-A web application that offers solutions for different feelings. Developed with HTML, CSS, and JavaScript, it features a responsive interface and online emotional support resources.
-
-### [ExpoCar](https://ryan-wes.github.io/expo-car/)
-A presentation website for high-performance cars, where users can view information and images of the vehicles. Built with HTML, CSS, and JavaScript.
-
-### [The Hunger Snake](https://ryan-wes.github.io/jogoDaCobrinha-JS/)
-A game where the player controls a snake to capture food and score points. The highest score is saved in localStorage. Created with HTML, CSS, and JavaScript.
-
-### [Dev Friends Cards](https://ryan-wes.github.io/dev-friends/)
-Parody cards of the series Friends as if they were programmers, with clickable buttons to change the images and texts. Utilizes HTML, CSS, and JavaScript.
-
-### [GitHub API](https://ryan-wes.github.io/github-api/)
-An application that searches GitHub profiles and displays information about repositories and events. Developed with HTML, CSS, and JavaScript, it uses Fetch to integrate data from the API.
-
-### [One Piece Characters](https://ryan-wes.github.io/projeto-one-piece/)
-A responsive page showcasing characters from the anime One Piece, with interactive buttons that change the background image and corresponding description. Built with HTML, CSS, and JavaScript.
-
-## Contact
-
-Feel free to reach out to me:
-
-- [GitHub](https://github.com/Ryan-Wes)
-- [LinkedIn](https://www.linkedin.com/in/wesley-ryanl/)
-- [Email](mailto:wesley.ryan03@gmail.com)
-- [WhatsApp](https://api.whatsapp.com/send/?phone=5551995321057&text&type=phone_number&app_absent=0)
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E44D26?logo=html5&logoColor=fff" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" />
+  <img src="https://img.shields.io/badge/Responsive-Design-success?logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Online-7130B1" />
+</p>
 
 ---
 
-Copyright &copy; 2024 by WRyan | All Rights Reserved
+## 🌐 Visão Geral
+
+Este portfólio foi desenvolvido com **HTML**, **CSS** e **JavaScript puro**, com o objetivo de apresentar de forma clara e interativa meus **projetos, experiências e habilidades**.
+
+O foco principal foi unir **estética moderna**, **acessibilidade** e **responsividade**, utilizando boas práticas de design e código limpo.
+
+📍 **Acesse em:** [https://ryan-wes.github.io/portfolio/](https://ryan-wes.github.io/portfolio/)
+
+---
+
+## 🧠 Principais Funcionalidades
+
+- 🌗 **Modo Claro/Escuro** — alternância dinâmica com ícones animados.  
+- 🧭 **Navegação Interativa** — links sincronizados com a rolagem da página.  
+- ✨ **Efeitos de Aparição (ScrollReveal)** — animações suaves ao rolar.  
+- 💬 **Botão “Leia Mais”** — expansão dinâmica da seção *Sobre Mim*.  
+- 📱 **Design Responsivo** — compatível com todos os tamanhos de tela.  
+- 🧾 **Seções organizadas**: Home, Sobre, Habilidades, Projetos e Contato.  
+
+---
+
+## 🧩 Tecnologias Utilizadas
+
+| Categoria | Ferramentas |
+|------------|-------------|
+| Estrutura | **HTML5** |
+| Estilização | **CSS3 / Flexbox / Grid** |
+| Interatividade | **JavaScript (ES6)** |
+| Animações | **ScrollReveal.js** |
+| Deploy | **GitHub Pages** |
+
+---
+
+## 🚀 Aprendizados
+
+Durante o desenvolvimento, pratiquei e aprofundei conceitos como:
+- Boas práticas de organização de código e arquivos.
+- Uso de *scroll listeners* para vincular elementos da interface à navegação.
+- Implementação de temas com alternância de ícones.
+- Estruturação semântica para SEO e acessibilidade.
+- Manutenção de performance mesmo com múltiplas animações ativas.
+
+---
+
+## 🛠️ Estrutura do Projeto
+
+```
+portfolio/
+│
+├── assets/           # Imagens, ícones e fontes
+├── css/              # Arquivos de estilo
+├── js/               # Scripts JavaScript
+├── index.html        # Página principal
+└── README.md         # Este arquivo
+```
+
+---
+
+## 📊 Desafios Técnicos
+
+O maior desafio foi criar **transições suaves e reativas** sem depender de frameworks ou bibliotecas pesadas, mantendo **performance e leveza** — algo essencial para um portfólio pessoal.  
+Também refinei a lógica de **sincronização entre links e seções**, garantindo que a navegação fluísse naturalmente com o scroll.
+
+---
+
+## 🌎 Próximos Passos
+
+- Reescrever o projeto em **React.js** para maior componentização.  
+- Adicionar uma **versão multilíngue (PT/EN)**.  
+- Implementar uma seção de **projetos dinâmicos** puxando dados via API (GitHub API).  
+
+---
+
+## 👨‍💻 Autor
+
+**WRyan**  
+📫 [LinkedIn](https://www.linkedin.com/in/wryan-lopes)  
+🌐 [Portfólio Online](https://ryan-wes.github.io/portfolio/)  
+🐙 [GitHub](https://github.com/Ryan-Wes)
+
+---
+
+<h3 align="center">© 2024 — WRyan | Todos os direitos reservados</h3>
