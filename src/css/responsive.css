@@ -18,13 +18,13 @@
 
     .home .profession-container {
         right: inherit;
-        
+
     }
 
     .home .profession-container .profession-box {
         right: 170px;
         height: 999px;
-        
+
     }
 
     .home .profession-container .overlay {
@@ -48,7 +48,7 @@
         pointer-events: none;
         max-width: 800px;
         max-height: 90vh;
-        
+
         /* alterado altura e largura */
     }
 
@@ -80,7 +80,7 @@
         pointer-events: none;
         max-width: 480px;
         max-height: 90vh;
-        
+
         /* alterado altura e largura */
     }
 
@@ -158,7 +158,7 @@
     .services,
     .portfolio {
         padding-bottom: 7rem;
-        
+
     }
 
     .services .services-container {
@@ -167,7 +167,7 @@
         grid-template-columns: repeat(3, 1fr);
 
     }
-    
+
     .services-box i {
         font-size: 700%;
         color: var(--text-color);
@@ -235,6 +235,13 @@
 
     .navbar a::before {
         display: none;
+    }
+
+    #language-selector {
+        position: absolute;
+        right: 9rem;
+        /* fica antes do ícone do dark mode */
+        top: 2rem;
     }
 
     .home {
@@ -369,8 +376,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    } 
-    
+    }
+
 }
 
 @media (max-width: 617px) {
@@ -378,18 +385,18 @@
     .home .profession-box .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-50px, -280px);
         padding: 20px;
-        
+
     }
 
     .home .profession-box .profession:nth-child(2) {
         transform: rotate(0deg) translate(5px, -335px);
         padding: 20px;
-        
+
     }
 
     .home .profession-box .profession:nth-child(3) {
         transform: rotate(90deg) translate(-95px, -415px);
-        
+
     }
 
     .home .profession-box .profession:nth-child(4) {
@@ -405,7 +412,7 @@
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
     }
-    
+
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -421,12 +428,12 @@
     .home .profession-box .profession:nth-child(2) {
         transform: rotate(0deg) translate(5px, -335px);
         padding: 20px;
-        
+
     }
 
     .home .profession-box .profession:nth-child(3) {
         transform: rotate(90deg) translate(-95px, -415px);
-        
+
     }
 
     .home .profession-box .profession:nth-child(4) {
@@ -443,7 +450,7 @@
         border-width: 23.9rem;
     }
 
-    
+
 }
 
 @media (max-width: 432px) {
@@ -489,7 +496,7 @@
 
     .home .profession-box .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-50px, -280px);
-        padding: 20px;        
+        padding: 20px;
     }
 
     .home .profession-box .profession:nth-child(2) {
@@ -556,18 +563,18 @@
 
     .home .profession-box .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-50px, -280px);
-        padding: 20px;        
+        padding: 20px;
     }
 
     .home .profession-box .profession:nth-child(2) {
         transform: rotate(0deg) translate(5px, -335px);
         padding: 20px;
-        
+
     }
 
     .home .profession-box .profession:nth-child(3) {
         transform: rotate(90deg) translate(-95px, -415px);
-        
+
     }
 
     .home .profession-box .profession:nth-child(4) {

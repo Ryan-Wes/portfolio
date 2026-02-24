@@ -24,6 +24,7 @@
   <header class="header">
     <a href="#" class="logo">WRyan.</a>
 
+
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
       <a href="#about">Sobre</a>
@@ -31,6 +32,13 @@
       <a href="#portfolio">Projetos</a>
       <a href="#contact">Contato</a>
     </nav>
+
+    <select id="language-selector" aria-label="Selecionar idioma">
+      <option value="pt">PT</option>
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+      <option value="es">ES</option>
+    </select>
 
     <div class="bx bx-sun" id="darkMode-icon"></div>
 
@@ -49,7 +57,7 @@
       <br /><br /><br /><br /><br /><br /><br /><br />
 
       <p>
-        
+
         Transformando ideias em sites, dados em decisões e
         <strong>automações inteligentes</strong>
       </p>
@@ -109,47 +117,9 @@
       <h2 class="heading">Sobre <strong>Mim</strong></h2>
       <h3>Olá, pode me chamar de <strong>Ryan</strong>.</h3>
       <br /><br />
-         <p>
-      Desde o início da minha jornada no desenvolvimento web, venho me dedicando a criar e aprimorar websites.
-      Estou <strong>sempre atualizado</strong> com as tendências e tecnologias, aplicando
-      <strong>boas práticas</strong> para desenvolver sites eficientes, <strong>responsivos</strong>,
-      <strong>acessíveis</strong> e <strong>visualmente atraentes</strong>.
-      <br /><br />
 
-      No momento estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong> e pretendo, em seguida,
-      fazer uma pós em <strong>Engenharia de Software</strong>.
-      <br /><br />
-
-      Em 2023, fiz o investimento no <strong>Curso de Programação Fullstack com mentoria</strong> do
-      <strong>Dev em Dobro</strong>. Desde então, venho me aprofundando em tecnologias como
-      <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Next.js</strong>,
-      <strong>SCSS</strong>, <strong>HTML</strong> e <strong>CSS</strong>.
-      <span id="pontos">...</span>
-      <span id="mais">
-        <br /><br />
-        Mais recentemente, descobri uma paixão pela <strong>automação de processos</strong> e pela
-        <strong>análise de dados</strong>. Com isso, passei a estudar <strong>n8n</strong> e
-        <strong>Python</strong>, aplicando-os para criar scripts que otimizam tarefas, manipulam dados em
-        <strong>Excel</strong> e geram relatórios mais rápidos e precisos. Também tive contato com
-        <strong>SQL</strong> e <strong>Power BI</strong> para transformar dados em decisões.
-        <br /><br />
-
-        Atualmente estou em transição de carreira, atuando como <strong>Analista Técnico</strong> em uma empresa
-        internacional de Linha de Transmissão, onde desenvolvi habilidades valiosas como
-        <strong>comunicação</strong>, <strong>trabalho em equipe</strong>, <strong>adaptabilidade</strong>,
-        <strong>organização</strong> e <strong>gerenciamento de tempo</strong>, além de um
-        <strong>pensamento crítico</strong> para solucionar problemas e cumprir prazos.
-        <br /><br />
-
-        Além disso, tenho um grande interesse por <strong>carros</strong> e por <strong>música</strong> — toco
-        instrumentos como violão, teclado, guitarra, baixo, flauta, bateria, gaita e ukulele, e arrisco um pouco
-        no canto também haha...
-      </span>
-    </p>
-      <button class="btn" onclick="leiaMais()" id="btnLeiaMais">
-        Leia Mais
-      </button>
-      <!-- <a href="#" class="btn">Leia Mais</a> -->
+      <!-- O JS vai preencher este parágrafo via translations[lang].aboutText -->
+      <p></p>
     </div>
   </section>
 
@@ -199,7 +169,7 @@
 
       <div class="services-box">
         <i class="bx bx-line-chart"></i>
-        <h3>Análise de Dados</h3>
+        <h3 id="skill-data-analysis">Análise de Dados</h3>
       </div>
 
       <div class="services-box">
