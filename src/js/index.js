@@ -8,7 +8,7 @@ const translations = {
     contact: "Contato",
 
     heroGreeting: "Olá! Eu sou o",
-    heroRole: 'Data <strong>Analyst</strong> e Desenvolvedor <strong>Full Stack</strong>',
+    heroRole: 'Analista de <strong>Dados</strong> e Desenvolvedor <strong>Full Stack</strong>',
     heroTagline:
       'Transformando ideias em sites, dados em decisões e <strong>automações inteligentes</strong>',
 
@@ -81,7 +81,7 @@ Construído com <strong>HTML, CSS e JavaScript</strong>, com manipulação de ev
     contact: "Contact",
 
     heroGreeting: "Hi! I am",
-    heroRole: '<strong>Data Analyst</strong> and <strong>Full Stack Developer</strong>',
+    heroRole: 'Data <strong>Analyst</strong> and Full Stack <strong>Developer</strong>',
     heroTagline: 'Building scalable web solutions and <strong>intelligent automations</strong>',
 
     aboutTitle: '<strong>About</strong> Me',
@@ -153,7 +153,7 @@ Built with <strong>HTML, CSS, and JavaScript</strong>.
     contact: "Contact",
 
     heroGreeting: "Salut ! Je suis",
-    heroRole: '<strong>Analyste de Données</strong> et <strong>Développeur Full Stack</strong>',
+    heroRole: 'Analyste de <strong>Données</strong> et Développeur <strong>Full Stack</strong>',
     heroTagline: 'Solutions web évolutives et <strong>automatisations intelligentes</strong>',
 
     aboutTitle: 'À propos de <strong>moi</strong>',
@@ -216,7 +216,7 @@ Projet interactif inspiré de la série Friends.
     contact: "Contacto",
 
     heroGreeting: "Hola! Soy",
-    heroRole: '<strong>Analista de Datos</strong> y <strong>Desarrollador Full Stack</strong>',
+    heroRole: 'Analista de <strong>Datos</strong> y Desarrollador <strong>Full Stack</strong>',
     heroTagline: 'Soluciones web escalables y <strong>automatizaciones inteligentes</strong>',
 
     aboutTitle: 'Sobre <strong>mí</strong>',

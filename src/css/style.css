@@ -33,7 +33,7 @@ body {
 
 .navbar a {
     position: relative;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: var(--white-color);
     font-weight: 500;
     margin-right: 3.5rem;
@@ -125,7 +125,7 @@ section {
 }
 
 .home-content h2{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: .3;
     text-align: end;
