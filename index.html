@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8" />
@@ -23,7 +23,6 @@
 <body>
   <header class="header">
     <a href="#" class="logo">WRyan.</a>
-
 
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
@@ -57,7 +56,6 @@
       <br /><br /><br /><br /><br /><br /><br /><br />
 
       <p>
-
         Transformando ideias em sites, dados em decisões e
         <strong>automações inteligentes</strong>
       </p>
@@ -71,7 +69,8 @@
           style="--i: 10"><i class="bx bxl-whatsapp"></i></a>
       </div>
 
-      <a href="https://drive.google.com/uc?export=download&id=1cHSvr_wg12CRJWCRMjHaH7R5qkdC-PIn" class="btn">Download
+      <a href="https://drive.google.com/uc?export=download&id=1cHSvr_wg12CRJWCRMjHaH7R5qkdC-PIn" id="download-cv-btn"
+        class="btn">Download
         CV</a>
     </div>
 
@@ -118,7 +117,6 @@
       <h3>Olá, pode me chamar de <strong>Ryan</strong>.</h3>
       <br /><br />
 
-      <!-- O JS vai preencher este parágrafo via translations[lang].aboutText -->
       <p></p>
     </div>
   </section>
@@ -203,16 +201,16 @@
 
         <div class="portfolio-layer">
           <h4>Guia de Saúde Mental</h4>
-          <p>
+          <p id="project-mental-health-desc">
             Aplicação web para o Setembro Amarelo que oferece soluções para
             diferentes sentimentos. Desenvolvida com HTML, CSS e JavaScript,
             possui uma interface responsiva e recursos de suporte emocional
             online.
           </p>
           <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/guia-de-saude-mental"
+            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/guia-de-saude-mental"
               target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/guia-de-saude-mental/"
+            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/guia-de-saude-mental/"
               target="_blank">Projeto</a>
           </div>
         </div>
@@ -223,15 +221,15 @@
 
         <div class="portfolio-layer">
           <h4>Pokédex Com React</h4>
-          <p>
+          <p id="project-pokedex-desc">
             Uma Pokédex interativa desenvolvida em React, com busca, filtros e
             detalhes dos Pokémons. Utiliza React Router Dom para navegação,
             Styled-components para estilização e consome dados da PokéAPI.
           </p>
           <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/pokedex-api-com-react"
+            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/pokedex-api-com-react"
               target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://pokedex-api-com-react-three.vercel.app/"
+            <a class="btn-hover-effect-4782fghj btn-project" href="https://pokedex-api-com-react-three.vercel.app/"
               target="_blank">Projeto</a>
           </div>
         </div>
@@ -242,14 +240,16 @@
 
         <div class="portfolio-layer">
           <h4>ExpoCar</h4>
-          <p>
+          <p id="project-expocar-desc">
             Um site de apresentação de carros de alta performance com texto de
             descrição e com botões que mudam a imagem do carro e sua descrição
             quando clicados ultilizando HTML, CSS e JavaScript.
           </p>
           <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/expo-car" target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/expo-car/" target="_blank">Projeto</a>
+            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/expo-car"
+              target="_blank">Código</a>
+            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/expo-car/"
+              target="_blank">Projeto</a>
           </div>
         </div>
       </div>
@@ -259,15 +259,15 @@
 
         <div class="portfolio-layer">
           <h4>The Hunger Snake</h4>
-          <p>
+          <p id="project-snake-desc">
             Uma página do jogo "The Hunger Snake", onde o jogador controla uma
             cobra para capturar comidas e marcar pontos. O maior score é salvo
             no localStorage. Feito com HTML, CSS e JavaScript.
           </p>
           <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/jogoDaCobrinha-JS"
+            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/jogoDaCobrinha-JS"
               target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/jogoDaCobrinha-JS/"
+            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/jogoDaCobrinha-JS/"
               target="_blank">Projeto</a>
           </div>
         </div>
@@ -278,16 +278,16 @@
 
         <div class="portfolio-layer">
           <h4>Github API</h4>
-          <p>
+          <p id="project-github-api-desc">
             Aplicação que busca perfis do GitHub e exibe informações como
             repositórios e eventos. Desenvolvida com HTML, CSS e JavaScript,
             utiliza fetch para integrar dados da API e exibir informações
             dinamicamente.
           </p>
           <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/github-api"
+            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/github-api"
               target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/github-api/"
+            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/github-api/"
               target="_blank">Projeto</a>
           </div>
         </div>
@@ -298,16 +298,16 @@
 
         <div class="portfolio-layer">
           <h4>Cards Dev Friends</h4>
-          <p>
+          <p id="project-dev-friends-desc">
             Cards de paródia da série Friends como se fossem programadores com
             descrição dos personagens e reconhecimento de clique para mudar as
             imagens do carrossel e seus respectivos textos ultilizando HTML,
             CSS e JavaScript.
           </p>
           <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/dev-friends"
+            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/dev-friends"
               target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/dev-friends/"
+            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/dev-friends/"
               target="_blank">Projeto</a>
           </div>
         </div>
@@ -316,19 +316,20 @@
   </section>
 
   <section class="contact" id="contact">
-    <h2 class="heading">Contate<strong>-me!</strong></h2>
+    <h2 class="heading" id="contact-title">Contate<strong>-me!</strong></h2>
 
     <form action="https://api.staticforms.xyz/submit" method="post">
       <div class="input-box">
-        <input type="text" name="name" placeholder="Nome completo" required />
-        <input type="email" name="email" placeholder="Endereço de email" required />
+        <input id="input-name" type="text" name="name" placeholder="Nome completo" required />
+        <input id="input-email" type="email" name="email" placeholder="Endereço de email" required />
       </div>
       <div class="input-box">
-        <input type="number" name="number" placeholder="Número de celular" required />
-        <input type="text" name="text" placeholder="Assunto" required />
+        <input id="input-phone" type="number" name="number" placeholder="Número de celular" required />
+        <input id="input-subject" type="text" name="text" placeholder="Assunto" required />
       </div>
-      <textarea name="message" id="" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
-      <input type="submit" value="Enviar mensagem" class="btn" />
+      <textarea id="input-message" name="message" cols="30" rows="10" placeholder="Sua mensagem"
+        required></textarea>
+      <input id="submit-btn" type="submit" value="Enviar mensagem" class="btn" />
 
       <input type="hidden" name="accessKey" value="31e536b4-135e-420a-8776-2ca63eb6ef22" />
       <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html" />
