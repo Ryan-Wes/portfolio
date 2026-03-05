@@ -506,10 +506,10 @@ window.addEventListener("scroll", () => {
   let scrollOffset = 0;
   const points = [];
   const SETTINGS = {
-    density: 9000,         // menor = mais pontos (ajuste fino)
+    density: 12000,         // menor = mais pontos (ajuste fino)
     maxLinkDist: 140,      // distância máxima das conexões
     speed: 0.35,           // velocidade dos pontos
-    pointSize: 1.4         // tamanho do ponto
+    pointSize: 3.5         // tamanho do ponto
   };
 
   function resize() {
@@ -584,7 +584,7 @@ window.addEventListener("scroll", () => {
         if (dist < SETTINGS.maxLinkDist) {
           const alpha = 1 - dist / SETTINGS.maxLinkDist;
 
-          ctx.strokeStyle = `rgba(176, 5, 255, ${0.22 * alpha})`;
+          ctx.strokeStyle = `rgba(176, 5, 255, ${0.70 * alpha})`;
           // Se você quiser obedecer totalmente sua --main-color, use isso:
           // ctx.strokeStyle = hexToRgba(mainColor, 0.22 * alpha);
 
@@ -598,7 +598,7 @@ window.addEventListener("scroll", () => {
     }
 
     // Pontos
-    ctx.fillStyle = `rgba(176, 5, 255, 0.65)`;
+    ctx.fillStyle = `rgba(176, 5, 255, 0.50)`;
     // ou: ctx.fillStyle = hexToRgba(mainColor, 0.65);
 
     for (const p of points) {
@@ -624,4 +624,3 @@ window.addEventListener("scroll", () => {
   resize();
   step();
 })();
-
