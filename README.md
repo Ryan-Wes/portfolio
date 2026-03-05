@@ -1,99 +1,115 @@
-<h1 align="center">🎨 Portfólio Pessoal — WRyan</h1>
+<h1 align="center">⚡ Portfólio — WRyan</h1>
 
 <p align="center">
-  <b>Website pessoal desenvolvido para apresentar meus projetos, habilidades e trajetória na área de tecnologia e automação.</b>
+  <b>Full-Stack Developer | Data & AI Automation</b><br>
+  Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e experimentos envolvendo desenvolvimento web, análise de dados, automação e inteligência artificial.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E44D26?logo=html5&logoColor=fff" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" />
-  <img src="https://img.shields.io/badge/Responsive-Design-success?logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Status-Online-7130B1" />
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff" />
+  <img src="https://img.shields.io/badge/n8n-FF6D5A?logo=n8n&logoColor=white" />
+  <img src="https://img.shields.io/badge/Artificial%20Intelligence-8A2BE2?logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data%20Analysis-7130B1?logo=databricks&logoColor=white" />
+  <img src="https://img.shields.io/badge/Automation-FF8C00?logo=zapier&logoColor=white" />
+  <img src="https://img.shields.io/badge/Excel-217346?logo=microsoft-excel&logoColor=white" />
 </p>
 
 ---
 
 ## 🌐 Visão Geral
 
-Este portfólio foi desenvolvido com **HTML**, **CSS** e **JavaScript puro**, com o objetivo de apresentar de forma clara e interativa meus **projetos, experiências e habilidades**.
+Este portfólio foi desenvolvido com **HTML, CSS e JavaScript puro**, com foco em demonstrar minhas habilidades em:
 
-O foco principal foi unir **estética moderna**, **acessibilidade** e **responsividade**, utilizando boas práticas de design e código limpo.
+- Desenvolvimento **Full-Stack**
+- **Análise e manipulação de dados**
+- **Automação de processos**
+- **Integração com Inteligência Artificial**
 
-📍 **Acesse em:** [https://ryan-wes.github.io/portfolio/](https://ryan-wes.github.io/portfolio/)
+O objetivo é apresentar projetos e experimentos que unem **código, dados e automação**, mantendo uma interface moderna e interativa.
+
+📍 **Acesse:**  
+https://ryan-wes.github.io/portfolio/
 
 ---
 
 ## 🧠 Principais Funcionalidades
 
-- 🌗 **Modo Claro/Escuro** — alternância dinâmica com ícones animados.  
-- 🧭 **Navegação Interativa** — links sincronizados com a rolagem da página.  
-- ✨ **Efeitos de Aparição (ScrollReveal)** — animações suaves ao rolar.  
-- 💬 **Botão “Leia Mais”** — expansão dinâmica da seção *Sobre Mim*.  
-- 📱 **Design Responsivo** — compatível com todos os tamanhos de tela.  
-- 🧾 **Seções organizadas**: Home, Sobre, Habilidades, Projetos e Contato.  
+- 🌗 **Modo claro/escuro**
+- 🌍 **Suporte multilíngue** (PT / EN / FR / ES)
+- 🧭 **Navegação sincronizada com scroll**
+- ✨ **Animações com ScrollReveal**
+- 🧠 **Neural background animado interativo**
+- 📱 **Design totalmente responsivo**
+- 🎯 Estrutura organizada em:
+  - Home
+  - Sobre
+  - Skills
+  - Projetos
+  - Contato
 
 ---
 
 ## 🧩 Tecnologias Utilizadas
 
 | Categoria | Ferramentas |
-|------------|-------------|
+|-----------|-------------|
 | Estrutura | **HTML5** |
-| Estilização | **CSS3 / Flexbox / Grid** |
-| Interatividade | **JavaScript (ES6)** |
+| Estilo | **CSS3 / Flexbox / Grid** |
+| Interatividade | **JavaScript (ES6+)** |
 | Animações | **ScrollReveal.js** |
+| Visual | **SVG Icons / Neural Canvas Background** |
 | Deploy | **GitHub Pages** |
 
 ---
 
-## 🚀 Aprendizados
+## 🚀 Destaques Técnicos
 
-Durante o desenvolvimento, pratiquei e aprofundei conceitos como:
-- Boas práticas de organização de código e arquivos.
-- Uso de *scroll listeners* para vincular elementos da interface à navegação.
-- Implementação de temas com alternância de ícones.
-- Estruturação semântica para SEO e acessibilidade.
-- Manutenção de performance mesmo com múltiplas animações ativas.
+Durante o desenvolvimento deste projeto, trabalhei principalmente em:
+
+- Construção de **interfaces modernas sem frameworks pesados**
+- Implementação de **animações suaves com JavaScript e CSS**
+- Criação de **background neural interativo com Canvas**
+- Organização de código visando **manutenção e escalabilidade**
+- Integração de **ícones SVG dinâmicos**
 
 ---
 
-## 🛠️ Estrutura do Projeto
+## 📊 Estrutura do Projeto
 
-```
 portfolio/
 │
-├── assets/           # Imagens, ícones e fontes
-├── css/              # Arquivos de estilo
-├── js/               # Scripts JavaScript
-├── index.html        # Página principal
-└── README.md         # Este arquivo
-```
+├── assets/ # imagens e ícones
+├── css/ # estilos
+├── js/ # scripts
+├── index.html
+└── README.md
+
 
 ---
 
-## 📊 Desafios Técnicos
+## 🔭 Próximos Passos
 
-O maior desafio foi criar **transições suaves e reativas** sem depender de frameworks ou bibliotecas pesadas, mantendo **performance e leveza** — algo essencial para um portfólio pessoal.  
-Também refinei a lógica de **sincronização entre links e seções**, garantindo que a navegação fluísse naturalmente com o scroll.
+Algumas melhorias planejadas para o projeto:
 
----
-
-## 🌎 Próximos Passos
-
-- Reescrever o projeto em **React.js** para maior componentização.  
-- Adicionar uma **versão multilíngue (PT/EN)**.  
-- Implementar uma seção de **projetos dinâmicos** puxando dados via API (GitHub API).  
+- Integração com **APIs de IA**
+- Exibição de **projetos dinâmicos via GitHub API**
+- Adicionar **projetos de análise de dados**
+- Experimentar **visualizações de dados interativas**
 
 ---
 
 ## 👨‍💻 Autor
 
-**WRyan**  
-📫 [LinkedIn](https://www.linkedin.com/in/wryan-lopes)  
-🌐 [Portfólio Online](https://ryan-wes.github.io/portfolio/)  
-🐙 [GitHub](https://github.com/Ryan-Wes)
+**WRyan**
 
----
+🔗 LinkedIn  
+https://www.linkedin.com/in/wryan-lopes
 
-<h3 align="center">© 2024 — WRyan | Todos os direitos reservados</h3>
+🌐 Portfólio  
+https://ryan-wes.github.io/portfolio/
+
+🐙 GitHub  
+https://github.com/Ryan-Wes
