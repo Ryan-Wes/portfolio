@@ -4,6 +4,8 @@ body {
     width: 100vw;
 }
 
+
+
 .header {
     position: fixed;
     top: 0;
@@ -20,7 +22,7 @@ body {
 .header.sticky {
     background: var(--bg-color);
     box-shadow: 0 .1rem .1rem var(--shadow-color);
-    
+
 }
 
 .logo {
@@ -62,22 +64,23 @@ body {
     opacity: .7;
 }
 
-#language-selector{
-  background: transparent;
-  color: var(--text-color); /* aqui muda */
-  border: 2px solid var(--main-color);
-  border-radius: .6rem;
-  padding: .6rem 1rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-right: 1.5rem;
-  transition: .3s ease;
+#language-selector {
+    background: transparent;
+    color: var(--text-color);
+    /* aqui muda */
+    border: 2px solid var(--main-color);
+    border-radius: .6rem;
+    padding: .6rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    transition: .3s ease;
 }
 
-#language-selector option{
-  background: var(--bg-color);
-  color: var(--text-color);
+#language-selector option {
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 #darkMode-icon {
@@ -109,7 +112,8 @@ section {
 }
 
 .home .home-content {
-    max-width: 53rem;
+    width: 100%;
+    max-width: 63rem;
 }
 
 .home-content h3 {
@@ -124,8 +128,8 @@ section {
     margin-bottom: .3rem;
 }
 
-.home-content h2{
-    font-size: 16px;
+.home-content h2 {
+    font-size: 15px;
     font-weight: 300;
     line-height: .3;
     text-align: end;
@@ -220,19 +224,29 @@ section {
     animation: professionRotate 13s ease-out infinite;
 }
 
+
 @keyframes professionRotate {
-    0%,20% {
+
+    0%,
+    20% {
         transform: rotate(0deg);
     }
-    25%,45% {
+
+    25%,
+    45% {
         transform: rotate(-90deg);
     }
-    50%,70% {
+
+    50%,
+    70% {
         transform: rotate(-180deg);
     }
-    75%,95% {
+
+    75%,
+    95% {
         transform: rotate(-270deg);
     }
+
     100% {
         transform: rotate(-360deg);
     }
@@ -254,20 +268,20 @@ section {
     /* background-color: red; */
 }
 
-.home .profession-box .profession:nth-child(1){
-        padding-left: 25px;
+.home .profession-box .profession:nth-child(1) {
+    padding-left: 25px;
 }
 
 .home .profession-box .profession:nth-child(2) {
-    padding-left: 60px;
+    padding-left: 90px;
 }
 
 .home .profession-box .profession:nth-child(3) {
     padding-left: 46px;
 }
 
-.home .profession-box .profession:nth-child(4) {
-    padding-left: 46px;
+.home .profession-box .profession:nth-child(4) {    
+    padding-left: 66px;
 }
 
 
@@ -312,6 +326,7 @@ section {
     /* border bottom e top 50vh */
 }
 
+
 .home-img img {
     position: relative;
     bottom: 44vh;
@@ -320,7 +335,7 @@ section {
     pointer-events: none;
     max-width: 480px;
     max-height: 90vh;
-    
+
     /* alterado altura e largura */
 }
 
@@ -330,12 +345,12 @@ section {
 
 ::-webkit-scrollbar {
     width: 15px;
- }
+}
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border: 2px solid var(--bg-color);
- }
+}
 
 
 
@@ -391,69 +406,75 @@ section {
     gap: 70px;
     width: 90vw;
     flex-wrap: wrap;
-    
-    
+}
 
+/* ============================
+   SERVICES (Habilidades) - FIX
+   ============================ */
+
+/* tamanho responsivo dos ícones (substitui o "1200%") */
+.services {
+    --skill-icon-size: clamp(64px, 8vw, 110px);
 }
 
 .services-container .services-box {
     flex: 1 1 300px;
     background: var(--bg-color);
     padding: 75px 0 75px 0;
-    /* border-radius: 20px; */
-    /* box-shadow: 0 1px 5px var(--shadow-color); */
     text-align: center;
-    /* border-top: 6px solid var(--main-color);
-    border-bottom: 6px solid var(--main-color); */
     transition: .5s ease;
     height: 200px;
-    
-
 }
 
-/* .services-container .services-box:hover {
-    box-shadow: 0 1px 2px var(--shadow-color);
-    transform: scale(1.02);
-} */
-
-.services-box i {
-    font-size: 1200%;
+/* unifica base (ícone + título) */
+.services-box i,
+.services-box svg,
+.services-box h3 {
     color: var(--text-color);
     transition: .5s ease;
-    
 }
 
-.services-box:hover i {
-    color: var(--main-color);
+/* Boxicons (fonte) */
+.services-box i {
+    font-size: var(--skill-icon-size);
 }
 
-.services-box h3 {
-    font-size: 26px;
-    transition: .5s ease;
+/* SVG inline (AI) */
+.services-box svg {
+    width: var(--skill-icon-size);
+    height: var(--skill-icon-size);
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
 }
 
+/* hover no CARD (pega tudo junto) */
+.services-box:hover i,
+.services-box:hover svg,
 .services-box:hover h3 {
     color: var(--main-color);
 }
 
+/* se quiser um hover mais "tech" leve */
+.services-box:hover i,
+.services-box:hover svg {
+    transform: translateY(-4px) scale(1.03);
+}
+
+/* Título */
+.services-box h3 {
+    font-size: 26px;
+}
+
+
+
+/* ============================
+   FIM SERVICES FIX
+   ============================ */
+
 .services-box p {
     font-size: 16px;
     margin: 10px 0 30px;
-}
-
-.n8n-logo {
-  width: var(--icon-size);
-  height: var(--icon-size);
-  object-fit: contain;
-  margin-bottom: 10px;
-  transition: filter .5s ease;
-  filter: brightness(0) invert(1); /* começa branco */
-}
-
-.services-box:hover .n8n-logo {
-  filter: brightness(0) saturate(100%) invert(16%) sepia(95%) saturate(6866%) 
-          hue-rotate(274deg) brightness(97%) contrast(101%);
-  /* isso pinta do roxo #b005ff */
 }
 
 
@@ -581,9 +602,11 @@ section {
         opacity: 0;
         left: 0%;
     }
+
     50% {
         opacity: 1;
     }
+
     to {
         opacity: 0;
         left: 100%;
@@ -651,7 +674,7 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px 7%;
+    padding: 8px 7%;
     background: var(--main-color);
 }
 
@@ -700,5 +723,51 @@ section {
     font-size: 16px;
 }
 
+/* ===== CYBERPUNK GLOW EFFECT ===== */
 
 
+@keyframes neonPulse {
+    0% { filter: drop-shadow(0 0 6px var(--main-color)); }
+    50% { filter: drop-shadow(0 0 18px var(--main-color)); }
+    100% { filter: drop-shadow(0 0 6px var(--main-color)); }
+}
+
+.services-box:hover i,
+.services-box:hover svg {
+    animation: neonPulse 1.5s infinite;
+}
+
+/* ===== AI CURSOR GLOW ===== */
+
+body::after{
+    content: "";
+    position: fixed;
+    left: var(--mouse-x);
+    top: var(--mouse-y);
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+
+    background: radial-gradient(
+        circle,
+        rgba(176,5,255,0.18) 0%,
+        rgba(176,5,255,0.10) 25%,
+        rgba(176,5,255,0.04) 40%,
+        transparent 70%
+    );
+
+    transition: left 0.08s linear, top 0.08s linear;
+}
+
+/* ===== NEURAL NETWORK BACKGROUND (canvas) ===== */
+#neural-bg{
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;          /* fica atrás de tudo */
+  pointer-events: none; /* não atrapalha clique */
+  opacity: .55;         /* ajusta a força */
+}

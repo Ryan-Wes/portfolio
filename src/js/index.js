@@ -8,7 +8,7 @@ const translations = {
     contact: "Contato",
 
     heroGreeting: "Olá! Eu sou o",
-    heroRole: 'Analista de <strong>Dados</strong> e Desenvolvedor <strong>Full Stack</strong>',
+    heroRole: 'Desenvolvedor <strong>Full-Stack</strong> | Dados & <strong>Automação de IA</strong>',
     heroTagline:
       'Transformando ideias em sites, dados em decisões e <strong>automações inteligentes</strong>',
 
@@ -81,7 +81,7 @@ Construído com <strong>HTML, CSS e JavaScript</strong>, com manipulação de ev
     contact: "Contact",
 
     heroGreeting: "Hi! I am",
-    heroRole: 'Data <strong>Analyst</strong> and Full Stack <strong>Developer</strong>',
+    heroRole: '<strong>Full-Stack</strong> Developer | Data & <strong>AI Automation</strong>',
     heroTagline: 'Building scalable web solutions and <strong>intelligent automations</strong>',
 
     aboutTitle: '<strong>About</strong> Me',
@@ -153,7 +153,7 @@ Built with <strong>HTML, CSS, and JavaScript</strong>.
     contact: "Contact",
 
     heroGreeting: "Salut ! Je suis",
-    heroRole: 'Analyste de <strong>Données</strong> et Développeur <strong>Full Stack</strong>',
+    heroRole: 'Développeur <strong>Full-Stack</strong> | Données & <strong>Automatisation par IA</strong>',
     heroTagline: 'Solutions web évolutives et <strong>automatisations intelligentes</strong>',
 
     aboutTitle: 'À propos de <strong>moi</strong>',
@@ -216,7 +216,7 @@ Projet interactif inspiré de la série Friends.
     contact: "Contacto",
 
     heroGreeting: "Hola! Soy",
-    heroRole: 'Analista de <strong>Datos</strong> y Desarrollador <strong>Full Stack</strong>',
+    heroRole: 'Desarrollador <strong>Full-Stack</strong> | Datos & <strong>Automatización con IA</strong>',
     heroTagline: 'Soluciones web escalables y <strong>automatizaciones inteligentes</strong>',
 
     aboutTitle: 'Sobre <strong>mí</strong>',
@@ -362,12 +362,12 @@ function setLanguage(lang) {
   setIdValue("submit-btn", t.sendMessage);
 
   // DOWNLOAD CV
-setIdText("download-cv-btn", t.downloadCV);
+  setIdText("download-cv-btn", t.downloadCV);
 
-const cvBtn = document.getElementById("download-cv-btn");
-if (cvBtn) {
-  cvBtn.href = cvLinks[lang] || cvLinks.pt;
-}
+  const cvBtn = document.getElementById("download-cv-btn");
+  if (cvBtn) {
+    cvBtn.href = cvLinks[lang] || cvLinks.pt;
+  }
 }
 
 const languageSelector = document.getElementById("language-selector");
@@ -450,4 +450,178 @@ ScrollReveal().reveal(".home-img img, .services-container, .portfolio-box, .cont
 });
 ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", { origin: "right" });
+
+(async () => {
+  const svgEl = document.querySelector(".icon-n8n");
+  if (!svgEl) return;
+
+  try {
+    // Simple Icons: retorna o SVG cru do ícone
+    const res = await fetch("https://cdn.simpleicons.org/n8n");
+    const svgText = await res.text();
+
+    // Pega o <path ...> de dentro do SVG e coloca no seu <svg>
+    const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
+    const inner = doc.querySelector("svg")?.innerHTML;
+
+    if (inner) {
+      svgEl.setAttribute("viewBox", "0 0 24 24");
+      svgEl.innerHTML = inner;
+
+      // força o preenchimento seguir o currentColor
+      svgEl.querySelectorAll("[fill]").forEach(el => el.removeAttribute("fill"));
+      svgEl.querySelectorAll("path, circle, rect, polygon").forEach(el => {
+        el.setAttribute("fill", "currentColor");
+      });
+    }
+  } catch (err) {
+    // se der ruim, o ícone só não aparece — sem quebrar o resto
+    console.error("Falha ao carregar ícone do n8n:", err);
+  }
+})();
+
+let mouse = {
+  x: null,
+  y: null,
+  radius: 160
+};
+
+window.addEventListener("mousemove", (e) => {
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
+});
+
+window.addEventListener("scroll", () => {
+  scrollOffset = window.scrollY * 0.15;
+});
+
+(() => {
+  const canvas = document.getElementById("neural-bg");
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d", { alpha: true });
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+  let w = 0, h = 0;
+  let scrollOffset = 0;
+  const points = [];
+  const SETTINGS = {
+    density: 9000,         // menor = mais pontos (ajuste fino)
+    maxLinkDist: 140,      // distância máxima das conexões
+    speed: 0.35,           // velocidade dos pontos
+    pointSize: 1.4         // tamanho do ponto
+  };
+
+  function resize() {
+    w = window.innerWidth;
+    h = window.innerHeight;
+
+    canvas.width = Math.floor(w * DPR);
+    canvas.height = Math.floor(h * DPR);
+    canvas.style.width = w + "px";
+    canvas.style.height = h + "px";
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+
+    // Recria pontos proporcionalmente à área
+    points.length = 0;
+    const count = Math.floor((w * h) / SETTINGS.density);
+
+    for (let i = 0; i < count; i++) {
+      points.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() * 2 - 1) * SETTINGS.speed,
+        vy: (Math.random() * 2 - 1) * SETTINGS.speed,
+      });
+    }
+  }
+
+  function step() {
+    ctx.clearRect(0, 0, w, h);
+
+    // Pega sua cor principal do CSS (var --main-color)
+    const mainColor = getComputedStyle(document.documentElement)
+      .getPropertyValue("--main-color")
+      .trim() || "#b005ff";
+
+    // Move pontos
+    for (const p of points) {
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (mouse.x !== null) {
+
+        const dx = p.x - mouse.x;
+        const dy = p.y - mouse.y;
+        const dist = Math.hypot(dx, dy);
+
+        if (dist < mouse.radius) {
+
+          const force = (mouse.radius - dist) / mouse.radius;
+
+          p.x += dx * force * 0.07;
+          p.y += dy * force * 0.07;
+
+        }
+
+      }
+
+      // quica nas bordas
+      if (p.x < 0 || p.x > w) p.vx *= -1;
+      if (p.y < 0 || p.y > h) p.vy *= -1;
+    }
+
+    // Linhas (conexões)
+    for (let i = 0; i < points.length; i++) {
+      const a = points[i];
+
+      for (let j = i + 1; j < points.length; j++) {
+        const b = points[j];
+        const dx = a.x - b.x;
+        const dy = a.y - b.y;
+        const dist = Math.hypot(dx, dy);
+
+        if (dist < SETTINGS.maxLinkDist) {
+          const alpha = 1 - dist / SETTINGS.maxLinkDist;
+
+          ctx.strokeStyle = `rgba(176, 5, 255, ${0.22 * alpha})`;
+          // Se você quiser obedecer totalmente sua --main-color, use isso:
+          // ctx.strokeStyle = hexToRgba(mainColor, 0.22 * alpha);
+
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y - scrollOffset);
+          ctx.lineTo(b.x, b.y - scrollOffset);
+          ctx.stroke();
+        }
+      }
+    }
+
+    // Pontos
+    ctx.fillStyle = `rgba(176, 5, 255, 0.65)`;
+    // ou: ctx.fillStyle = hexToRgba(mainColor, 0.65);
+
+    for (const p of points) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y - scrollOffset, SETTINGS.pointSize, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  // (Opcional) se quiser usar sua --main-color em hex corretamente:
+  // function hexToRgba(hex, a){
+  //   const h = hex.replace("#","").trim();
+  //   if (h.length !== 6) return `rgba(176,5,255,${a})`;
+  //   const r = parseInt(h.slice(0,2),16);
+  //   const g = parseInt(h.slice(2,4),16);
+  //   const b = parseInt(h.slice(4,6),16);
+  //   return `rgba(${r},${g},${b},${a})`;
+  // }
+
+  window.addEventListener("resize", resize);
+  resize();
+  step();
+})();
 
