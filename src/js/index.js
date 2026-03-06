@@ -451,6 +451,13 @@ ScrollReveal().reveal(".home-img img, .services-container, .portfolio-box, .cont
 ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", { origin: "right" });
 
+
+
+
+
+
+
+
 (async () => {
   const svgEl = document.querySelector(".icon-n8n");
   if (!svgEl) return;
@@ -624,3 +631,209 @@ window.addEventListener("scroll", () => {
   resize();
   step();
 })();
+
+
+
+
+ 
+
+
+/* =========================
+   AI CHAT BOT
+========================= */
+
+const bot = document.getElementById("ai-bot");
+const chat = document.getElementById("ai-chat");
+const closeBtn = document.getElementById("chat-close")
+
+const input = document.getElementById("chat-input");
+const send = document.getElementById("chat-send");
+const messages = document.getElementById("chat-messages");
+
+
+
+
+/* abrir / fechar chat */
+
+closeBtn.addEventListener("click", () => {
+  chat.style.display = "none"
+})
+
+bot.addEventListener("click", () => {
+
+  if(chat.style.display === "flex"){
+    chat.style.display = "none";
+  }else{
+    chat.style.display = "flex";
+    input.focus();
+  }
+
+});
+
+
+/* responder mensagem fake (por enquanto) */
+
+send.addEventListener("click", () => {
+
+  const text = input.value;
+
+  if(!text) return;
+
+  messages.innerHTML += `<div><b>You:</b> ${text}</div>`;
+
+  input.value = "";
+
+  setTimeout(() => {
+
+    messages.innerHTML += `<div><b>AI:</b> I'm Suzy, Ryan's AI assistant. Soon I'll be powered by real AI 🚀</div>`;
+
+    messages.scrollTop = messages.scrollHeight;
+
+  },500);
+
+});
+
+
+
+
+/* =========================
+   NEURAL BOT MASCOT
+========================= */
+
+(() => {
+  const canvas = document.getElementById("bot-canvas");
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+  const size = 120;
+  canvas.width = size * dpr;
+  canvas.height = size * dpr;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  const cx = size / 2;
+  const cy = size / 2;
+
+  let hover = false;
+  let time = 0;
+
+  const nodes = Array.from({ length: 6 }, (_, i) => ({
+    angle: (Math.PI * 2 * i) / 6,
+    radius: 28 + Math.random() * 8,
+    size: 3 + Math.random() * 2,
+    speed: 0.008 + Math.random() * 0.004
+  }));
+
+  const bot = document.getElementById("ai-bot");
+
+  bot.addEventListener("mouseenter", () => {
+    hover = true;
+  });
+
+  bot.addEventListener("mouseleave", () => {
+    hover = false;
+  });
+
+  function drawCore(pulse) {
+    const gradient = ctx.createRadialGradient(cx, cy, 4, cx, cy, 22);
+    gradient.addColorStop(0, "rgba(220,180,255,0.95)");
+    gradient.addColorStop(0.35, "rgba(176,5,255,0.9)");
+    gradient.addColorStop(1, "rgba(176,5,255,0.08)");
+
+    ctx.beginPath();
+    ctx.fillStyle = gradient;
+    ctx.arc(cx, cy, 16 + pulse, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.fillStyle = "rgba(255,255,255,0.95)";
+    ctx.arc(cx, cy, 5 + pulse * 0.25, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  function drawRing(pulse) {
+    ctx.beginPath();
+    ctx.strokeStyle = hover
+      ? "rgba(176,5,255,0.55)"
+      : "rgba(176,5,255,0.28)";
+    ctx.lineWidth = hover ? 1.8 : 1.2;
+    ctx.arc(cx, cy, 30 + pulse * 1.2, 0, Math.PI * 2);
+    ctx.stroke();
+  }
+
+  function drawNodes() {
+    const positions = [];
+
+    for (const node of nodes) {
+      node.angle += hover ? node.speed * 1.9 : node.speed;
+
+      const orbitRadius = hover ? node.radius + 2 : node.radius;
+      const x = cx + Math.cos(node.angle) * orbitRadius;
+      const y = cy + Math.sin(node.angle) * orbitRadius;
+
+      positions.push({ x, y });
+
+      ctx.beginPath();
+      ctx.fillStyle = hover
+        ? "rgba(210,150,255,0.95)"
+        : "rgba(176,5,255,0.8)";
+      ctx.arc(x, y, node.size, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.strokeStyle = hover
+        ? "rgba(176,5,255,0.35)"
+        : "rgba(176,5,255,0.18)";
+      ctx.lineWidth = 1;
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(x, y);
+      ctx.stroke();
+    }
+
+    for (let i = 0; i < positions.length; i++) {
+      const a = positions[i];
+      const b = positions[(i + 1) % positions.length];
+
+      ctx.beginPath();
+      ctx.strokeStyle = hover
+        ? "rgba(176,5,255,0.25)"
+        : "rgba(176,5,255,0.12)";
+      ctx.lineWidth = 0.9;
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(b.x, b.y);
+      ctx.stroke();
+    }
+  }
+
+  function drawParticles() {
+    for (let i = 0; i < 8; i++) {
+      const angle = (Math.PI * 2 * i) / 8 + time * 0.01;
+      const r = 40 + Math.sin(time * 0.03 + i) * 3;
+      const x = cx + Math.cos(angle) * r;
+      const y = cy + Math.sin(angle) * r;
+
+      ctx.beginPath();
+      ctx.fillStyle = "rgba(176,5,255,0.18)";
+      ctx.arc(x, y, 1.3, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  function animate() {
+    time += 1;
+    ctx.clearRect(0, 0, size, size);
+
+    const pulse = Math.sin(time * 0.06) * 1.4 + (hover ? 1.5 : 0);
+
+    drawParticles();
+    drawRing(pulse);
+    drawNodes();
+    drawCore(pulse);
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+})();
+

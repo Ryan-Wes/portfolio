@@ -419,7 +419,7 @@ section {
 
 .services-container .services-box {
     flex: 1 1 300px;
-    background: var(--bg-color);
+    background: none;
     padding: 75px 0 75px 0;
     text-align: center;
     transition: .5s ease;
@@ -723,8 +723,10 @@ section {
     font-size: 16px;
 }
 
-/* ===== CYBERPUNK GLOW EFFECT ===== */
 
+
+
+/* ===== CYBERPUNK GLOW EFFECT ===== */
 
 @keyframes neonPulse {
     0% { filter: drop-shadow(0 0 6px var(--main-color)); }
@@ -737,6 +739,20 @@ section {
     animation: neonPulse 1.5s infinite;
 }
 
+
+/* ===== NEURAL NETWORK BACKGROUND ===== */
+
+#neural-bg{
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .55;
+}
+
+
 /* ===== AI CURSOR GLOW ===== */
 
 body::after{
@@ -748,7 +764,7 @@ body::after{
     height: 400px;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    z-index: 0;
+    z-index: 1;
 
     background: radial-gradient(
         circle,
@@ -761,13 +777,149 @@ body::after{
     transition: left 0.08s linear, top 0.08s linear;
 }
 
-/* ===== NEURAL NETWORK BACKGROUND (canvas) ===== */
-#neural-bg{
+
+/* ===== MAIN CONTENT LAYER ===== */
+
+header,
+section,
+footer{
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ===== AI BOT BUTTON ===== */
+
+#ai-bot {
   position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -2;          /* fica atrás de tudo */
-  pointer-events: none; /* não atrapalha clique */
-  opacity: .55;         /* ajusta a força */
+  bottom: 10px;
+  right: 10px;
+
+  cursor: pointer;
+  z-index: 999;
+
+  animation: botFloat 3s infinite ease-in-out;
+}
+
+#bot-avatar{
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  display: block;
+
+  filter: drop-shadow(0 0 10px rgba(176, 5, 255, 0.45));
+  transition: transform .25s ease, filter .25s ease;
+}
+
+#ai-bot:hover #bot-avatar{
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 16px rgba(176, 5, 255, 0.7));
+}
+
+/* balãozinho de ajuda */
+
+#bot-bubble{
+  position: absolute;
+  top: -16px;
+  right: 4px;
+
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(145deg, #b349ae, #8303be);
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+
+  border-radius: 50%;
+  box-shadow: 0 0 14px rgba(176, 5, 255, 0.6);
+
+  animation: bubblePulse 1.6s infinite ease-in-out;
+}
+
+@keyframes botFloat{
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-7px); }
+  100%{ transform: translateY(0); }
+}
+
+@keyframes bubblePulse{
+  0%{ transform: scale(1); opacity: .92; }
+  50%{ transform: scale(1.12); opacity: 1; }
+  100%{ transform: scale(1); opacity: .92; }
+}
+
+/* ===== CHAT WINDOW ===== */
+
+#ai-chat{
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  width: 320px;
+  height: 420px;
+  background:#111;
+  border-radius:12px;
+  display:none;
+  flex-direction:column;
+  overflow:hidden;
+  z-index:999;
+}
+
+
+#chat-header{
+  background: var(--main-color);
+  padding:10px;
+  color:white;
+  font-weight:bold;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+
+#chat-close{
+  cursor:pointer;
+  font-size:16px;
+  opacity:.8;
+}
+
+#chat-close:hover{
+  opacity:1;
+}
+
+
+#chat-messages{
+  flex:1;
+  padding:10px;
+  overflow-y:auto;
+  font-size:14px;
+}
+
+
+#chat-input-area{
+  display:flex;
+}
+
+
+#chat-input{
+  flex:1;
+  padding:8px;
+  border:none;
+  outline:none;
+}
+
+
+#chat-send{
+  padding:8px 12px;
+  background:var(--main-color);
+  border:none;
+  color:white;
+  cursor:pointer;
 }
