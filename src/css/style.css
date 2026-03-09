@@ -802,8 +802,8 @@ footer{
 }
 
 #bot-avatar{
-  width: 62px;
-  height: 62px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
   display: block;
 
@@ -823,8 +823,8 @@ footer{
   top: -16px;
   right: 4px;
 
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
 
   display: flex;
   align-items: center;
@@ -865,6 +865,7 @@ footer{
   height: 420px;
   background:#111;
   border-radius:12px;
+  border: #333 solid 2px;
   display:none;
   flex-direction:column;
   overflow:hidden;
