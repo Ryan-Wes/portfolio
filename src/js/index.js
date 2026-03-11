@@ -671,26 +671,81 @@ bot.addEventListener("click", () => {
 });
 
 
-/* responder mensagem fake (por enquanto) */
+/* =========================
+   SUZY AI CHAT
+========================= */
 
-send.addEventListener("click", () => {
+function addChatMessage(text, sender) {
+  const message = document.createElement("div");
+  message.classList.add("chat-message", sender);
 
-  const text = input.value;
+  const bubble = document.createElement("div");
+  bubble.classList.add("chat-bubble");
+  bubble.textContent = text;
 
-  if(!text) return;
+  message.appendChild(bubble);
+  messages.appendChild(message);
 
-  messages.innerHTML += `<div><b>You:</b> ${text}</div>`;
+  messages.scrollTop = messages.scrollHeight;
 
+  return message;
+}
+
+async function sendMessage() {
+  const text = input.value.trim();
+
+  if (!text) return;
+
+  addChatMessage(text, "user");
   input.value = "";
 
-  setTimeout(() => {
+  const typingMessage = addChatMessage("Typing...", "suzy");
 
-    messages.innerHTML += `<div><b>AI:</b> I'm Suzy, Ryan's AI assistant. Soon I'll be powered by real AI 🚀</div>`;
+  try {
+    const response = await fetch("https://wryan.app.n8n.cloud/webhook-test/suzy-chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        message: text
+      })
+    });
 
-    messages.scrollTop = messages.scrollHeight;
+    const data = await response.json();
 
-  },500);
+    typingMessage.remove();
 
+    addChatMessage(data.reply || "Sorry, I couldn't answer right now.", "suzy");
+
+  } catch (error) {
+    typingMessage.remove();
+    addChatMessage("Connection error.", "suzy");
+    console.error(error);
+  }
+}
+
+/* botão enviar */
+send.addEventListener("click", sendMessage);
+
+/* enviar com Enter */
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    sendMessage();
+  }
+});
+
+
+/* botão enviar */
+
+send.addEventListener("click", sendMessage);
+
+/* enviar com Enter */
+
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    sendMessage();
+  }
 });
 
 

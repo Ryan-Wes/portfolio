@@ -924,3 +924,53 @@ footer{
   color:white;
   cursor:pointer;
 }
+
+
+/* =========================
+   CHAT MESSAGES STYLE
+========================= */
+
+#chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  display: flex;
+  width: 100%;
+}
+
+.chat-message.user {
+  justify-content: flex-end;
+}
+
+.chat-message.suzy {
+  justify-content: flex-start;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 1.4rem;
+}
+
+.chat-message.user .chat-bubble {
+  background: #ffffff;
+  color: #111111;
+  border-bottom-right-radius: 6px;
+}
+
+.chat-message.suzy .chat-bubble {
+  background: rgba(176, 5, 255, 0.18);
+  color: #f3dcff;
+  border: 1px solid rgba(176, 5, 255, 0.35);
+  border-bottom-left-radius: 6px;
+  box-shadow: 0 0 12px rgba(176, 5, 255, 0.18);
+}
