@@ -71,6 +71,8 @@ Construído com <strong>HTML, CSS e JavaScript</strong>, com manipulação de ev
     subject: "Assunto",
     message: "Sua mensagem",
     sendMessage: "Enviar mensagem",
+
+    chatTyping: "Suzy está digitando"
   },
 
   en: {
@@ -143,6 +145,8 @@ Built with <strong>HTML, CSS, and JavaScript</strong>.
     subject: "Subject",
     message: "Your Message",
     sendMessage: "Send Message",
+
+    chatTyping: "Suzy is typing"
   },
 
   fr: {
@@ -206,6 +210,8 @@ Projet interactif inspiré de la série Friends.
     subject: "Sujet",
     message: "Votre message",
     sendMessage: "Envoyer le message",
+
+    chatTyping: "Suzy est en train d’écrire"
   },
 
   es: {
@@ -268,6 +274,8 @@ Proyecto interactivo inspirado en la serie Friends.
     subject: "Asunto",
     message: "Tu mensaje",
     sendMessage: "Enviar mensaje",
+
+    chatTyping: "Suzy está escribiendo"
   },
 };
 
@@ -635,7 +643,7 @@ window.addEventListener("scroll", () => {
 
 
 
- 
+
 
 
 /* =========================
@@ -661,9 +669,9 @@ closeBtn.addEventListener("click", () => {
 
 bot.addEventListener("click", () => {
 
-  if(chat.style.display === "flex"){
+  if (chat.style.display === "flex") {
     chat.style.display = "none";
-  }else{
+  } else {
     chat.style.display = "flex";
     input.focus();
   }
@@ -675,13 +683,30 @@ bot.addEventListener("click", () => {
    SUZY AI CHAT
 ========================= */
 
+function escapeHTML(text) {
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+function formatMessageText(text) {
+  const safeText = escapeHTML(text);
+
+  const withLinks = safeText.replace(
+    /(https?:\/\/[^\s<]+)/g,
+    '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+  );
+
+  return withLinks.replace(/\n/g, "<br>");
+}
+
 function addChatMessage(text, sender) {
   const message = document.createElement("div");
   message.classList.add("chat-message", sender);
 
   const bubble = document.createElement("div");
   bubble.classList.add("chat-bubble");
-  bubble.textContent = text;
+  bubble.innerHTML = formatMessageText(text);
 
   message.appendChild(bubble);
   messages.appendChild(message);
@@ -689,6 +714,36 @@ function addChatMessage(text, sender) {
   messages.scrollTop = messages.scrollHeight;
 
   return message;
+}
+
+function addTypingMessage() {
+  const lang = getCurrentLanguage();
+  const typingText = translations[lang]?.chatTyping || translations.pt.chatTyping;
+
+  const message = document.createElement("div");
+  message.classList.add("chat-message", "suzy");
+
+  const bubble = document.createElement("div");
+  bubble.classList.add("chat-bubble", "typing-bubble");
+  bubble.innerHTML = `
+    <span class="typing-text">${typingText}</span>
+    <span class="typing-dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  `;
+
+  message.appendChild(bubble);
+  messages.appendChild(message);
+
+  messages.scrollTop = messages.scrollHeight;
+
+  return message;
+}
+
+function getCurrentLanguage() {
+  return localStorage.getItem("language") || "pt";
 }
 
 async function sendMessage() {
@@ -699,10 +754,10 @@ async function sendMessage() {
   addChatMessage(text, "user");
   input.value = "";
 
-  const typingMessage = addChatMessage("Typing...", "suzy");
+  const typingMessage = addTypingMessage();
 
   try {
-    const response = await fetch("https://wryan.app.n8n.cloud/webhook-test/suzy-chat", {
+    const response = await fetch("https://wryan.app.n8n.cloud/webhook/suzy-chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -724,6 +779,17 @@ async function sendMessage() {
     console.error(error);
   }
 }
+
+/* botão enviar */
+send.addEventListener("click", sendMessage);
+
+/* enviar com Enter */
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    sendMessage();
+  }
+});
+
 
 /* botão enviar */
 send.addEventListener("click", sendMessage);

@@ -861,8 +861,8 @@ footer{
   position: fixed;
   bottom: 100px;
   right: 25px;
-  width: 320px;
-  height: 420px;
+  width: 420px;
+  height: 520px;
   background:#111;
   border-radius:12px;
   border: #333 solid 2px;
@@ -957,7 +957,8 @@ footer{
   border-radius: 18px;
   line-height: 1.5;
   word-wrap: break-word;
-  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  white-space: normal;
   font-size: 1.4rem;
 }
 
@@ -973,4 +974,62 @@ footer{
   border: 1px solid rgba(176, 5, 255, 0.35);
   border-bottom-left-radius: 6px;
   box-shadow: 0 0 12px rgba(176, 5, 255, 0.18);
+}
+
+.chat-bubble a {
+  color: #ffffff;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.chat-bubble a:hover {
+  opacity: 0.85;
+}
+
+/* =========================
+   TYPING ANIMATION
+========================= */
+
+.typing-bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.typing-text {
+  opacity: 0.9;
+}
+
+.typing-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.typing-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.35;
+  animation: typingBounce 1.2s infinite ease-in-out;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typingBounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
+    opacity: 0.35;
+  }
+  40% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
 }
