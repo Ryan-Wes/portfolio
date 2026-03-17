@@ -8,6 +8,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
 ![n8n](https://img.shields.io/badge/n8n-AI%20Automation-FF6D5A)
 ![OpenAI](https://img.shields.io/badge/OpenAI-Chatbot-10A37F?logo=openai&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-Contextual%20AI-7130B1)
 ![Responsive](https://img.shields.io/badge/Responsive-Design-success?logo=vercel&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Online-7130B1)
 </div>
@@ -30,25 +31,30 @@ Além da interface moderna e responsiva, o projeto também integra um **assisten
 
 ---
 
+
 ## 🤖 Suzy --- Assistente Virtual do Portfólio
 
-O portfólio possui um **chatbot inteligente integrado**, capaz de responder perguntas sobre o conteúdo do site.
+O portfólio possui uma **assistente virtual inteligente integrada**, baseada em **RAG (Retrieval Augmented Generation)**, capaz de responder perguntas em tempo real sobre o conteúdo do site.
 
-O sistema utiliza:
+A arquitetura foi construída utilizando **n8n** e **OpenAI**, com foco em automação e uso de contexto dinâmico.
 
-- **OpenAI**
-- **n8n**
-- **Memória de conversa**
-- **Extração automática de conteúdo do site**
+### 🛠️ Funcionalidades do Sistema
 
-A IA consegue responder perguntas como:
+- **Integração com OpenAI** para geração de respostas.
+- **Orquestração de fluxo com n8n**.
+- **Extração automática de conteúdo** do próprio portfólio.
+- **Tratamento e limpeza de dados** antes do envio para a IA.
+- **Estrutura de contexto baseada em relevância**.
+- **Memória simples de sessão** para continuidade da conversa.
+
+A assistente é capaz de responder perguntas como:
 
 - Quem é o Ryan?
-- Quais projetos ele tem?
-- Quais tecnologias ele utiliza?
+- Quais projetos ele desenvolveu?
+- Quais tecnologias utiliza?
 - Como entrar em contato?
 
-O chatbot utiliza uma abordagem semelhante a **RAG (Retrieval Augmented Generation)**, onde o conteúdo do próprio portfólio é utilizado como contexto para gerar respostas.
+O chatbot utiliza uma abordagem baseada em **RAG (Retrieval Augmented Generation)**, onde o conteúdo do próprio portfólio é processado, filtrado e enviado como contexto para a IA, garantindo respostas mais coerentes e alinhadas com as informações reais.
 
 ---
 
