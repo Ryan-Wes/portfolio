@@ -6,7 +6,7 @@
   <meta name="description" content="Portfolio of Ryan - Frontend developer focused on UI, automation and AI">
   <meta property="og:title" content="Ryan Portfolio">
   <meta property="og:image" content="/src/images/preview.png">
-  
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -35,6 +35,7 @@
       <a href="#home" class="active">Home</a>
       <a href="#about">Sobre</a>
       <a href="#services">Habilidades</a>
+      <a href="#ai">IA</a>
       <a href="#portfolio">Projetos</a>
       <a href="#contact">Contato</a>
     </nav>
@@ -203,127 +204,82 @@
     </div>
   </section>
 
-  <section class="portfolio" id="portfolio">
-    <h2 class="heading">Últimos <strong>Projetos</strong></h2>
 
-    <div class="portfolio-container">
-      <div class="portfolio-box">
-        <img src="./src/image/guiadesaudemental.gif" alt="Imagem do site Guia de Saúde Mental" />
+  <section class="ai-section" id="ai">
+    <h2 class="heading">Converse com minha <strong>IA</strong></h2>
 
-        <div class="portfolio-layer">
-          <h4>Guia de Saúde Mental</h4>
-          <p id="project-mental-health-desc">
-            Aplicação web para o Setembro Amarelo que oferece soluções para
-            diferentes sentimentos. Desenvolvida com HTML, CSS e JavaScript,
-            possui uma interface responsiva e recursos de suporte emocional
-            online.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/guia-de-saude-mental"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/guia-de-saude-mental/"
-              target="_blank">Projeto</a>
-          </div>
+    <div class="ai-section-container">
+      <div class="ai-section-content">
+        <span class="ai-badge">Assistente inteligente integrada ao portfólio</span>
+
+        <h3>Conheça a <strong>Suzy</strong>, minha assistente virtual</h3>
+
+        <p class="ai-section-description">
+          A Suzy foi integrada ao meu portfólio para responder perguntas em tempo real sobre
+          <strong>minha experiência</strong>, <strong>tecnologias</strong>,
+          <strong>projetos</strong> e <strong>formas de contato</strong>.
+        </p>
+
+        <p class="ai-section-description">
+          Ela utiliza uma arquitetura com <strong>frontend em JavaScript</strong>,
+          <strong>workflow no n8n</strong>, <strong>OpenAI</strong>,
+          <strong>memória de conversa</strong> e recuperação de contexto do próprio site.
+        </p>
+
+        <div class="ai-stack-list">
+          <span>JavaScript</span>
+          <span>n8n</span>
+          <span>OpenAI</span>
+          <span>Memory</span>
+          <span>Context Retrieval</span>
+          <span>Webhook</span>
+        </div>
+
+        <div class="ai-section-actions">
+          <button class="btn open-ai-chat-btn" type="button">Abrir chat</button>
+          <a href="#portfolio" class="btn btn-secondary">Ver projetos</a>
         </div>
       </div>
 
-      <div class="portfolio-box">
-        <img src="./src/image/Pokedex.gif" alt="Imagem do site do One Piece" />
-
-        <div class="portfolio-layer">
-          <h4>Pokédex Com React</h4>
-          <p id="project-pokedex-desc">
-            Uma Pokédex interativa desenvolvida em React, com busca, filtros e
-            detalhes dos Pokémons. Utiliza React Router Dom para navegação,
-            Styled-components para estilização e consome dados da PokéAPI.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/pokedex-api-com-react"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj btn-project" href="https://pokedex-api-com-react-three.vercel.app/"
-              target="_blank">Projeto</a>
+      <div class="ai-section-card">
+        <div class="ai-card-header">
+          <div class="ai-status">
+            <span class="ai-status-dot"></span>
+            <span class="ai-status-text">Suzy AI</span>
           </div>
         </div>
-      </div>
 
-      <div class="portfolio-box">
-        <img src="./src/image/expocar.gif" alt="Imagem do site Expocar" />
+        <div class="ai-card-body">
+          <p class="ai-card-label">Exemplos do que você pode perguntar:</p>
 
-        <div class="portfolio-layer">
-          <h4>ExpoCar</h4>
-          <p id="project-expocar-desc">
-            Um site de apresentação de carros de alta performance com texto de
-            descrição e com botões que mudam a imagem do carro e sua descrição
-            quando clicados ultilizando HTML, CSS e JavaScript.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/expo-car"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/expo-car/"
-              target="_blank">Projeto</a>
-          </div>
-        </div>
-      </div>
+          <div class="ai-example-list">
+            <button class="ai-example-question" type="button">
+              Quem é o Ryan?
+            </button>
 
-      <div class="portfolio-box">
-        <img src="./src/image/cobrinha.gif" alt="Gif do site Jogo da Cobrinha" />
+            <button class="ai-example-question" type="button">
+              Quais tecnologias ele usa?
+            </button>
 
-        <div class="portfolio-layer">
-          <h4>The Hunger Snake</h4>
-          <p id="project-snake-desc">
-            Uma página do jogo "The Hunger Snake", onde o jogador controla uma
-            cobra para capturar comidas e marcar pontos. O maior score é salvo
-            no localStorage. Feito com HTML, CSS e JavaScript.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/jogoDaCobrinha-JS"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/jogoDaCobrinha-JS/"
-              target="_blank">Projeto</a>
-          </div>
-        </div>
-      </div>
+            <button class="ai-example-question" type="button">
+              Quais são os principais projetos?
+            </button>
 
-      <div class="portfolio-box">
-        <img src="./src/image/githubapi.gif" alt="Imagem do site Github API" />
-
-        <div class="portfolio-layer">
-          <h4>Github API</h4>
-          <p id="project-github-api-desc">
-            Aplicação que busca perfis do GitHub e exibe informações como
-            repositórios e eventos. Desenvolvida com HTML, CSS e JavaScript,
-            utiliza fetch para integrar dados da API e exibir informações
-            dinamicamente.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/github-api"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/github-api/"
-              target="_blank">Projeto</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="./src/image/devfriends.gif" alt="Imagem do site DevFriends" />
-
-        <div class="portfolio-layer">
-          <h4>Cards Dev Friends</h4>
-          <p id="project-dev-friends-desc">
-            Cards de paródia da série Friends como se fossem programadores com
-            descrição dos personagens e reconhecimento de clique para mudar as
-            imagens do carrossel e seus respectivos textos ultilizando HTML,
-            CSS e JavaScript.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj btn-code" href="https://github.com/Ryan-Wes/dev-friends"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj btn-project" href="https://ryan-wes.github.io/dev-friends/"
-              target="_blank">Projeto</a>
+            <button class="ai-example-question" type="button">
+              Como posso entrar em contato?
+            </button>
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Últimos <strong>Projetos</strong></h2>
+
+    <div class="portfolio-container"></div>
+    
   </section>
 
   <section class="contact" id="contact">
@@ -371,15 +327,19 @@
   <div id="ai-chat">
 
     <div id="chat-header">
-      Suzy - Sua Assistente Virtual
+      <div class="ai-status">
+        <span class="ai-status-dot"></span>
+        <span class="ai-status-text">Suzy - Sua Assistente Virtual</span>
+      </div>
+
       <span id="chat-close">✕</span>
     </div>
 
     <div id="chat-messages"></div>
 
     <div id="chat-input-area">
-      <input id="chat-input" placeholder="Ask something to Suzy..." />
-      <button id="chat-send">Send</button>
+      <input id="chat-input" placeholder="Pergunte algo para a Suzy." />
+      <button id="chat-send">Enviar</button>
     </div>
 
   </div>

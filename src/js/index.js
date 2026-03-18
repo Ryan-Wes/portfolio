@@ -72,7 +72,25 @@ Construído com <strong>HTML, CSS e JavaScript</strong>, com manipulação de ev
     message: "Sua mensagem",
     sendMessage: "Enviar mensagem",
 
-    chatTyping: "Suzy está digitando"
+    chatTyping: "Suzy está digitando",
+
+    ai: "IA",
+    aiTitle: 'Converse com minha <strong>IA</strong>',
+    aiBadge: "Assistente inteligente integrada ao portfólio",
+    aiHeading: 'Conheça a <strong>Suzy</strong>, minha assistente virtual',
+    aiDescription1: 'A Suzy foi integrada ao meu portfólio para responder perguntas em tempo real sobre <strong>minha experiência</strong>, <strong>tecnologias</strong>, <strong>projetos</strong> e <strong>formas de contato</strong>.',
+    aiDescription2: 'Ela utiliza uma arquitetura com <strong>frontend em JavaScript</strong>, <strong>workflow no n8n</strong>, <strong>OpenAI</strong>, <strong>memória de conversa</strong> e recuperação de contexto do próprio site.',
+    aiOpenChat: "Abrir chat",
+    aiViewProjects: "Ver projetos",
+    aiCardTitle: "Suzy AI",
+    aiCardLabel: "Exemplos do que você pode perguntar:",
+    aiQuestion1: "Quem é o Ryan?",
+    aiQuestion2: "Quais tecnologias ele usa?",
+    aiQuestion3: "Quais são os principais projetos?",
+    aiQuestion4: "Como posso entrar em contato?",
+
+    chatWelcome:
+      "Olá, eu sou a Suzy, assistente de IA do Ryan. Você pode me perguntar sobre projetos, tecnologias, experiência e formas de contato.",
   },
 
   en: {
@@ -146,7 +164,25 @@ Built with <strong>HTML, CSS, and JavaScript</strong>.
     message: "Your Message",
     sendMessage: "Send Message",
 
-    chatTyping: "Suzy is typing"
+    chatTyping: "Suzy is typing",
+
+    ai: "AI",
+    aiTitle: 'Talk to my <strong>AI</strong>',
+    aiBadge: "Intelligent assistant integrated into the portfolio",
+    aiHeading: 'Meet <strong>Suzy</strong>, my virtual assistant',
+    aiDescription1: 'Suzy was integrated into my portfolio to answer real-time questions about <strong>my experience</strong>, <strong>technologies</strong>, <strong>projects</strong> and <strong>contact information</strong>.',
+    aiDescription2: 'It uses an architecture with <strong>JavaScript frontend</strong>, <strong>n8n workflow</strong>, <strong>OpenAI</strong>, <strong>conversation memory</strong> and context retrieval from the portfolio itself.',
+    aiOpenChat: "Open chat",
+    aiViewProjects: "View projects",
+    aiCardTitle: "Suzy AI",
+    aiCardLabel: "Examples of what you can ask:",
+    aiQuestion1: "Who is Ryan?",
+    aiQuestion2: "What technologies does he use?",
+    aiQuestion3: "What are his main projects?",
+    aiQuestion4: "How can I contact him?",
+
+    chatWelcome:
+      "Hi, I’m Suzy, Ryan’s AI assistant. You can ask me about projects, tech stack, experience, and contact information.",
   },
 
   fr: {
@@ -211,7 +247,25 @@ Projet interactif inspiré de la série Friends.
     message: "Votre message",
     sendMessage: "Envoyer le message",
 
-    chatTyping: "Suzy est en train d’écrire"
+    chatTyping: "Suzy est en train d’écrire",
+
+    ai: "IA",
+    aiTitle: 'Discutez avec mon <strong>IA</strong>',
+    aiBadge: "Assistante intelligente intégrée au portfolio",
+    aiHeading: 'Découvrez <strong>Suzy</strong>, mon assistante virtuelle',
+    aiDescription1: 'Suzy a été intégrée à mon portfolio pour répondre en temps réel à des questions sur <strong>mon expérience</strong>, <strong>mes technologies</strong>, <strong>mes projets</strong> et <strong>mes contacts</strong>.',
+    aiDescription2: 'Elle utilise une architecture avec <strong>frontend en JavaScript</strong>, <strong>workflow n8n</strong>, <strong>OpenAI</strong>, <strong>mémoire de conversation</strong> et récupération de contexte depuis le site lui-même.',
+    aiOpenChat: "Ouvrir le chat",
+    aiViewProjects: "Voir les projets",
+    aiCardTitle: "Suzy AI",
+    aiCardLabel: "Exemples de questions possibles :",
+    aiQuestion1: "Qui est Ryan ?",
+    aiQuestion2: "Quelles technologies utilise-t-il ?",
+    aiQuestion3: "Quels sont ses principaux projets ?",
+    aiQuestion4: "Comment puis-je le contacter ?",
+
+    chatWelcome:
+      "Bonjour, je suis Suzy, l’assistante IA de Ryan. Vous pouvez me poser des questions sur ses projets, ses technologies, son expérience et ses contacts.",
   },
 
   es: {
@@ -275,7 +329,25 @@ Proyecto interactivo inspirado en la serie Friends.
     message: "Tu mensaje",
     sendMessage: "Enviar mensaje",
 
-    chatTyping: "Suzy está escribiendo"
+    chatTyping: "Suzy está escribiendo",
+
+    ai: "IA",
+    aiTitle: 'Habla con mi <strong>IA</strong>',
+    aiBadge: "Asistente inteligente integrada al portafolio",
+    aiHeading: 'Conoce a <strong>Suzy</strong>, mi asistente virtual',
+    aiDescription1: 'Suzy fue integrada a mi portafolio para responder preguntas en tiempo real sobre <strong>mi experiencia</strong>, <strong>tecnologías</strong>, <strong>proyectos</strong> y <strong>formas de contacto</strong>.',
+    aiDescription2: 'Utiliza una arquitectura con <strong>frontend en JavaScript</strong>, <strong>workflow en n8n</strong>, <strong>OpenAI</strong>, <strong>memoria de conversación</strong> y recuperación de contexto desde el propio sitio.',
+    aiOpenChat: "Abrir chat",
+    aiViewProjects: "Ver proyectos",
+    aiCardTitle: "Suzy AI",
+    aiCardLabel: "Ejemplos de lo que puedes preguntar:",
+    aiQuestion1: "¿Quién es Ryan?",
+    aiQuestion2: "¿Qué tecnologías usa?",
+    aiQuestion3: "¿Cuáles son sus principales proyectos?",
+    aiQuestion4: "¿Cómo puedo contactarlo?",
+
+    chatWelcome:
+      "Hola, soy Suzy, la asistente de IA de Ryan. Puedes preguntarme sobre proyectos, tecnologías, experiencia y formas de contacto.",
   },
 };
 
@@ -317,6 +389,10 @@ function setIdValue(id, value) {
   if (el) el.value = value;
 }
 
+function getCurrentLanguage() {
+  return localStorage.getItem("language") || "pt";
+}
+
 function setLanguage(lang) {
   localStorage.setItem("language", lang);
   document.documentElement.lang = lang;
@@ -344,21 +420,11 @@ function setLanguage(lang) {
   setHTML(".services .heading", t.skillsTitle);
   setIdText("skill-data-analysis", t.dataAnalysis);
 
-  // PROJECTS (título + descrições)
+  // PROJECTS
   setHTML(".portfolio .heading", t.projectsTitle);
-  setIdHTML("project-mental-health-desc", t.mentalHealthDesc);
-  setIdHTML("project-pokedex-desc", t.pokedexDesc);
-  setIdHTML("project-expocar-desc", t.expocarDesc);
-  setIdHTML("project-snake-desc", t.snakeDesc);
-  setIdHTML("project-github-api-desc", t.githubApiDesc);
-  setIdHTML("project-dev-friends-desc", t.devFriendsDesc);
 
   // DOWNLOAD CV
   setIdText("download-cv-btn", t.downloadCV);
-
-  // BOTÕES PROJETOS
-  document.querySelectorAll(".btn-code").forEach((btn) => (btn.textContent = t.codeBtn));
-  document.querySelectorAll(".btn-project").forEach((btn) => (btn.textContent = t.projectBtn));
 
   // CONTATO + FORM
   setIdHTML("contact-title", t.contactTitle);
@@ -369,13 +435,40 @@ function setLanguage(lang) {
   setIdPlaceholder("input-message", t.message);
   setIdValue("submit-btn", t.sendMessage);
 
-  // DOWNLOAD CV
-  setIdText("download-cv-btn", t.downloadCV);
-
   const cvBtn = document.getElementById("download-cv-btn");
   if (cvBtn) {
     cvBtn.href = cvLinks[lang] || cvLinks.pt;
   }
+
+  // AI SECTION
+  setText('.navbar a[href="#ai"]', t.ai);
+  setHTML("#ai .heading", t.aiTitle);
+  setText(".ai-badge", t.aiBadge);
+  setHTML(".ai-section-content h3", t.aiHeading);
+
+  const aiDescriptions = document.querySelectorAll(".ai-section-description");
+  if (aiDescriptions[0]) aiDescriptions[0].innerHTML = t.aiDescription1;
+  if (aiDescriptions[1]) aiDescriptions[1].innerHTML = t.aiDescription2;
+
+  const openChatBtn = document.querySelector(".open-ai-chat-btn");
+  if (openChatBtn) openChatBtn.textContent = t.aiOpenChat;
+
+  const aiProjectsBtn = document.querySelector(".ai-section-actions .btn-secondary");
+  if (aiProjectsBtn) aiProjectsBtn.textContent = t.aiViewProjects;
+
+  const aiCardTitle = document.querySelector(".ai-section-card .ai-status-text");
+  if (aiCardTitle) aiCardTitle.textContent = t.aiCardTitle;
+
+  const aiCardLabel = document.querySelector(".ai-card-label");
+  if (aiCardLabel) aiCardLabel.textContent = t.aiCardLabel;
+
+  const aiQuestions = document.querySelectorAll(".ai-example-question");
+  if (aiQuestions[0]) aiQuestions[0].textContent = t.aiQuestion1;
+  if (aiQuestions[1]) aiQuestions[1].textContent = t.aiQuestion2;
+  if (aiQuestions[2]) aiQuestions[2].textContent = t.aiQuestion3;
+  if (aiQuestions[3]) aiQuestions[3].textContent = t.aiQuestion4;
+
+  loadProjects();
 }
 
 const languageSelector = document.getElementById("language-selector");
@@ -421,11 +514,9 @@ window.addEventListener("scroll", () => {
     }
   });
 
-  // STICKY NAVBAR
   const header = document.querySelector(".header");
   if (header) header.classList.toggle("sticky", scrollPosition > 100);
 
-  // REMOVE MENU ICON NAVBAR WHEN CLICK NAVBAR LINK (SCROLL)
   if (menuIcon && navbar) {
     menuIcon.classList.remove("bx-x");
     navbar.classList.remove("active");
@@ -459,23 +550,14 @@ ScrollReveal().reveal(".home-img img, .services-container, .portfolio-box, .cont
 ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", { origin: "right" });
 
-
-
-
-
-
-
-
 (async () => {
   const svgEl = document.querySelector(".icon-n8n");
   if (!svgEl) return;
 
   try {
-    // Simple Icons: retorna o SVG cru do ícone
     const res = await fetch("https://cdn.simpleicons.org/n8n");
     const svgText = await res.text();
 
-    // Pega o <path ...> de dentro do SVG e coloca no seu <svg>
     const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
     const inner = doc.querySelector("svg")?.innerHTML;
 
@@ -483,14 +565,12 @@ ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", { ori
       svgEl.setAttribute("viewBox", "0 0 24 24");
       svgEl.innerHTML = inner;
 
-      // força o preenchimento seguir o currentColor
       svgEl.querySelectorAll("[fill]").forEach(el => el.removeAttribute("fill"));
       svgEl.querySelectorAll("path, circle, rect, polygon").forEach(el => {
         el.setAttribute("fill", "currentColor");
       });
     }
   } catch (err) {
-    // se der ruim, o ícone só não aparece — sem quebrar o resto
     console.error("Falha ao carregar ícone do n8n:", err);
   }
 })();
@@ -521,10 +601,10 @@ window.addEventListener("scroll", () => {
   let scrollOffset = 0;
   const points = [];
   const SETTINGS = {
-    density: 12000,         // menor = mais pontos (ajuste fino)
-    maxLinkDist: 140,      // distância máxima das conexões
-    speed: 0.35,           // velocidade dos pontos
-    pointSize: 3.5         // tamanho do ponto
+    density: 12000,
+    maxLinkDist: 140,
+    speed: 0.35,
+    pointSize: 3.5
   };
 
   function resize() {
@@ -537,7 +617,6 @@ window.addEventListener("scroll", () => {
     canvas.style.height = h + "px";
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
 
-    // Recria pontos proporcionalmente à área
     points.length = 0;
     const count = Math.floor((w * h) / SETTINGS.density);
 
@@ -554,39 +633,30 @@ window.addEventListener("scroll", () => {
   function step() {
     ctx.clearRect(0, 0, w, h);
 
-    // Pega sua cor principal do CSS (var --main-color)
     const mainColor = getComputedStyle(document.documentElement)
       .getPropertyValue("--main-color")
       .trim() || "#b005ff";
 
-    // Move pontos
     for (const p of points) {
       p.x += p.vx;
       p.y += p.vy;
 
       if (mouse.x !== null) {
-
         const dx = p.x - mouse.x;
         const dy = p.y - mouse.y;
         const dist = Math.hypot(dx, dy);
 
         if (dist < mouse.radius) {
-
           const force = (mouse.radius - dist) / mouse.radius;
-
           p.x += dx * force * 0.07;
           p.y += dy * force * 0.07;
-
         }
-
       }
 
-      // quica nas bordas
       if (p.x < 0 || p.x > w) p.vx *= -1;
       if (p.y < 0 || p.y > h) p.vy *= -1;
     }
 
-    // Linhas (conexões)
     for (let i = 0; i < points.length; i++) {
       const a = points[i];
 
@@ -598,11 +668,7 @@ window.addEventListener("scroll", () => {
 
         if (dist < SETTINGS.maxLinkDist) {
           const alpha = 1 - dist / SETTINGS.maxLinkDist;
-
           ctx.strokeStyle = `rgba(176, 5, 255, ${0.70 * alpha})`;
-          // Se você quiser obedecer totalmente sua --main-color, use isso:
-          // ctx.strokeStyle = hexToRgba(mainColor, 0.22 * alpha);
-
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y - scrollOffset);
@@ -612,9 +678,7 @@ window.addEventListener("scroll", () => {
       }
     }
 
-    // Pontos
     ctx.fillStyle = `rgba(176, 5, 255, 0.50)`;
-    // ou: ctx.fillStyle = hexToRgba(mainColor, 0.65);
 
     for (const p of points) {
       ctx.beginPath();
@@ -625,26 +689,10 @@ window.addEventListener("scroll", () => {
     requestAnimationFrame(step);
   }
 
-  // (Opcional) se quiser usar sua --main-color em hex corretamente:
-  // function hexToRgba(hex, a){
-  //   const h = hex.replace("#","").trim();
-  //   if (h.length !== 6) return `rgba(176,5,255,${a})`;
-  //   const r = parseInt(h.slice(0,2),16);
-  //   const g = parseInt(h.slice(2,4),16);
-  //   const b = parseInt(h.slice(4,6),16);
-  //   return `rgba(${r},${g},${b},${a})`;
-  // }
-
   window.addEventListener("resize", resize);
   resize();
   step();
 })();
-
-
-
-
-
-
 
 /* =========================
    AI CHAT BOT
@@ -652,32 +700,52 @@ window.addEventListener("scroll", () => {
 
 const bot = document.getElementById("ai-bot");
 const chat = document.getElementById("ai-chat");
-const closeBtn = document.getElementById("chat-close")
+const closeBtn = document.getElementById("chat-close");
 
 const input = document.getElementById("chat-input");
 const send = document.getElementById("chat-send");
 const messages = document.getElementById("chat-messages");
 
-
-
-
-/* abrir / fechar chat */
-
-closeBtn.addEventListener("click", () => {
-  chat.style.display = "none"
-})
-
-bot.addEventListener("click", () => {
-
-  if (chat.style.display === "flex") {
+if (closeBtn && chat) {
+  closeBtn.addEventListener("click", () => {
     chat.style.display = "none";
-  } else {
-    chat.style.display = "flex";
-    input.focus();
-  }
+  });
+}
 
+if (bot && chat) {
+  bot.addEventListener("click", () => {
+    if (chat.style.display === "flex") {
+      chat.style.display = "none";
+    } else {
+      openChat();
+    }
+  });
+}
+
+function openChat() {
+  if (!chat || !input) return;
+
+  chat.style.display = "flex";
+  showSuzyWelcomeMessage();
+  input.focus();
+}
+
+const aiSectionOpenBtn = document.querySelector(".open-ai-chat-btn");
+if (aiSectionOpenBtn) {
+  aiSectionOpenBtn.addEventListener("click", openChat);
+}
+
+document.querySelectorAll(".ai-example-question").forEach((button) => {
+  button.addEventListener("click", () => {
+    openChat();
+
+    const question = button.textContent.trim();
+    if (input) {
+      input.value = question;
+      input.focus();
+    }
+  });
 });
-
 
 /* =========================
    SUZY AI CHAT
@@ -701,6 +769,8 @@ function formatMessageText(text) {
 }
 
 function addChatMessage(text, sender) {
+  if (!messages) return document.createElement("div");
+
   const message = document.createElement("div");
   message.classList.add("chat-message", sender);
 
@@ -742,13 +812,23 @@ function addTypingMessage() {
   return message;
 }
 
-function getCurrentLanguage() {
-  return localStorage.getItem("language") || "pt";
+function showSuzyWelcomeMessage() {
+  const lang = getCurrentLanguage();
+  const welcomeText = translations[lang]?.chatWelcome || translations.pt.chatWelcome;
+
+  if (!messages) return;
+
+  const alreadyHasWelcome = messages.querySelector(".chat-message.suzy.welcome-message");
+  if (alreadyHasWelcome) return;
+
+  const welcomeMessage = addChatMessage(welcomeText, "suzy");
+  welcomeMessage.classList.add("welcome-message");
 }
 
 async function sendMessage() {
-  const text = input.value.trim();
+  if (!input) return;
 
+  const text = input.value.trim();
   if (!text) return;
 
   addChatMessage(text, "user");
@@ -770,9 +850,7 @@ async function sendMessage() {
     const data = await response.json();
 
     typingMessage.remove();
-
     addChatMessage(data.reply || "Sorry, I couldn't answer right now.", "suzy");
-
   } catch (error) {
     typingMessage.remove();
     addChatMessage("Connection error.", "suzy");
@@ -780,42 +858,17 @@ async function sendMessage() {
   }
 }
 
-/* botão enviar */
-send.addEventListener("click", sendMessage);
+if (send) {
+  send.addEventListener("click", sendMessage);
+}
 
-/* enviar com Enter */
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    sendMessage();
-  }
-});
-
-
-/* botão enviar */
-send.addEventListener("click", sendMessage);
-
-/* enviar com Enter */
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    sendMessage();
-  }
-});
-
-
-/* botão enviar */
-
-send.addEventListener("click", sendMessage);
-
-/* enviar com Enter */
-
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    sendMessage();
-  }
-});
-
-
-
+if (input) {
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      sendMessage();
+    }
+  });
+}
 
 /* =========================
    NEURAL BOT MASCOT
@@ -846,13 +899,14 @@ input.addEventListener("keydown", (e) => {
     speed: 0.008 + Math.random() * 0.004
   }));
 
-  const bot = document.getElementById("ai-bot");
+  const botElement = document.getElementById("ai-bot");
+  if (!botElement) return;
 
-  bot.addEventListener("mouseenter", () => {
+  botElement.addEventListener("mouseenter", () => {
     hover = true;
   });
 
-  bot.addEventListener("mouseleave", () => {
+  botElement.addEventListener("mouseleave", () => {
     hover = false;
   });
 
@@ -958,3 +1012,132 @@ input.addEventListener("keydown", (e) => {
   animate();
 })();
 
+const GITHUB_USERNAME = "Ryan-Wes";
+
+const featuredRepos = [
+  "botflix",
+  "calculo-de-rescisao",
+  "pokedex-api-com-react",
+  "guia-de-saude-mental",
+  "expo-car",
+  "jogoDaCobrinha-JS"
+];
+
+const projectsDisplay = {
+  botflix: {
+    title: "BotFlix",
+    description: {
+      pt: "Assistente com IA para recomendações de filmes e séries, usando n8n, OpenAI e integração com TMDB.",
+      en: "AI assistant for movie and TV recommendations using n8n, OpenAI and TMDB.",
+      fr: "Assistant IA pour recommandations de films et séries avec n8n, OpenAI et TMDB.",
+      es: "Asistente con IA para recomendaciones de películas y series usando n8n, OpenAI y TMDB."
+    }
+  },
+  "calculo-de-rescisao": {
+    title: "Calculadora de Rescisão de Estágio",
+    description: {
+      pt: "Ferramenta para calcular valores e direitos no encerramento de contratos de estágio.",
+      en: "Tool to calculate values and rights in internship contract termination.",
+      fr: "Outil pour calculer les montants et droits lors de la fin d’un stage.",
+      es: "Herramienta para calcular valores y derechos en la finalización de prácticas."
+    }
+  },
+  "pokedex-api-com-react": {
+    title: "Pokédex com React",
+    description: {
+      pt: "Pokédex interativa com React, rotas dinâmicas e consumo de API.",
+      en: "Interactive Pokédex built with React, dynamic routes and API integration.",
+      fr: "Pokédex interactive avec React, routes dynamiques et API.",
+      es: "Pokédex interactiva con React, rutas dinámicas y API."
+    }
+  },
+  "expo-car": {
+    title: "ExpoCar",
+    description: {
+      pt: "Landing page interativa para apresentação de carros de alta performance.",
+      en: "Interactive landing page to showcase high-performance cars.",
+      fr: "Landing page interactive pour présenter des voitures haute performance.",
+      es: "Landing page interactiva para mostrar autos de alto rendimiento."
+    }
+  },
+  "guia-de-saude-mental": {
+    title: "Guia de Saúde Mental",
+    description: {
+      pt: "Aplicação web focada em apoio emocional, acessibilidade e experiência do usuário.",
+      en: "Web application focused on emotional support, accessibility and UX.",
+      fr: "Application web axée sur le soutien émotionnel et l’accessibilité.",
+      es: "Aplicación web enfocada en apoyo emocional y accesibilidad."
+    }
+  },
+  "jogoDaCobrinha-JS": {
+    title: "Jogo da Cobrinha",
+    description: {
+      pt: "Clássico jogo da cobrinha desenvolvido com JavaScript puro.",
+      en: "Classic snake game built with pure JavaScript.",
+      fr: "Jeu du serpent classique développé en JavaScript pur.",
+      es: "Juego clásico de la serpiente desarrollado con JavaScript puro."
+    }
+  }
+};
+
+async function loadProjects() {
+  try {
+    const container = document.querySelector(".portfolio-container");
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`);
+
+    if (!response.ok) {
+      throw new Error("Erro ao buscar repositórios");
+    }
+
+    const repos = await response.json();
+
+    const selectedRepos = featuredRepos
+      .map(name => repos.find(repo => repo.name === name))
+      .filter(Boolean);
+
+    const lang = getCurrentLanguage();
+    const t = translations[lang] || translations.pt;
+
+    selectedRepos.forEach(repo => {
+      const projectTitle = projectsDisplay[repo.name]?.title || repo.name;
+
+      const projectDescription =
+        projectsDisplay[repo.name]?.description?.[lang] ||
+        repo.description ||
+        "Projeto disponível no GitHub.";
+
+      const projectHTML = `
+        <div class="portfolio-box">
+          <img 
+            src="https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repo.name}/main/assets/preview.gif" 
+            alt="Preview do projeto ${projectTitle}"
+          />
+
+          <div class="portfolio-layer">
+            <h4>${projectTitle}</h4>
+            <p>${projectDescription}</p>
+
+            <div class="icons">
+              <a class="btn-hover-effect-4782fghj btn-code" href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
+                ${t.codeBtn}
+              </a>
+
+              <a class="btn-hover-effect-4782fghj btn-project" href="${repo.homepage && repo.homepage.trim() !== "" ? repo.homepage : repo.html_url}" target="_blank" rel="noopener noreferrer">
+                ${t.projectBtn}
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+
+      container.insertAdjacentHTML("beforeend", projectHTML);
+    });
+
+  } catch (error) {
+    console.error("Erro ao carregar projetos:", error);
+  }
+}

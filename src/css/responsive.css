@@ -183,6 +183,14 @@
     .footer {
         padding: 2rem 3%;
     }
+
+
+
+    
+
+    .ai-section-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
@@ -376,6 +384,38 @@
         justify-content: center;
     }
 
+
+
+
+
+    .ai-section-content,
+    .ai-section-card {
+        padding: 2rem;
+    }
+
+    .ai-section-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .ai-section-description {
+        font-size: 1.5rem;
+    }
+
+    .ai-section-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ai-section-actions .btn,
+    .ai-section-actions a.btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ai-card-body {
+        padding: 2rem;
+    }
+
 }
 
 @media (max-width: 617px) {
@@ -526,6 +566,22 @@
 
     .contat form .input-box input {
         width: 100%;
+    }
+
+
+
+
+    .ai-badge {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .ai-section-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .ai-example-question {
+        font-size: 1.35rem;
     }
 }
 
