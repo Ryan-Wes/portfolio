@@ -367,11 +367,11 @@
     }
 
     .portfolio .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .portfolio-container .portfolio-box {
-        height: 360px;
+        height: 260px;
     }
 
     .portfolio-layer h4 {
