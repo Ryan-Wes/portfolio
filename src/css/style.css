@@ -9,7 +9,7 @@ body {
 .header {
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     padding: 2rem 4%;
     /* padding 7% alterado para 4% */
     background: transparent;

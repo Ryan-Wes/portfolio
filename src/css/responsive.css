@@ -199,6 +199,7 @@
     .header {
         padding: 1.6rem 4%;
         gap: 1rem;
+        
     }
 
     .logo {
@@ -249,13 +250,13 @@
         display: none;
     }
 
-.home {
-    position: relative;
-    padding: 8rem 3% 34rem;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-}
+    .home {
+        position: relative;
+        padding: 8rem 3% 34rem;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+    }
 
 
     .home .home-content {
@@ -427,5 +428,10 @@
         padding: 2rem;
     }
 
-}
+    #chat-input,
+    #ai-chat input,
+    #ai-chat textarea {
+        font-size: 16px !important;
+    }
 
+}
