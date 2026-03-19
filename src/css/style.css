@@ -1,7 +1,7 @@
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    width: 100vw;
+    min-width: 0;
 }
 
 
@@ -488,8 +488,8 @@ section {
 
 .portfolio .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
     gap: 25px;
 }
 
@@ -499,9 +499,9 @@ section {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     overflow: hidden;
-
     width: 100%;
     aspect-ratio: 639 / 426;
+    min-width: 0;
 }
 
 .portfolio-box img {
@@ -518,19 +518,16 @@ section {
 
 .portfolio-box .portfolio-layer {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.772), var(--main-color));
     backdrop-filter: blur(8px);
     color: var(--white-color);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
     text-align: center;
-    padding: 0 40px;
+    padding: 1.6rem 2rem;
     opacity: 0;
     transition: .5s ease;
 }
@@ -540,49 +537,55 @@ section {
 }
 
 .portfolio-layer h4 {
-    font-size: 25px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    font-size: 2.2rem;
+    padding: 0;
 }
 
 .portfolio-layer p {
-    font-size: 16px;
-    margin: 3px 0 10px;
-    /* padding-bottom: 10px; */
-    height: 50%;
-
+    font-size: 1.5rem;
+    margin: .8rem 0;
+    height: auto;
+    max-width: 100%;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    /* quantidade de linhas */
     line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
+
 .tech-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 8px;
-    padding-top: 5px;
+    justify-content: center;
+    gap: .6rem;
+    width: 100%;
+    margin-bottom: .8rem;
+    padding-top: .5rem;
 }
 
 .tech-badge {
-    font-size: 11px;
-    padding: 4px 8px;
+    font-size: 1.1rem;
+    padding: .4rem .8rem;
     border-radius: 999px;
-
     background: var(--main-color);
-    border: 1px var(--shadow-color);
-
+    border: 1px solid var(--shadow-color);
     color: var(--text-color);
-
     transition: 0.4s ease;
+    max-width: 100%;
+    word-break: break-word;
 }
 
 .tech-badge:hover {
     background: var(--bg-color);
     color: var(--text-color);
+}
+
+.portfolio-layer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 20px;
 }
 
 .btn-hover-effect-4782fghj {
@@ -659,13 +662,6 @@ section {
     transition: box-shadow 0.2s ease-in;
 }
 
-
-.portfolio-layer .icons {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding-bottom: 20px;
-}
 
 .contact h2 {
     margin-bottom: 30px;
@@ -926,8 +922,8 @@ footer {
     position: fixed;
     bottom: 100px;
     right: 25px;
-    width: 420px;
-    height: 520px;
+    width: min(420px, calc(100vw - 32px));
+    height: min(520px, calc(100vh - 140px));
     background: #111;
     border-radius: 12px;
     border: #333 solid 2px;
