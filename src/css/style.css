@@ -526,7 +526,7 @@ section {
     backdrop-filter: blur(8px);
     color: var(--white-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -542,6 +542,7 @@ section {
 .portfolio-layer h4 {
     font-size: 25px;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .portfolio-layer p {
@@ -549,6 +550,39 @@ section {
     margin: 3px 0 10px;
     /* padding-bottom: 10px; */
     height: 50%;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* quantidade de linhas */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+    padding-top: 5px;
+}
+
+.tech-badge {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 999px;
+
+    background: var(--main-color);
+    border: 1px var(--shadow-color);
+
+    color: var(--text-color);
+
+    transition: 0.4s ease;
+}
+
+.tech-badge:hover {
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 .btn-hover-effect-4782fghj {
@@ -630,6 +664,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 50px;
+    padding-bottom: 20px;
 }
 
 .contact h2 {
@@ -1271,6 +1306,3 @@ footer {
         box-shadow: 0 0 0 0 rgba(176, 5, 255, 0);
     }
 }
-
-
-

@@ -1017,8 +1017,8 @@ const GITHUB_USERNAME = "Ryan-Wes";
 const featuredRepos = [
   "botflix",
   "calculo-de-rescisao",
-  "pokedex-api-com-react",
   "guia-de-saude-mental",
+  "pokedex-api-com-react",
   "expo-car",
   "jogoDaCobrinha-JS"
 ];
@@ -1034,7 +1034,7 @@ const projectsDisplay = {
     }
   },
   "calculo-de-rescisao": {
-    title: "Calculadora de Rescisão de Estágio",
+    title: "Calculadora de Rescisão",
     description: {
       pt: "Ferramenta para calcular valores e direitos no encerramento de contratos de estágio.",
       en: "Tool to calculate values and rights in internship contract termination.",
@@ -1087,7 +1087,11 @@ async function loadProjects() {
 
     container.innerHTML = "";
 
-    const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`);
+    const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`, {
+      headers: {
+        Accept: "application/vnd.github.mercy-preview+json"
+      }
+    });
 
     if (!response.ok) {
       throw new Error("Erro ao buscar repositórios");
@@ -1110,29 +1114,49 @@ async function loadProjects() {
         repo.description ||
         "Projeto disponível no GitHub.";
 
+      const topics = repo.topics || [];
+
+      const badgesHTML = topics
+        .map(topic => `<span class="tech-badge">${topic}</span>`)
+        .join("");
+
+      const codeUrl = repo.html_url;
+
+      const projectUrl =
+        repo.homepage && repo.homepage.trim() !== ""
+          ? repo.homepage
+          : null;
+
       const projectHTML = `
-        <div class="portfolio-box">
-          <img 
-            src="https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repo.name}/main/assets/preview.gif" 
-            alt="Preview do projeto ${projectTitle}"
-          />
+    <div class="portfolio-box">
+      <img 
+        src="https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repo.name}/main/assets/preview.gif" 
+        alt="Preview do projeto ${projectTitle}"
+        loading="lazy"
+      />
 
-          <div class="portfolio-layer">
-            <h4>${projectTitle}</h4>
-            <p>${projectDescription}</p>
+      <div class="portfolio-layer">
+        <h4>${projectTitle}</h4>
 
-            <div class="icons">
-              <a class="btn-hover-effect-4782fghj btn-code" href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
-                ${t.codeBtn}
-              </a>
+        <div class="tech-badges">${badgesHTML}</div>
 
-              <a class="btn-hover-effect-4782fghj btn-project" href="${repo.homepage && repo.homepage.trim() !== "" ? repo.homepage : repo.html_url}" target="_blank" rel="noopener noreferrer">
-                ${t.projectBtn}
-              </a>
-            </div>
-          </div>
+        <p>${projectDescription}</p>
+
+        <div class="icons">
+          <a class="btn-hover-effect-4782fghj btn-code" href="${codeUrl}" target="_blank" rel="noopener noreferrer">
+            ${t.codeBtn}
+          </a>
+
+          ${projectUrl
+          ? `<a class="btn-hover-effect-4782fghj btn-project" href="${projectUrl}" target="_blank" rel="noopener noreferrer">
+                   ${t.projectBtn}
+                 </a>`
+          : ""
+        }
         </div>
-      `;
+      </div>
+    </div>
+  `;
 
       container.insertAdjacentHTML("beforeend", projectHTML);
     });
