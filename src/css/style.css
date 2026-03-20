@@ -399,7 +399,7 @@ section {
 
 .services .services-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 4rem 6rem;
     width: min(1100px, 90vw);
     margin: 0 auto;
