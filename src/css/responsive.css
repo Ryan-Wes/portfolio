@@ -156,13 +156,13 @@
     }
 
     .services-box i {
-        font-size: 700%;
+        font-size: 40px;
         color: var(--text-color);
         transition: .5s ease;
     }
 
     .services-box h3 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .contact {
@@ -199,7 +199,7 @@
     .header {
         padding: 1.6rem 4%;
         gap: 1rem;
-        
+
     }
 
     .logo {
@@ -366,6 +366,25 @@
         margin-bottom: 3rem;
     }
 
+     .services .services-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.2rem;
+        width: 100%;
+    }
+
+    .services-container .services-box {
+        flex: unset;
+        height: auto;
+        min-height: 150px;
+        padding: 2rem 1rem;
+    }
+
+    .services-box h3 {
+        font-size: 1.4rem;
+        line-height: 1.25;
+    }
+
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -389,7 +408,7 @@
     .portfolio-layer a {
         width: 100px;
         height: 40px;
-        font-size: 14px;
+        font-size: 12px;
         top: -12px;
         display: flex;
         align-items: center;
@@ -434,4 +453,17 @@
         font-size: 16px !important;
     }
 
+    #ai-bot {
+        bottom: 75px;
+        right: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #chat-send {
+        min-width: 64px;
+        padding: 8px 10px;
+        font-size: 13px;
+    }
 }

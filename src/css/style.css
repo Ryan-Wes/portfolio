@@ -4,8 +4,6 @@ body {
     min-width: 0;
 }
 
-
-
 .header {
     position: fixed;
     top: 0;
@@ -466,6 +464,23 @@ section {
     font-size: 26px;
 }
 
+.services-box .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-box .icon-wrapper i,
+.services-box .icon-wrapper img,
+.services-box .icon-wrapper svg {
+    width: 42px;
+    height: 42px;
+    display: block;
+    object-fit: contain;
+}
 
 
 /* ============================
@@ -869,7 +884,6 @@ footer {
     height: 20px;
 
     display: flex;
-    align-items: center;
     justify-content: center;
 
     background: linear-gradient(145deg, #b349ae, #8303be);
@@ -883,7 +897,9 @@ footer {
     box-shadow: 0 0 14px rgba(176, 5, 255, 0.6);
 
     animation: bubblePulse 1.6s infinite ease-in-out;
+    
 }
+
 
 @keyframes botFloat {
     0% {
@@ -979,20 +995,28 @@ footer {
 
 #chat-input-area {
     display: flex;
+    align-items: stretch;
+    gap: 0;
 }
 
 
 #chat-input {
     flex: 1;
-    padding: 8px;
+    min-width: 0;
+    padding: 8px 10px;
     border: none;
     outline: none;
+    border-radius: 0;
 }
 
 
 #chat-send {
+    flex-shrink: 0;
+    min-width: 72px;
     padding: 8px 12px;
     background: var(--main-color);
+    white-space: nowrap;
+    border-radius: 0;
     border: none;
     color: white;
     cursor: pointer;
