@@ -1,7 +1,7 @@
 # <div align="center">🤖 Portfólio Pessoal --- WRyan</div>
 
 <div align="center">
-**Website pessoal desenvolvido para apresentar meus projetos, habilidades e trajetória na área de tecnologia, automação e IA.**
+<strong>Website pessoal desenvolvido para apresentar meus projetos, habilidades e trajetória na área de tecnologia, automação e IA.</strong>
 
 ![HTML5](https://img.shields.io/badge/HTML5-E44D26?logo=html5&logoColor=fff)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff)
