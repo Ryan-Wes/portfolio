@@ -398,12 +398,12 @@ section {
 } */
 
 .services .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    width: 90vw;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4rem 6rem;
+    width: min(1100px, 90vw);
+    margin: 0 auto;
+    align-items: start;
 }
 
 /* ============================
@@ -416,12 +416,16 @@ section {
 }
 
 .services-container .services-box {
-    flex: 1 1 300px;
     background: none;
-    padding: 75px 0 75px 0;
+    padding: 4rem 1rem;
     text-align: center;
     transition: .5s ease;
-    height: 200px;
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* unifica base (ícone + título) */
@@ -432,17 +436,16 @@ section {
     transition: .5s ease;
 }
 
-/* Boxicons (fonte) */
 .services-box i {
     font-size: var(--skill-icon-size);
+    line-height: 1;
+    display: block;
 }
 
-/* SVG inline (AI) */
 .services-box svg {
     width: var(--skill-icon-size);
     height: var(--skill-icon-size);
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     fill: currentColor;
 }
 
@@ -459,27 +462,34 @@ section {
     transform: translateY(-4px) scale(1.03);
 }
 
-/* Título */
-.services-box h3 {
-    font-size: 26px;
-}
-
 .services-box .icon-wrapper {
     width: 64px;
     height: 64px;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.services-box .icon-wrapper i,
+.services-box .icon-wrapper i {
+    font-size: 56px;
+    width: auto;
+    height: auto;
+    line-height: 1;
+}
+
 .services-box .icon-wrapper img,
 .services-box .icon-wrapper svg {
-    width: 42px;
-    height: 42px;
+    width: 60px;
+    height: 60px;
     display: block;
     object-fit: contain;
+}
+
+.services-box h3 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 0;
 }
 
 
