@@ -10,20 +10,22 @@ const translations = {
     heroGreeting: "Olá! Eu sou o",
     heroRole: 'Desenvolvedor <strong>Full-Stack</strong> | Dados & <strong>Automação de IA</strong>',
     heroTagline:
-      'Transformando ideias em sites, dados em decisões e <strong>automações inteligentes</strong>',
+      'Transformando ideias em soluções, dados em decisões e <strong>processos em automações inteligentes</strong>',
 
     aboutTitle: 'Sobre <strong>Mim</strong>',
     aboutSubtitle: "Olá, pode me chamar de <strong>Ryan</strong>.",
     aboutText: `
-Sou <strong>Data Analyst e Desenvolvedor Full Stack</strong>, focado na criação de soluções web escaláveis e sistemas orientados por dados.
-
-Atualmente curso <strong>Análise e Desenvolvimento de Sistemas</strong> e fortaleço continuamente minha base técnica através de projetos práticos e resolução de problemas reais.
-
-Minha stack principal inclui <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Next.js</strong>, <strong>Python</strong> e <strong>SQL</strong>, sempre aplicando boas práticas para desenvolver aplicações eficientes, responsivas e acessíveis.
-
-Também atuo com <strong>automação de processos</strong> e <strong>análise de dados</strong>, utilizando ferramentas como <strong>n8n</strong>, <strong>Excel</strong> e <strong>Power BI</strong> para transformar dados em decisões estratégicas.
-
-Minha experiência como <strong>Analista Técnico</strong> em uma empresa internacional fortaleceu habilidades como comunicação, pensamento crítico, adaptabilidade e gestão de tempo.
+Sou <strong>Data Analyst</strong> e <strong>Desenvolvedor Full Stack</strong> com foco em resolver problemas reais através de tecnologia.
+<br /><br />
+Mais do que apenas desenvolver interfaces, meu objetivo é construir soluções completas: aplicações web bem estruturadas, processos automatizados e sistemas orientados por dados que realmente gerem valor.
+<br /><br />
+Atualmente curso <strong>Análise e Desenvolvimento de Sistemas</strong>, mas minha evolução vem principalmente da prática — criando projetos, enfrentando problemas reais e buscando constantemente formas mais eficientes de resolver cada desafio.
+<br /><br />
+Minha stack principal inclui <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Next.js</strong>, <strong>Python</strong> e <strong>SQL</strong>. Também atuo com automação e análise de dados utilizando <strong>n8n</strong>, <strong>Excel</strong> e <strong>Power BI</strong>, sempre com foco em eliminar tarefas repetitivas e transformar dados em decisões claras.
+<br /><br />
+Minha experiência profissional como Analista Técnico de Engenharia em uma empresa internacional reforçou minha capacidade de lidar com pressão, me comunicar com diferentes áreas e tomar decisões baseadas em contexto real.
+<br /><br />
+Costumo dizer que o que ainda não sei, me esforço ao máximo para aprender o mais rápido possível.
 `,
 
     skillsTitle: 'Minhas <strong>Habilidades</strong>',
@@ -102,20 +104,22 @@ Construído com <strong>HTML, CSS e JavaScript</strong>, com manipulação de ev
 
     heroGreeting: "Hi! I am",
     heroRole: '<strong>Full-Stack</strong> Developer | Data & <strong>AI Automation</strong>',
-    heroTagline: 'Building scalable web solutions and <strong>intelligent automations</strong>',
+    heroTagline: 'Transforming ideas into solutions, data into decisions and <strong>processes into intelligent automations</strong>',
 
     aboutTitle: '<strong>About</strong> Me',
     aboutSubtitle: "Hi, you can call me <strong>Ryan</strong>.",
     aboutText: `
-I am a <strong>Data Analyst and Full Stack Developer</strong> focused on building scalable web solutions and data-driven systems.
-
-Currently pursuing a degree in <strong>Systems Analysis and Development</strong>, I continuously refine my technical foundation through hands-on projects.
-
-My core stack includes <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Next.js</strong>, <strong>Python</strong>, and <strong>SQL</strong>.
-
-I also work with <strong>process automation</strong> and <strong>data analytics</strong> using tools such as <strong>n8n</strong>, <strong>Excel</strong>, and <strong>Power BI</strong>.
-
-My experience as a <strong>Technical Analyst</strong> strengthened my communication and critical thinking skills.
+I am a <strong>Data Analyst</strong> and <strong>Full Stack Developer</strong> focused on solving real-world problems through technology.
+<br /><br />
+More than just building interfaces, my goal is to create complete solutions: well-structured web applications, automated processes and data-driven systems that truly generate value.
+<br /><br />
+I am currently studying <strong>Systems Analysis and Development</strong>, but my growth comes mainly from practice — building projects, facing real problems and constantly seeking more efficient ways to solve each challenge.
+<br /><br />
+My main stack includes <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Next.js</strong>, <strong>Python</strong> and <strong>SQL</strong>. I also work with automation and data analysis using <strong>n8n</strong>, <strong>Excel</strong> and <strong>Power BI</strong>, always focused on eliminating repetitive tasks and turning data into clear decisions.
+<br /><br />
+My professional experience as an Engineering Technical Analyst in an international company strengthened my ability to handle pressure, communicate with different teams and make decisions based on real-world context.
+<br /><br />
+I usually say that what I don’t know yet, I make my best effort to learn as quickly as possible.
 `,
 
     skillsTitle: 'My <strong>Skills</strong>',
@@ -194,16 +198,23 @@ Built with <strong>HTML, CSS, and JavaScript</strong>.
 
     heroGreeting: "Salut ! Je suis",
     heroRole: 'Développeur <strong>Full-Stack</strong> | Données & <strong>Automatisation par IA</strong>',
-    heroTagline: 'Solutions web évolutives et <strong>automatisations intelligentes</strong>',
+    heroTagline: 'Transformer des idées en solutions, des données en décisions et des <strong>processus en automatisations intelligentes</strong>',
 
     aboutTitle: 'À propos de <strong>moi</strong>',
     aboutSubtitle: "Bonjour, vous pouvez m’appeler <strong>Ryan</strong>.",
     aboutText: `
-Je suis <strong>Analyste de Données et Développeur Full Stack</strong>, spécialisé dans la création de solutions web évolutives.
+Je suis <strong>Data Analyst</strong> et <strong>développeur Full Stack</strong>, avec un focus sur la résolution de problèmes réels grâce à la technologie.
+<br /><br />
+Au-delà du développement d’interfaces, mon objectif est de créer des solutions complètes : des applications web bien structurées, des processus automatisés et des systèmes orientés par les données qui génèrent réellement de la valeur.
+<br /><br />
+Je suis actuellement en formation en <strong>Analyse et Développement de Systèmes</strong>, mais ma progression vient principalement de la pratique — en construisant des projets, en faisant face à des problèmes réels et en recherchant constamment des solutions plus efficaces.
+<br /><br />
+Ma stack principale inclut <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Next.js</strong>, <strong>Python</strong> et <strong>SQL</strong>. Je travaille également avec l’automatisation et l’analyse de données en utilisant <strong>n8n</strong>, <strong>Excel</strong> et <strong>Power BI</strong>, avec pour objectif d’éliminer les tâches répétitives et de transformer les données en décisions claires.
+<br /><br />
+Mon expérience professionnelle en tant qu’Analyste Technique en ingénierie dans une entreprise internationale a renforcé ma capacité à travailler sous pression, à communiquer avec différentes équipes et à prendre des décisions basées sur un contexte réel.
+<br /><br />
+J’ai l’habitude de dire que ce que je ne sais pas encore, je fais de mon mieux pour l’apprendre le plus rapidement possible.
 
-Je travaille avec <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Python</strong> et <strong>SQL</strong>.
-
-Je développe également des solutions d’automatisation et d’analyse de données.
 `,
 
     skillsTitle: 'Mes <strong>Compétences</strong>',
@@ -277,16 +288,22 @@ Projet interactif inspiré de la série Friends.
 
     heroGreeting: "Hola! Soy",
     heroRole: 'Desarrollador <strong>Full-Stack</strong> | Datos & <strong>Automatización con IA</strong>',
-    heroTagline: 'Soluciones web escalables y <strong>automatizaciones inteligentes</strong>',
+    heroTagline: 'Transformando ideas en soluciones, datos en decisiones y <strong>procesos en automatizaciones inteligentes</strong>',
 
     aboutTitle: 'Sobre <strong>mí</strong>',
     aboutSubtitle: "Hola, puedes llamarme <strong>Ryan</strong>.",
     aboutText: `
-Soy <strong>Analista de Datos y Desarrollador Full Stack</strong> enfocado en crear soluciones web escalables.
-
-Trabajo con <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Python</strong> y <strong>SQL</strong>.
-
-También desarrollo soluciones de automatización y análisis de datos.
+Soy <strong>Data Analyst</strong> y <strong>Desarrollador Full Stack</strong>, enfocado en resolver problemas reales a través de la tecnología.
+<br /><br />
+Más allá de desarrollar interfaces, mi objetivo es construir soluciones completas: aplicaciones web bien estructuradas, procesos automatizados y sistemas orientados por datos que realmente generen valor.
+<br /><br />
+Actualmente estudio <strong>Análisis y Desarrollo de Sistemas</strong>, pero mi evolución viene principalmente de la práctica — creando proyectos, enfrentando problemas reales y buscando constantemente formas más eficientes de resolver cada desafío.
+<br /><br />
+Mi stack principal incluye <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Next.js</strong>, <strong>Python</strong> y <strong>SQL</strong>. También trabajo con automatización y análisis de datos utilizando <strong>n8n</strong>, <strong>Excel</strong> y <strong>Power BI</strong>, siempre enfocado en eliminar tareas repetitivas y transformar datos en decisiones claras.
+<br /><br />
+Mi experiencia profesional como Analista Técnico de Ingeniería en una empresa internacional fortaleció mi capacidad para trabajar bajo presión, comunicarme con diferentes áreas y tomar decisiones basadas en contextos reales.
+<br /><br />
+Suelo decir que lo que aún no sé, me esfuerzo al máximo para aprenderlo lo más rápido posible.
 `,
 
     skillsTitle: 'Mis <strong>Habilidades</strong>',
@@ -1027,55 +1044,60 @@ const projectsDisplay = {
   botflix: {
     title: "BotFlix",
     description: {
-      pt: "Assistente com IA para recomendações de filmes e séries, usando n8n, OpenAI e integração com TMDB.",
-      en: "AI assistant for movie and TV recommendations using n8n, OpenAI and TMDB.",
-      fr: "Assistant IA pour recommandations de films et séries avec n8n, OpenAI et TMDB.",
-      es: "Asistente con IA para recomendaciones de películas y series usando n8n, OpenAI y TMDB."
+      pt: "Assistente inteligente que recomenda filmes e séries com base no perfil do usuário, entregando sugestões rápidas e personalizadas.",
+      en: "Intelligent assistant that recommends movies and TV shows based on user profile, delivering fast and personalized suggestions.",
+      fr: "Assistant intelligent qui recommande films et séries selon le profil de l’utilisateur, avec des suggestions rapides et personnalisées.",
+      es: "Asistente inteligente que recomienda películas y series según el perfil del usuario, ofreciendo sugerencias rápidas y personalizadas."
     }
   },
+
   "calculo-de-rescisao": {
     title: "Calculadora de Rescisão",
     description: {
-      pt: "Ferramenta para calcular valores e direitos no encerramento de contratos de estágio.",
-      en: "Tool to calculate values and rights in internship contract termination.",
-      fr: "Outil pour calculer les montants et droits lors de la fin d’un stage.",
-      es: "Herramienta para calcular valores y derechos en la finalización de prácticas."
+      pt: "Ferramenta que automatiza o cálculo de rescisões de estágio, tornando o processo mais rápido, claro e confiável.",
+      en: "Tool that automates internship termination calculations, making the process faster, clearer and more reliable.",
+      fr: "Outil qui automatise les calculs de fin de stage, rendant le processus plus rapide, clair et fiable.",
+      es: "Herramienta que automatiza cálculos de finalización de prácticas, haciendo el proceso más rápido, claro y confiable."
     }
   },
+
   "pokedex-api-com-react": {
     title: "Pokédex com React",
     description: {
-      pt: "Pokédex interativa com React, rotas dinâmicas e consumo de API.",
-      en: "Interactive Pokédex built with React, dynamic routes and API integration.",
-      fr: "Pokédex interactive avec React, routes dynamiques et API.",
-      es: "Pokédex interactiva con React, rutas dinámicas y API."
+      pt: "Aplicação interativa para explorar dados de Pokémon, com navegação dinâmica e experiência fluida para o usuário.",
+      en: "Interactive application to explore Pokémon data, with dynamic navigation and a smooth user experience.",
+      fr: "Application interactive pour explorer les données Pokémon, avec navigation dynamique et expérience fluide.",
+      es: "Aplicación interactiva para explorar datos de Pokémon, con navegación dinámica y experiencia fluida."
     }
   },
+
   "expo-car": {
     title: "ExpoCar",
     description: {
-      pt: "Landing page interativa para apresentação de carros de alta performance.",
-      en: "Interactive landing page to showcase high-performance cars.",
-      fr: "Landing page interactive pour présenter des voitures haute performance.",
-      es: "Landing page interactiva para mostrar autos de alto rendimiento."
+      pt: "Landing page interativa que apresenta carros de alta performance, focada em impacto visual e experiência envolvente.",
+      en: "Interactive landing page showcasing high-performance cars, focused on visual impact and engaging experience.",
+      fr: "Landing page interactive présentant des voitures haute performance, axée sur l’impact visuel et l’expérience immersive.",
+      es: "Landing page interactiva que presenta autos de alto rendimiento, enfocada en impacto visual y experiencia envolvente."
     }
   },
+
   "guia-de-saude-mental": {
     title: "Guia de Saúde Mental",
     description: {
-      pt: "Aplicação web focada em apoio emocional, acessibilidade e experiência do usuário.",
-      en: "Web application focused on emotional support, accessibility and UX.",
-      fr: "Application web axée sur le soutien émotionnel et l’accessibilité.",
-      es: "Aplicación web enfocada en apoyo emocional y accesibilidad."
+      pt: "Aplicação voltada ao apoio emocional, oferecendo uma experiência acessível e acolhedora para o usuário.",
+      en: "Application focused on emotional support, providing an accessible and welcoming user experience.",
+      fr: "Application dédiée au soutien émotionnel, offrant une expérience accessible et accueillante.",
+      es: "Aplicación enfocada en apoyo emocional, ofreciendo una experiencia accesible y acogedora."
     }
   },
+
   "jogoDaCobrinha-JS": {
     title: "Jogo da Cobrinha",
     description: {
-      pt: "Clássico jogo da cobrinha desenvolvido com JavaScript puro.",
-      en: "Classic snake game built with pure JavaScript.",
-      fr: "Jeu du serpent classique développé en JavaScript pur.",
-      es: "Juego clásico de la serpiente desarrollado con JavaScript puro."
+      pt: "Recriação do clássico jogo da cobrinha, demonstrando lógica de programação, controle de eventos e interatividade.",
+      en: "Recreation of the classic snake game, demonstrating programming logic, event handling and interactivity.",
+      fr: "Recréation du jeu classique du serpent, mettant en avant logique, gestion d’événements et interactivité.",
+      es: "Recreación del clásico juego de la serpiente, demostrando lógica de programación, manejo de eventos e interactividad."
     }
   }
 };
