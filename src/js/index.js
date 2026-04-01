@@ -1032,8 +1032,9 @@ if (input) {
 const GITHUB_USERNAME = "Ryan-Wes";
 
 const featuredRepos = [
+  "documind-ai",
   "botflix",
-  "calculo-de-rescisao",
+  "calculo-de-rescisao-estagio",
   "guia-de-saude-mental",
   "pokedex-api-com-react",
   "expo-car",
@@ -1041,7 +1042,17 @@ const featuredRepos = [
 ];
 
 const projectsDisplay = {
-  botflix: {
+  "documind-ai": {
+    title: "DocuMind AI",
+    description: {
+      pt: "Assistente baseado em RAG que analisa documentos e responde perguntas com precisão a partir do conteúdo fornecido.",
+      en: "RAG-based assistant that analyzes documents and answers questions accurately using the provided content.",
+      fr: "Assistant basé sur le RAG qui analyse des documents et répond aux questions avec précision.",
+      es: "Asistente basado en RAG que analiza documentos y responde preguntas con precisión."
+    }
+  },
+
+  "botflix": {
     title: "BotFlix",
     description: {
       pt: "Assistente inteligente que recomenda filmes e séries com base no perfil do usuário, entregando sugestões rápidas e personalizadas.",
