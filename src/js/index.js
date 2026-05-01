@@ -1078,7 +1078,7 @@ const projectsDisplay = {
     }
   },
 
-  "calculo-de-rescisao": {
+  "calculo-de-rescisao-estagio": {
     title: "Calculadora de Rescisão",
     description: {
       pt: "Ferramenta que automatiza o cálculo de rescisões de estágio, tornando o processo mais rápido, claro e confiável.",
