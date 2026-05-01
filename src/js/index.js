@@ -1032,16 +1032,32 @@ if (input) {
 const GITHUB_USERNAME = "Ryan-Wes";
 
 const featuredRepos = [
+  "velora-ai",
   "documind-ai",
   "botflix",
   "calculo-de-rescisao-estagio",
   "guia-de-saude-mental",
   "pokedex-api-com-react",
   "expo-car",
-  "jogoDaCobrinha-JS"
+  "jogoDaCobrinha-JS",
 ];
 
 const projectsDisplay = {
+
+  "velora-ai": {
+    title: "Velora AI",
+    description: {
+      pt: "Sistema financeiro com IA para análise de gastos, categorização inteligente e visualização de dados.",
+
+      en: "AI-powered financial system for expense analysis, smart categorization, and data visualization.",
+
+      fr: "Système financier avec IA pour analyser les dépenses, catégoriser intelligemment et visualiser les données.",
+
+      es: "Sistema financiero con IA para análisis de gastos, categorización inteligente y visualización de datos."
+    }
+  },
+
+
   "documind-ai": {
     title: "DocuMind AI",
     description: {
