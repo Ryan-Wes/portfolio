@@ -197,7 +197,7 @@ section {
 }
 
 .home .profession-container {
-    position: absolute;
+    position: absolute;    
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -884,7 +884,6 @@ section {
     -webkit-box-orient: vertical;
     overflow: hidden;
     white-space: pre-line;
-
 }
 
 
@@ -1216,7 +1215,6 @@ footer {
     box-shadow: 0 0 14px rgba(176, 5, 255, 0.6);
 
     animation: bubblePulse 1.6s infinite ease-in-out;
-
 }
 
 
