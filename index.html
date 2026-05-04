@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
+
+  <meta name="description" content="Portfolio of Ryan - Frontend developer focused on UI, automation and AI">
+  <meta property="og:title" content="Ryan Portfolio">
+  <meta property="og:image" content="/src/images/preview.png">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="./src/image/favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +18,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
 
+  <!-- Boxicons (para os ícones das stacks) -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="./src/css/reset.css" />
@@ -21,19 +29,27 @@
 </head>
 
 <body>
+  <canvas id="neural-bg" aria-hidden="true"></canvas>
   <header class="header">
-    <a href="#" class="logo">WRyan.</a>
+    <a href="#" class="logo"src>WRyan.</a>
 
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
       <a href="#about">Sobre</a>
       <a href="#services">Habilidades</a>
+      <a href="#ai">IA</a>
       <a href="#portfolio">Projetos</a>
       <a href="#contact">Contato</a>
     </nav>
 
-    <div class="bx bx-sun" id="darkMode-icon"></div>
+    <select id="language-selector" aria-label="Selecionar idioma">
+      <option value="pt">PT</option>
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+      <option value="es">ES</option>
+    </select>
 
+    <div class="bx bx-sun" id="darkMode-icon"></div>
     <div class="bx bx-menu" id="menu-icon"></div>
   </header>
 
@@ -49,44 +65,49 @@
       <br /><br /><br /><br /><br /><br /><br /><br />
 
       <p>
-        
-        Transformando ideias em sites, dados em decisões e
-        <strong>automações inteligentes</strong>
+        Transformando ideias em soluções, dados em decisões e processos em <strong>automações inteligentes</strong>
       </p>
 
       <div class="social-media">
         <a href="https://github.com/Ryan-Wes" target="_blank" style="--i: 7"><i class="bx bxl-github"></i></a>
         <a href="https://www.linkedin.com/in/wryan-lopes/" target="_blank" style="--i: 8"><i
             class="bx bxl-linkedin"></i></a>
-        <a href="devwryan@gmail.com" target="_blank" style="--i: 9"><i class="bx bxl-gmail"></i></a>
+        <!-- corrigido: mailto -->
+        <a href="mailto:devwryan@gmail.com" target="_blank" style="--i: 9"><i class="bx bxl-gmail"></i></a>
         <a href="https://api.whatsapp.com/send/?phone=5551995321057&text&type=phone_number&app_absent=0" target="_blank"
           style="--i: 10"><i class="bx bxl-whatsapp"></i></a>
       </div>
 
-      <a href="https://drive.google.com/uc?export=download&id=1cHSvr_wg12CRJWCRMjHaH7R5qkdC-PIn" class="btn">Download
+      <a href="https://drive.google.com/uc?export=download&id=1cHSvr_wg12CRJWCRMjHaH7R5qkdC-PIn" id="download-cv-btn"
+        class="btn">Download
         CV</a>
     </div>
 
     <div class="profession-container">
       <div class="profession-box">
+
         <div class="profession" style="--i: 0">
           <i class="bx bxl-javascript"></i>
           <h3>JavaScript</h3>
         </div>
 
         <div class="profession" style="--i: 1">
-          <i class="bx bxl-react"></i>
-          <h3>React</h3>
+          <svg class="profession-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            aria-hidden="true">
+            <path
+              d="M20 10c-.74 0-1.38.4-1.72 1H13V9h4c.55 0 1-.45 1-1V5.72c.6-.35 1-.98 1-1.72 0-1.1-.9-2-2-2s-2 .9-2 2c0 .74.4 1.38 1 1.72V7h-3V5c0-1.65-1.35-3-3-3-1.3 0-2.41.83-2.83 2.01A3.51 3.51 0 0 0 4 7.5c0 .33.05.65.14.96C2.87 9.14 2 10.49 2 12c0 1.08.43 2.09 1.17 2.83-.11.38-.17.77-.17 1.17 0 1.96 1.41 3.59 3.31 3.93C6.86 21.16 8.11 22 9.5 22c1.93 0 3.5-1.57 3.5-3.5V17h3v1.28c-.6.35-1 .98-1 1.72 0 1.1.9 2 2 2s2-.9 2-2c0-.74-.4-1.38-1-1.72V16c0-.55-.45-1-1-1h-4v-2h5.28c.35.6.98 1 1.72 1 1.1 0 2-.9 2-2s-.9-2-2-2m-9 8.5c0 .83-.67 1.5-1.5 1.5-.71 0-1.33-.5-1.47-1.2l-.21-.8H7c-1.1 0-2-.9-2-2 0-.35.08-.68.25-.98l.46-.82-.78-.51C4.35 13.31 4 12.68 4 12c0-.98.72-1.82 1.68-1.97l1.69-.26-1.06-1.35c-.2-.26-.32-.59-.32-.92 0-.83.67-1.5 1.5-1.5.11 0 .21.01.31.03l1.19.17V4.99c0-.55.45-1 1-1s1 .45 1 1v13.5Z" />
+          </svg>
+          <h3>AI</h3>
         </div>
 
         <div class="profession" style="--i: 2">
-          <i class="bx bxl-nodejs"></i>
-          <h3>NodeJS</h3>
+          <i class="bx bxl-python"></i>
+          <h3>Python</h3>
         </div>
 
         <div class="profession" style="--i: 3">
-          <i class="bx bxl-python"></i>
-          <h3>Python</h3>
+          <i class="bx bx-line-chart"></i>
+          <h3>Data</h3>
         </div>
 
         <div class="circle"></div>
@@ -94,271 +115,387 @@
 
       <div class="overlay">
         <div class="home-img">
-          <img src="./src/image/Home Photo.png" alt="Foto do Ryan da página home" />
+          <img src="./src/image/home_photo.PNG" alt="Foto do Ryan da página home" />
         </div>
       </div>
     </div>
   </section>
 
   <section class="about" id="about">
+  <div class="about-main">
     <div class="about-img">
-      <img src="./src/image/About Photo.png" alt="Foto do Ryan da página sobre" />
+      <img src="./src/image/about_photo.PNG" alt="Foto do Ryan da página sobre" />
     </div>
 
     <div class="about-content">
       <h2 class="heading">Sobre <strong>Mim</strong></h2>
       <h3>Olá, pode me chamar de <strong>Ryan</strong>.</h3>
       <br /><br />
-         <p>
-      Desde o início da minha jornada no desenvolvimento web, venho me dedicando a criar e aprimorar websites.
-      Estou <strong>sempre atualizado</strong> com as tendências e tecnologias, aplicando
-      <strong>boas práticas</strong> para desenvolver sites eficientes, <strong>responsivos</strong>,
-      <strong>acessíveis</strong> e <strong>visualmente atraentes</strong>.
-      <br /><br />
 
-      No momento estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong> e pretendo, em seguida,
-      fazer uma pós em <strong>Engenharia de Software</strong>.
-      <br /><br />
-
-      Em 2023, fiz o investimento no <strong>Curso de Programação Fullstack com mentoria</strong> do
-      <strong>Dev em Dobro</strong>. Desde então, venho me aprofundando em tecnologias como
-      <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>Next.js</strong>,
-      <strong>SCSS</strong>, <strong>HTML</strong> e <strong>CSS</strong>.
-      <span id="pontos">...</span>
-      <span id="mais">
-        <br /><br />
-        Mais recentemente, descobri uma paixão pela <strong>automação de processos</strong> e pela
-        <strong>análise de dados</strong>. Com isso, passei a estudar <strong>n8n</strong> e
-        <strong>Python</strong>, aplicando-os para criar scripts que otimizam tarefas, manipulam dados em
-        <strong>Excel</strong> e geram relatórios mais rápidos e precisos. Também tive contato com
-        <strong>SQL</strong> e <strong>Power BI</strong> para transformar dados em decisões.
-        <br /><br />
-
-        Atualmente estou em transição de carreira, atuando como <strong>Analista Técnico</strong> em uma empresa
-        internacional de Linha de Transmissão, onde desenvolvi habilidades valiosas como
-        <strong>comunicação</strong>, <strong>trabalho em equipe</strong>, <strong>adaptabilidade</strong>,
-        <strong>organização</strong> e <strong>gerenciamento de tempo</strong>, além de um
-        <strong>pensamento crítico</strong> para solucionar problemas e cumprir prazos.
-        <br /><br />
-
-        Além disso, tenho um grande interesse por <strong>carros</strong> e por <strong>música</strong> — toco
-        instrumentos como violão, teclado, guitarra, baixo, flauta, bateria, gaita e ukulele, e arrisco um pouco
-        no canto também haha...
-      </span>
-    </p>
-      <button class="btn" onclick="leiaMais()" id="btnLeiaMais">
-        Leia Mais
-      </button>
-      <!-- <a href="#" class="btn">Leia Mais</a> -->
+      <p></p>
     </div>
-  </section>
+  </div>
+
+  <div class="about-extra">
+    <div class="experience-block">
+      <h3>Experiência <strong>Profissional</strong></h3>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">abr 2025 - o momento</span>
+          <h4>Analista Técnico</h4>
+          <strong>CYMI Brasil</strong>
+          <p>Sete Lagoas, Minas Gerais · Presencial</p>
+
+          <ul>
+            <li>Análise e gestão de grandes volumes de dados técnicos e operacionais.</li>
+            <li>Criação de dashboards e planilhas avançadas para indicadores e tomada de decisão.</li>
+            <li>Automação de rotinas com Python e n8n para relatórios, alertas e controle de prazos.</li>
+            <li>Aplicação inicial de IA para análise de dados e automação de processos internos.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">mar 2024 - abr 2025</span>
+          <h4>Assistente Técnico de Qualidade</h4>
+          <strong>CYMI Brasil</strong>
+          <p>Sacramento, Minas Gerais · Híbrido</p>
+
+          <ul>
+            <li>Controle e validação de dados de materiais aplicados em campo.</li>
+            <li>Gestão de notas fiscais, documentos financeiros e bases digitais.</li>
+            <li>Criação de dashboards em Excel para acompanhamento de produção.</li>
+            <li>Organização de formulários de qualidade e geração de relatórios técnicos.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">abr 2023 - mar 2024</span>
+          <h4>Auxiliar Técnico de Qualidade</h4>
+          <strong>CYMI Brasil</strong>
+          <p>Santo Antônio da Patrulha, RS · Presencial</p>
+
+          <ul>
+            <li>Digitalização e organização de formulários técnicos.</li>
+            <li>Controle de materiais, produção e expedição por planilhas de rastreamento.</li>
+            <li>Criação de planilhas com fórmulas, filtros e automações.</li>
+            <li>Operação de drone e produção de registros técnicos audiovisuais.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="certificates-block">
+      <h3>Meus <strong>Certificados</strong></h3>
+
+      <div class="certificates-carousel">
+        <button class="certificate-arrow certificate-arrow-left" type="button" aria-label="Certificado anterior">
+          <i class="bx bx-chevron-left"></i>
+        </button>
+
+        <div class="certificates-slider">
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-backend.png" alt="Certificado Backend">
+            <div class="certificate-info"><h4>Backend</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-basicofuncionamentopc.jpg" alt="Certificado Básico Funcionamento PC">
+            <div class="certificate-info"><h4>Básico Funcionamento PC</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-devwebbasico.jpg" alt="Certificado Dev Web Básico">
+            <div class="certificate-info"><h4>Dev Web Básico</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-figmaparadevs.jpg" alt="Certificado Figma para Devs">
+            <div class="certificate-info"><h4>Figma para Devs</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-frontend.png" alt="Certificado Frontend">
+            <div class="certificate-info"><h4>Frontend</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-frontenddevquest.jpg" alt="Certificado Frontend DevQuest">
+            <div class="certificate-info"><h4>Frontend DevQuest</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-fullstack.jpg" alt="Certificado Full Stack">
+            <div class="certificate-info"><h4>Full Stack</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-iaparadevs.png" alt="Certificado IA para Devs">
+            <div class="certificate-info"><h4>IA para Devs</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-imersaodevagentesdeia.jpg" alt="Certificado Imersão Dev Agentes de IA">
+            <div class="certificate-info"><h4>Imersão Agentes de IA</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-ingles.jpg" alt="Certificado Inglês">
+            <div class="certificate-info"><h4>Inglês</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-inglesavancadouninter.jpg" alt="Certificado Inglês Avançado">
+            <div class="certificate-info"><h4>Inglês Avançado</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-intensivaopowerbi.jpg" alt="Certificado Power BI">
+            <div class="certificate-info"><h4>Power BI</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-jornadapython.jpg" alt="Certificado Jornada Python">
+            <div class="certificate-info"><h4>Jornada Python</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-logicadeprogramacaojs.jpg" alt="Certificado Lógica JS">
+            <div class="certificate-info"><h4>Lógica JS</h4></div>
+          </div>
+
+          <div class="certificate-card">
+            <img src="./src/certificados/certificado-reactbasico.jpg" alt="Certificado React Básico">
+            <div class="certificate-info"><h4>React Básico</h4></div>
+          </div>
+        </div>
+
+        <button class="certificate-arrow certificate-arrow-right" type="button" aria-label="Próximo certificado">
+          <i class="bx bx-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
   <section class="services" id="services">
     <h2 class="heading">Minhas <strong>Habilidades</strong></h2>
 
     <div class="services-container">
-      <div class="services-box">
-        <i class="bx bxl-react"></i>
-        <h3>React</h3>
-      </div>
 
       <div class="services-box">
-        <i class="bx bxl-javascript"></i>
-        <h3>Javascript</h3>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bxl-css3"></i>
-        <h3>CSS</h3>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bxl-html5"></i>
-        <h3>HTML</h3>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bxl-git"></i>
-        <h3>Git</h3>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bxl-figma"></i>
-        <h3>Figma</h3>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bxl-redux"></i>
-        <h3>Redux</h3>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bxl-visual-studio"></i>
-        <h3>VS Code</h3>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bx-line-chart"></i>
-        <h3>Análise de Dados</h3>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bxl-python"></i>
+        <div class="icon-wrapper">
+          <i class="bx bxl-python"></i>
+        </div>
         <h3>Python</h3>
       </div>
 
       <div class="services-box">
-        <img class="n8n-logo" src="https://cdn.simpleicons.org/n8n/ffffff" alt="n8n logo" />
+        <div class="icon-wrapper">
+          <svg class="skill-icon icon-n8n" aria-hidden="true"></svg>
+        </div>
         <h3>n8n</h3>
       </div>
 
       <div class="services-box">
-        <i class="bx bxs-bar-chart-alt-2"></i>
-        <h3>Power BI</h3>
+        <div class="icon-wrapper">
+          <svg class="skill-icon icon-rag" viewBox="0 0 128 128" fill="none">
+            <defs>
+              <mask id="rag-cut">
+                <rect width="128" height="128" fill="white" />
+                <text x="64" y="58" text-anchor="middle" font-size="20" font-weight="700"
+                  font-family="system-ui, sans-serif" fill="black">
+                  RAG
+                </text>
+              </mask>
+            </defs>
+
+            <rect x="28" y="28" width="72" height="48" rx="10" stroke="currentColor" stroke-width="4"
+              mask="url(#rag-cut)" />
+
+            <path d="M42 10V28M56 10V28M70 10V28M84 10V28" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" />
+
+            <path d="M10 44H28M10 60H28M100 44H118M100 60H118" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" />
+
+            <path d="M64 76V96
+                 M64 76L33 96
+                 M64 76L95 96" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+
+            <rect x="22" y="96" width="22" height="22" rx="5" stroke="currentColor" stroke-width="3" />
+
+            <rect x="53" y="96" width="22" height="22" rx="5" stroke="currentColor" stroke-width="3" />
+
+            <rect x="84" y="96" width="22" height="22" rx="5" stroke="currentColor" stroke-width="3" />
+
+            <path d="M28 104H38M28 110H38
+                 M59 104H69M59 110H69
+                 M90 104H100M90 110H100" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h3>RAG</h3>
       </div>
 
       <div class="services-box">
-        <i class="bx bxl-microsoft"></i>
+        <div class="icon-wrapper">
+          <i class="bx bxl-nodejs"></i>
+        </div>
+        <h3>Node.js</h3>
+      </div>
+
+      <div class="services-box">
+        <div class="icon-wrapper">
+          <i class="bx bxl-javascript"></i>
+        </div>
+        <h3>Javascript</h3>
+      </div>
+
+      <div class="services-box">
+        <div class="icon-wrapper">
+          <i class="bx bxl-react"></i>
+        </div>
+        <h3>React</h3>
+      </div>
+
+      <div class="services-box">
+        <div class="icon-wrapper">
+          <i class="bx bxl-css3"></i>
+        </div>
+        <h3>CSS</h3>
+      </div>
+
+      <div class="services-box">
+        <div class="icon-wrapper">
+          <i class="bx bxl-html5"></i>
+        </div>
+        <h3>HTML</h3>
+      </div>
+
+      <div class="services-box">
+        <div class="icon-wrapper">
+          <i class="bx bxl-git"></i>
+        </div>
+        <h3>Git</h3>
+      </div>
+
+      <div class="services-box">
+        <div class="icon-wrapper">
+          <i class="bx bx-line-chart"></i>
+        </div>
+        <h3 id="skill-data-analysis">Análise de Dados</h3>
+      </div>
+
+      <div class="services-box">
+        <div class="icon-wrapper">
+          <i class="bx bxl-microsoft"></i>
+        </div>
         <h3>Excel</h3>
+      </div>
+
+      <div class="services-box">
+        <div class="icon-wrapper">
+          <i class="bx bxs-bar-chart-alt-2"></i>
+        </div>
+        <h3>Power BI</h3>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+  <section class="ai-section" id="ai">
+    <h2 class="heading">Converse com minha <strong>IA</strong></h2>
+
+    <div class="ai-section-container">
+      <div class="ai-section-content">
+        <span class="ai-badge">Assistente inteligente integrada ao portfólio</span>
+
+        <h3>Conheça a <strong>Suzy</strong>, minha assistente virtual</h3>
+
+        <p class="ai-section-description">
+          A Suzy foi integrada ao meu portfólio para responder perguntas em tempo real sobre
+          <strong>minha experiência</strong>, <strong>tecnologias</strong>,
+          <strong>projetos</strong> e <strong>formas de contato</strong>.
+        </p>
+
+        <p class="ai-section-description">
+          Ela utiliza uma arquitetura com <strong>frontend em JavaScript</strong>,
+          <strong>workflow no n8n</strong>, <strong>OpenAI</strong>,
+          <strong>memória de conversa</strong> e recuperação de contexto do próprio site.
+        </p>
+
+        <div class="ai-stack-list">
+          <span>JavaScript</span>
+          <span>n8n</span>
+          <span>OpenAI</span>
+          <span>Memory</span>
+          <span>Context Retrieval</span>
+          <span>Webhook</span>
+        </div>
+
+        <div class="ai-section-actions">
+          <button class="btn open-ai-chat-btn" type="button">Abrir chat</button>
+          <a href="#portfolio" class="btn btn-secondary">Ver projetos</a>
+        </div>
+      </div>
+
+      <div class="ai-section-card">
+        <div class="ai-card-header">
+          <div class="ai-status">
+            <span class="ai-status-dot"></span>
+            <span class="ai-status-text">Suzy AI</span>
+          </div>
+        </div>
+
+        <div class="ai-card-body">
+          <p class="ai-card-label">Exemplos do que você pode perguntar:</p>
+
+          <div class="ai-example-list">
+            <button class="ai-example-question" type="button">
+              Quem é o Ryan?
+            </button>
+
+            <button class="ai-example-question" type="button">
+              Quais tecnologias ele usa?
+            </button>
+
+            <button class="ai-example-question" type="button">
+              Quais são os principais projetos?
+            </button>
+
+            <button class="ai-example-question" type="button">
+              Como posso entrar em contato?
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
 
   <section class="portfolio" id="portfolio">
     <h2 class="heading">Últimos <strong>Projetos</strong></h2>
 
-    <div class="portfolio-container">
-      <div class="portfolio-box">
-        <img src="./src/image/guiadesaudemental.gif" alt="Imagem do site Guia de Saúde Mental" />
+    <div class="portfolio-container"></div>
 
-        <div class="portfolio-layer">
-          <h4>Guia de Saúde Mental</h4>
-          <p>
-            Aplicação web para o Setembro Amarelo que oferece soluções para
-            diferentes sentimentos. Desenvolvida com HTML, CSS e JavaScript,
-            possui uma interface responsiva e recursos de suporte emocional
-            online.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/guia-de-saude-mental"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/guia-de-saude-mental/"
-              target="_blank">Projeto</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="./src/image/Pokedex.gif" alt="Imagem do site do One Piece" />
-
-        <div class="portfolio-layer">
-          <h4>Pokédex Com React</h4>
-          <p>
-            Uma Pokédex interativa desenvolvida em React, com busca, filtros e
-            detalhes dos Pokémons. Utiliza React Router Dom para navegação,
-            Styled-components para estilização e consome dados da PokéAPI.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/pokedex-api-com-react"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://pokedex-api-com-react-three.vercel.app/"
-              target="_blank">Projeto</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="./src/image/expocar.gif" alt="Imagem do site Expocar" />
-
-        <div class="portfolio-layer">
-          <h4>ExpoCar</h4>
-          <p>
-            Um site de apresentação de carros de alta performance com texto de
-            descrição e com botões que mudam a imagem do carro e sua descrição
-            quando clicados ultilizando HTML, CSS e JavaScript.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/expo-car" target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/expo-car/" target="_blank">Projeto</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="./src/image/cobrinha.gif" alt="Gif do site Jogo da Cobrinha" />
-
-        <div class="portfolio-layer">
-          <h4>The Hunger Snake</h4>
-          <p>
-            Uma página do jogo "The Hunger Snake", onde o jogador controla uma
-            cobra para capturar comidas e marcar pontos. O maior score é salvo
-            no localStorage. Feito com HTML, CSS e JavaScript.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/jogoDaCobrinha-JS"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/jogoDaCobrinha-JS/"
-              target="_blank">Projeto</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="./src/image/githubapi.gif" alt="Imagem do site Github API" />
-
-        <div class="portfolio-layer">
-          <h4>Github API</h4>
-          <p>
-            Aplicação que busca perfis do GitHub e exibe informações como
-            repositórios e eventos. Desenvolvida com HTML, CSS e JavaScript,
-            utiliza fetch para integrar dados da API e exibir informações
-            dinamicamente.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/github-api"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/github-api/"
-              target="_blank">Projeto</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="./src/image/devfriends.gif" alt="Imagem do site DevFriends" />
-
-        <div class="portfolio-layer">
-          <h4>Cards Dev Friends</h4>
-          <p>
-            Cards de paródia da série Friends como se fossem programadores com
-            descrição dos personagens e reconhecimento de clique para mudar as
-            imagens do carrossel e seus respectivos textos ultilizando HTML,
-            CSS e JavaScript.
-          </p>
-          <div class="icons">
-            <a class="btn-hover-effect-4782fghj" href="https://github.com/Ryan-Wes/dev-friends"
-              target="_blank">Código</a>
-            <a class="btn-hover-effect-4782fghj" href="https://ryan-wes.github.io/dev-friends/"
-              target="_blank">Projeto</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <section class="contact" id="contact">
-    <h2 class="heading">Contate<strong>-me!</strong></h2>
+    <h2 class="heading" id="contact-title">Contate<strong>-me!</strong></h2>
 
     <form action="https://api.staticforms.xyz/submit" method="post">
       <div class="input-box">
-        <input type="text" name="name" placeholder="Nome completo" required />
-        <input type="email" name="email" placeholder="Endereço de email" required />
+        <input id="input-name" type="text" name="name" placeholder="Nome completo" required />
+        <input id="input-email" type="email" name="email" placeholder="Endereço de email" required />
       </div>
       <div class="input-box">
-        <input type="number" name="number" placeholder="Número de celular" required />
-        <input type="text" name="text" placeholder="Assunto" required />
+        <input id="input-phone" type="number" name="number" placeholder="Número de celular" required />
+        <input id="input-subject" type="text" name="text" placeholder="Assunto" required />
       </div>
-      <textarea name="message" id="" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
-      <input type="submit" value="Enviar mensagem" class="btn" />
+      <textarea id="input-message" name="message" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+      <input id="submit-btn" type="submit" value="Enviar mensagem" class="btn" />
 
       <input type="hidden" name="accessKey" value="31e536b4-135e-420a-8776-2ca63eb6ef22" />
       <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html" />
@@ -375,8 +512,38 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
 
+
+
+  <!-- AI ASSISTANT -->
+
+  <div id="ai-bot">
+    <img src="./src/image/bot_image.png" id="bot-avatar">
+
+    <div id="bot-bubble">...</div>
+  </div>
+
+
+  <div id="ai-chat">
+
+    <div id="chat-header">
+      <div class="ai-status">
+        <span class="ai-status-dot"></span>
+        <span class="ai-status-text">Suzy - Sua Assistente Virtual</span>
+      </div>
+
+      <span id="chat-close">✕</span>
+    </div>
+
+    <div id="chat-messages"></div>
+
+    <div id="chat-input-area">
+      <input id="chat-input" placeholder="Pergunte algo para a Suzy." />
+      <button id="chat-send">Enviar</button>
+    </div>
+
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./src/js/index.js"></script>
 </body>
 
