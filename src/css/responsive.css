@@ -142,6 +142,10 @@
         display: none;
     }
 
+    .about-img img {
+        display: none;
+    }
+
     .services,
     .portfolio {
         padding-bottom: 7rem;
@@ -344,7 +348,7 @@
     }
 
     .about {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
     }
 
@@ -366,20 +370,21 @@
     }
 
     .timeline::before {
-        left: 1rem;
+        left: 2.8rem;
     }
 
     .timeline-item,
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
-        width: calc(100% - 3rem);
+        width: calc(100% - 4rem);
         justify-self: end;
         text-align: left;
+        padding: 2rem;
     }
 
     .timeline-item:nth-child(odd)::before,
     .timeline-item:nth-child(even)::before {
-        left: -2.9rem;
+        left: -2.4rem;
         right: auto;
     }
 
@@ -388,6 +393,15 @@
         direction: ltr;
         padding-left: 2rem;
         padding-right: 0;
+    }
+
+    .certificates-slider {
+        gap: 1.2rem;
+    }
+
+    .certificate-card {
+        flex: 0 0 240px;
+        max-width: 240px;
     }
 
     .services h2,
