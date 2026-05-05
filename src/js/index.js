@@ -1486,6 +1486,8 @@ const projectsDisplay = {
   }
 };
 
+let cachedRepos = null;
+
 async function loadProjects() {
   try {
     const container = document.querySelector(".portfolio-container");
@@ -1493,17 +1495,24 @@ async function loadProjects() {
 
     container.innerHTML = "";
 
-    const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`, {
-      headers: {
-        Accept: "application/vnd.github.mercy-preview+json"
+    let repos = cachedRepos;
+
+    if (!repos) {
+      const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`, {
+        headers: {
+          Accept: "application/vnd.github+json"
+        }
+      });
+
+      if (!response.ok) {
+        console.error("GitHub API status:", response.status);
+        console.error("GitHub API response:", await response.text());
+        throw new Error("Erro ao buscar repositórios");
       }
-    });
 
-    if (!response.ok) {
-      throw new Error("Erro ao buscar repositórios");
+      repos = await response.json();
+      cachedRepos = repos;
     }
-
-    const repos = await response.json();
 
     const selectedRepos = featuredRepos
       .map(name => repos.find(repo => repo.name === name))
@@ -1534,36 +1543,36 @@ async function loadProjects() {
           : null;
 
       const projectHTML = `
-    <div class="portfolio-box">
-      <img 
-        src="https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repo.name}/main/assets/preview.gif" 
-        alt="Preview do projeto ${projectTitle}"
-          loading="eager"
-  decoding="async"
-      />
+        <div class="portfolio-box">
+          <img 
+            src="https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repo.name}/main/assets/preview.gif" 
+            alt="Preview do projeto ${projectTitle}"
+            loading="eager"
+            decoding="async"
+          />
 
-      <div class="portfolio-layer">
-        <h4>${projectTitle}</h4>
+          <div class="portfolio-layer">
+            <h4>${projectTitle}</h4>
 
-        <div class="tech-badges">${badgesHTML}</div>
+            <div class="tech-badges">${badgesHTML}</div>
 
-        <p>${projectDescription}</p>
+            <p>${projectDescription}</p>
 
-        <div class="icons">
-          <a class="btn-hover-effect-4782fghj btn-code" href="${codeUrl}" target="_blank" rel="noopener noreferrer">
-            ${t.codeBtn}
-          </a>
+            <div class="icons">
+              <a class="btn-hover-effect-4782fghj btn-code" href="${codeUrl}" target="_blank">
+                ${t.codeBtn}
+              </a>
 
-          ${projectUrl
-          ? `<a class="btn-hover-effect-4782fghj btn-project" href="${projectUrl}" target="_blank" rel="noopener noreferrer">
-                   ${t.projectBtn}
-                 </a>`
-          : ""
-        }
+              ${projectUrl
+                ? `<a class="btn-hover-effect-4782fghj btn-project" href="${projectUrl}" target="_blank">
+                    ${t.projectBtn}
+                  </a>`
+                : ""
+              }
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  `;
+      `;
 
       container.insertAdjacentHTML("beforeend", projectHTML);
     });
