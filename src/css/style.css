@@ -197,7 +197,7 @@ section {
 }
 
 .home .profession-container {
-    position: absolute;    
+    position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -444,9 +444,23 @@ section {
     bottom: 0;
     left: 50%;
     width: 3px;
-    background: var(--main-color);
+    background: rgba(176, 5, 255, 0.18);
     transform: translateX(-50%);
-    box-shadow: 0 0 18px rgba(176, 5, 255, .55);
+    box-shadow: none;
+}
+
+.timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 0%;
+    transform: translateX(-50%);
+    background: var(--main-color);
+    box-shadow: 0 0 18px rgba(176, 5, 255, .65);
+    border-radius: 999px;
+    z-index: 1;
+    transition: height .12s linear;
 }
 
 .timeline-item {
@@ -458,9 +472,12 @@ section {
     border: 1px solid rgba(176, 5, 255, 0.22);
     border-radius: 1.2rem;
     box-shadow: 0 .2rem .8rem var(--shadow-color);
-    transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease, background .35s ease;
-
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .45s ease, transform .45s ease, border-color .35s ease, box-shadow .35s ease, background .35s ease;
 }
+
+
 
 .timeline-item:hover {
     transform: translateY(-6px);
@@ -485,13 +502,26 @@ section {
     top: 50%;
     width: 1.8rem;
     height: 1.8rem;
-    background: var(--main-color);
+    background: rgba(176, 5, 255, 0.25);
     border: 3px solid var(--bg-color);
     border-radius: 50%;
-    box-shadow: 0 0 18px rgba(176, 5, 255, .8);
-    transform: translateY(-50%);
-
+    box-shadow: 0 0 8px rgba(176, 5, 255, .25);
+    animation: none;
+    transition: background .35s ease, box-shadow .35s ease, transform .35s ease;
     animation: timelinePulse 2.4s ease-in-out infinite;
+}
+
+.timeline-item.is-active::before {
+    background: var(--main-color);
+    box-shadow: 0 0 22px rgba(176, 5, 255, .95);
+    transform: translateY(-50%) scale(1.12);
+}
+
+.timeline-item.is-active {
+    opacity: 1;
+    transform: translateY(0);
+    border-color: rgba(176, 5, 255, .55);
+    box-shadow: 0 0 24px rgba(176, 5, 255, .22);
 }
 
 .timeline::after {
@@ -502,17 +532,17 @@ section {
     left: 50%;
     width: 3px;
     transform: translateX(-50%);
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        rgba(176, 5, 255, .9),
-        transparent
-    );
+    background: linear-gradient(to bottom,
+            transparent,
+            rgba(176, 5, 255, .9),
+            transparent);
     animation: timelineGlowMove 3.5s ease-in-out infinite;
 }
 
 @keyframes timelineGlowMove {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: .25;
     }
 
@@ -522,7 +552,9 @@ section {
 }
 
 @keyframes timelinePulse {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 0 10px rgba(176, 5, 255, .55);
     }
 
@@ -634,7 +666,7 @@ section {
     aspect-ratio: 16 / 10;
     border-radius: 1.4rem;
     overflow: hidden;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     border: 2px solid rgba(176, 5, 255, 0.35);
     box-shadow: 0 .4rem 1rem var(--shadow-color);
     background: var(--bg-color);

@@ -373,6 +373,35 @@
         left: 2.8rem;
     }
 
+    .timeline-progress {
+    left: 2.8rem;
+}
+
+    .timeline::after {
+        display: none;
+    }
+
+    .certificates-carousel {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .certificate-arrow {
+        display: none;
+    }
+
+    .certificates-slider {
+        gap: 1.2rem;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: 2rem;
+        padding-inline: 2rem;
+    }
+
+    .certificate-card {
+        flex: 0 0 240px;
+        max-width: 240px;
+        scroll-snap-align: center;
+    }
+
     .timeline-item,
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {

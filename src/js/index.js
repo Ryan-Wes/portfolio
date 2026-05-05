@@ -28,6 +28,69 @@ Minha experiência profissional como Analista Técnico de Engenharia em uma empr
 Costumo dizer que o que ainda não sei, me esforço ao máximo para aprender o mais rápido possível.
 `,
 
+
+
+    experienceTitle: 'Experiência <strong>Profissional</strong>',
+    experiences: [
+      {
+        date: "abr 2025 - o momento",
+        title: "Analista Técnico",
+        company: "CYMI Brasil",
+        location: "Sete Lagoas, Minas Gerais · Presencial",
+        bullets: [
+          "Análise e gestão de grandes volumes de dados técnicos e operacionais.",
+          "Criação de dashboards e planilhas avançadas para indicadores e tomada de decisão.",
+          "Automação de rotinas com Python e n8n para relatórios, alertas e controle de prazos.",
+          "Aplicação inicial de IA para análise de dados e automação de processos internos.",
+        ],
+      },
+      {
+        date: "mar 2024 - abr 2025",
+        title: "Assistente Técnico de Qualidade",
+        company: "CYMI Brasil",
+        location: "Sacramento, Minas Gerais · Híbrido",
+        bullets: [
+          "Controle e validação de dados de materiais aplicados em campo.",
+          "Gestão de notas fiscais, documentos financeiros e bases digitais.",
+          "Criação de dashboards em Excel para acompanhamento de produção.",
+          "Organização de formulários de qualidade e geração de relatórios técnicos.",
+        ],
+      },
+      {
+        date: "abr 2023 - mar 2024",
+        title: "Auxiliar Técnico de Qualidade",
+        company: "CYMI Brasil",
+        location: "Santo Antônio da Patrulha, RS · Presencial",
+        bullets: [
+          "Digitalização e organização de formulários técnicos.",
+          "Controle de materiais, produção e expedição por planilhas de rastreamento.",
+          "Criação de planilhas com fórmulas, filtros e automações.",
+          "Operação de drone e produção de registros técnicos audiovisuais.",
+        ],
+      },
+    ],
+
+    certificatesTitle: 'Meus <strong>Certificados</strong>',
+    certificates: [
+      "Backend",
+      "Básico Funcionamento PC",
+      "Dev Web Básico",
+      "Figma para Devs",
+      "Frontend",
+      "Frontend DevQuest",
+      "Full Stack",
+      "IA para Devs",
+      "Imersão Agentes de IA",
+      "Inglês",
+      "Inglês Avançado",
+      "Power BI",
+      "Jornada Python",
+      "Lógica JS",
+      "React Básico",
+    ],
+
+
+
     skillsTitle: 'Minhas <strong>Habilidades</strong>',
     dataAnalysis: "Análise de Dados",
 
@@ -121,6 +184,69 @@ My professional experience as an Engineering Technical Analyst in an internation
 <br /><br />
 I usually say that what I don’t know yet, I make my best effort to learn as quickly as possible.
 `,
+
+
+
+    experienceTitle: 'Professional <strong>Experience</strong>',
+    experiences: [
+      {
+        date: "Apr 2025 - Present",
+        title: "Technical Analyst",
+        company: "CYMI Brazil",
+        location: "Sete Lagoas, Minas Gerais · On-site",
+        bullets: [
+          "Analysis and management of large volumes of technical and operational data.",
+          "Creation of dashboards and advanced spreadsheets for indicators and decision-making.",
+          "Automation of routines with Python and n8n for reports, alerts and deadline control.",
+          "Initial use of AI for data analysis and internal process automation.",
+        ],
+      },
+      {
+        date: "Mar 2024 - Apr 2025",
+        title: "Quality Technical Assistant",
+        company: "CYMI Brazil",
+        location: "Sacramento, Minas Gerais · Hybrid",
+        bullets: [
+          "Control and validation of data from materials applied in the field.",
+          "Management of invoices, financial documents and digital databases.",
+          "Creation of Excel dashboards to monitor production.",
+          "Organization of quality forms and generation of technical reports.",
+        ],
+      },
+      {
+        date: "Apr 2023 - Mar 2024",
+        title: "Quality Technical Auxiliary",
+        company: "CYMI Brazil",
+        location: "Santo Antônio da Patrulha, RS · On-site",
+        bullets: [
+          "Digitization and organization of technical forms.",
+          "Control of materials, production and shipping through tracking spreadsheets.",
+          "Creation of spreadsheets with formulas, filters and automations.",
+          "Drone operation and production of technical audiovisual records.",
+        ],
+      },
+    ],
+
+    certificatesTitle: 'My <strong>Certificates</strong>',
+    certificates: [
+      "Backend",
+      "Basic Computer Operation",
+      "Basic Web Development",
+      "Figma for Developers",
+      "Frontend",
+      "Frontend DevQuest",
+      "Full Stack",
+      "AI for Developers",
+      "AI Agents Immersion",
+      "English",
+      "Advanced English",
+      "Power BI",
+      "Python Journey",
+      "JavaScript Logic",
+      "Basic React",
+    ],
+
+
 
     skillsTitle: 'My <strong>Skills</strong>',
     dataAnalysis: "Data Analysis",
@@ -217,6 +343,69 @@ J’ai l’habitude de dire que ce que je ne sais pas encore, je fais de mon mie
 
 `,
 
+
+
+    experienceTitle: 'Expérience <strong>Professionnelle</strong>',
+    experiences: [
+      {
+        date: "avr. 2025 - aujourd’hui",
+        title: "Analyste Technique",
+        company: "CYMI Brésil",
+        location: "Sete Lagoas, Minas Gerais · Présentiel",
+        bullets: [
+          "Analyse et gestion de grands volumes de données techniques et opérationnelles.",
+          "Création de tableaux de bord et de feuilles de calcul avancées pour les indicateurs et la prise de décision.",
+          "Automatisation de routines avec Python et n8n pour les rapports, les alertes et le suivi des délais.",
+          "Première application de l’IA pour l’analyse de données et l’automatisation de processus internes.",
+        ],
+      },
+      {
+        date: "mars 2024 - avr. 2025",
+        title: "Assistant Technique Qualité",
+        company: "CYMI Brésil",
+        location: "Sacramento, Minas Gerais · Hybride",
+        bullets: [
+          "Contrôle et validation des données des matériaux appliqués sur le terrain.",
+          "Gestion de factures, de documents financiers et de bases de données numériques.",
+          "Création de tableaux de bord Excel pour le suivi de la production.",
+          "Organisation de formulaires qualité et génération de rapports techniques.",
+        ],
+      },
+      {
+        date: "avr. 2023 - mars 2024",
+        title: "Auxiliaire Technique Qualité",
+        company: "CYMI Brésil",
+        location: "Santo Antônio da Patrulha, RS · Présentiel",
+        bullets: [
+          "Numérisation et organisation de formulaires techniques.",
+          "Contrôle des matériaux, de la production et de l’expédition à l’aide de feuilles de suivi.",
+          "Création de feuilles de calcul avec formules, filtres et automatisations.",
+          "Pilotage de drone et production d’enregistrements audiovisuels techniques.",
+        ],
+      },
+    ],
+
+    certificatesTitle: 'Mes <strong>Certificats</strong>',
+    certificates: [
+      "Backend",
+      "Fonctionnement de Base du PC",
+      "Développement Web Basique",
+      "Figma pour Développeurs",
+      "Frontend",
+      "Frontend DevQuest",
+      "Full Stack",
+      "IA pour Développeurs",
+      "Immersion Agents IA",
+      "Anglais",
+      "Anglais Avancé",
+      "Power BI",
+      "Parcours Python",
+      "Logique JavaScript",
+      "React Basique",
+    ],
+
+
+
     skillsTitle: 'Mes <strong>Compétences</strong>',
     dataAnalysis: "Analyse de Données",
 
@@ -305,6 +494,69 @@ Mi experiencia profesional como Analista Técnico de Ingeniería en una empresa 
 <br /><br />
 Suelo decir que lo que aún no sé, me esfuerzo al máximo para aprenderlo lo más rápido posible.
 `,
+
+
+
+    experienceTitle: 'Experiencia <strong>Profesional</strong>',
+    experiences: [
+      {
+        date: "abr. 2025 - actualidad",
+        title: "Analista Técnico",
+        company: "CYMI Brasil",
+        location: "Sete Lagoas, Minas Gerais · Presencial",
+        bullets: [
+          "Análisis y gestión de grandes volúmenes de datos técnicos y operativos.",
+          "Creación de dashboards y hojas de cálculo avanzadas para indicadores y toma de decisiones.",
+          "Automatización de rutinas con Python y n8n para informes, alertas y control de plazos.",
+          "Aplicación inicial de IA para análisis de datos y automatización de procesos internos.",
+        ],
+      },
+      {
+        date: "mar. 2024 - abr. 2025",
+        title: "Asistente Técnico de Calidad",
+        company: "CYMI Brasil",
+        location: "Sacramento, Minas Gerais · Híbrido",
+        bullets: [
+          "Control y validación de datos de materiales aplicados en campo.",
+          "Gestión de facturas, documentos financieros y bases digitales.",
+          "Creación de dashboards en Excel para seguimiento de producción.",
+          "Organización de formularios de calidad y generación de informes técnicos.",
+        ],
+      },
+      {
+        date: "abr. 2023 - mar. 2024",
+        title: "Auxiliar Técnico de Calidad",
+        company: "CYMI Brasil",
+        location: "Santo Antônio da Patrulha, RS · Presencial",
+        bullets: [
+          "Digitalización y organización de formularios técnicos.",
+          "Control de materiales, producción y expedición mediante hojas de seguimiento.",
+          "Creación de hojas de cálculo con fórmulas, filtros y automatizaciones.",
+          "Operación de drone y producción de registros audiovisuales técnicos.",
+        ],
+      },
+    ],
+
+    certificatesTitle: 'Mis <strong>Certificados</strong>',
+    certificates: [
+      "Backend",
+      "Funcionamiento Básico del PC",
+      "Desarrollo Web Básico",
+      "Figma para Devs",
+      "Frontend",
+      "Frontend DevQuest",
+      "Full Stack",
+      "IA para Devs",
+      "Inmersión Agentes de IA",
+      "Inglés",
+      "Inglés Avanzado",
+      "Power BI",
+      "Jornada Python",
+      "Lógica JS",
+      "React Básico",
+    ],
+
+
 
     skillsTitle: 'Mis <strong>Habilidades</strong>',
     dataAnalysis: "Análisis de Datos",
@@ -485,6 +737,46 @@ function setLanguage(lang) {
   if (aiQuestions[2]) aiQuestions[2].textContent = t.aiQuestion3;
   if (aiQuestions[3]) aiQuestions[3].textContent = t.aiQuestion4;
 
+
+  // EXPERIENCE
+  setHTML(".experience-block h3", t.experienceTitle);
+
+  const timelineItems = document.querySelectorAll(".timeline-item");
+
+  t.experiences?.forEach((experience, index) => {
+    const item = timelineItems[index];
+    if (!item) return;
+
+    const date = item.querySelector(".timeline-date");
+    const title = item.querySelector("h4");
+    const company = item.querySelector("strong");
+    const location = item.querySelector("p");
+    const bullets = item.querySelector("ul");
+
+    if (date) date.textContent = experience.date;
+    if (title) title.textContent = experience.title;
+    if (company) company.textContent = experience.company;
+    if (location) location.textContent = experience.location;
+
+    if (bullets) {
+      bullets.innerHTML = experience.bullets
+        .map((bullet) => `<li>${bullet}</li>`)
+        .join("");
+    }
+  });
+
+  // CERTIFICATES
+  setHTML(".certificates-block h3", t.certificatesTitle);
+
+  const certificateTitles = document.querySelectorAll(".certificate-info h4");
+
+  t.certificates?.forEach((certificate, index) => {
+    if (certificateTitles[index]) {
+      certificateTitles[index].textContent = certificate;
+    }
+  });
+
+
   loadProjects();
 }
 
@@ -567,19 +859,42 @@ ScrollReveal().reveal(".home-img img, .services-container, .portfolio-box, .cont
 ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", { origin: "right" });
 
-ScrollReveal().reveal(".timeline-item:nth-child(odd)", {
-  origin: "left",
-  distance: "80px",
-  duration: 1200,
-  interval: 180,
-});
+const isMobile = window.innerWidth <= 846;
 
-ScrollReveal().reveal(".timeline-item:nth-child(even)", {
-  origin: "right",
-  distance: "80px",
-  duration: 1200,
-  interval: 180,
-});
+const timeline = document.querySelector(".timeline");
+
+if (timeline) {
+  const timelineProgress = document.createElement("span");
+  timelineProgress.classList.add("timeline-progress");
+  timeline.prepend(timelineProgress);
+
+  function updateTimelineProgress() {
+    const timelineRect = timeline.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    const progress = (windowHeight * 0.65 - timelineRect.top) / timelineRect.height;
+    const progressPercent = Math.min(Math.max(progress, 0), 1) * 100;
+
+    timelineProgress.style.height = `${progressPercent}%`;
+
+    const timelineItems = document.querySelectorAll(".timeline-item");
+    const progressHeight = timeline.offsetHeight * (progressPercent / 100);
+
+    timelineItems.forEach((item) => {
+      const itemDotPosition = item.offsetTop + item.offsetHeight / 2;
+
+      if (progressHeight >= itemDotPosition) {
+        item.classList.add("is-active");
+      } else {
+        item.classList.remove("is-active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", updateTimelineProgress);
+  window.addEventListener("resize", updateTimelineProgress);
+  updateTimelineProgress();
+}
 
 ScrollReveal().reveal(".certificates-block", {
   origin: "bottom",
@@ -1223,7 +1538,8 @@ async function loadProjects() {
       <img 
         src="https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repo.name}/main/assets/preview.gif" 
         alt="Preview do projeto ${projectTitle}"
-        loading="lazy"
+          loading="eager"
+  decoding="async"
       />
 
       <div class="portfolio-layer">
