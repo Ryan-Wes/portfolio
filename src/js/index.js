@@ -38,10 +38,10 @@ Costumo dizer que o que ainda não sei, me esforço ao máximo para aprender o m
         company: "CYMI Brasil",
         location: "Sete Lagoas, Minas Gerais · Presencial",
         bullets: [
-          "Análise e gestão de grandes volumes de dados técnicos e operacionais.",
-          "Criação de dashboards e planilhas avançadas para indicadores e tomada de decisão.",
-          "Automação de rotinas com Python e n8n para relatórios, alertas e controle de prazos.",
-          "Aplicação inicial de IA para análise de dados e automação de processos internos.",
+          "Análise de grandes volumes de dados técnicos e operacionais para suporte à tomada de decisão.",
+          "Desenvolvimento de dashboards e relatórios com Excel avançado e Power BI para monitoramento de indicadores.",
+          "Automação de rotinas com Python e n8n, reduzindo significativamente tarefas manuais e retrabalho.",
+          "Estruturação e padronização de dados, melhorando consistência e agilidade na geração de relatórios.",
         ],
       },
       {
@@ -50,10 +50,10 @@ Costumo dizer que o que ainda não sei, me esforço ao máximo para aprender o m
         company: "CYMI Brasil",
         location: "Sacramento, Minas Gerais · Híbrido",
         bullets: [
-          "Controle e validação de dados de materiais aplicados em campo.",
-          "Gestão de notas fiscais, documentos financeiros e bases digitais.",
-          "Criação de dashboards em Excel para acompanhamento de produção.",
-          "Organização de formulários de qualidade e geração de relatórios técnicos.",
+          "Validação e tratamento de dados técnicos de campo, garantindo qualidade e confiabilidade das informações.",
+          "Criação de dashboards em Excel para acompanhamento de produção e análise de desempenho.",
+          "Organização e estruturação de bases de dados, facilitando consultas e geração de relatórios.",
+          "Apoio na identificação de melhorias operacionais com base em análise de dados.",
         ],
       },
       {
@@ -62,31 +62,30 @@ Costumo dizer que o que ainda não sei, me esforço ao máximo para aprender o m
         company: "CYMI Brasil",
         location: "Santo Antônio da Patrulha, RS · Presencial",
         bullets: [
-          "Digitalização e organização de formulários técnicos.",
-          "Controle de materiais, produção e expedição por planilhas de rastreamento.",
-          "Criação de planilhas com fórmulas, filtros e automações.",
-          "Operação de drone e produção de registros técnicos audiovisuais.",
+          "Digitalização e estruturação de dados técnicos, criando bases organizadas para análise.",
+          "Desenvolvimento de planilhas automatizadas com fórmulas e validações, reduzindo erros operacionais.",
+          "Controle de materiais e produção com apoio de sistemas de rastreamento e planilhas estruturadas.",
+          "Apoio na geração de relatórios técnicos e organização de informações do projeto.",
         ],
       },
     ],
 
     certificatesTitle: 'Meus <strong>Certificados</strong>',
     certificates: [
+      "Full Stack",
+      "IA para Devs",
       "Backend",
+      "Frontend",
+      "Imersão Agentes de IA",
+      "Inglês Avançado",
+      "Jornada Python",
+      "React Básico",
+      "Inglês",
+      "Power BI",
       "Básico Funcionamento PC",
       "Dev Web Básico",
       "Figma para Devs",
-      "Frontend",
-      "Frontend DevQuest",
-      "Full Stack",
-      "IA para Devs",
-      "Imersão Agentes de IA",
-      "Inglês",
-      "Inglês Avançado",
-      "Power BI",
-      "Jornada Python",
-      "Lógica JS",
-      "React Básico",
+      "Lógica JS"
     ],
 
 
@@ -195,10 +194,10 @@ I usually say that what I don’t know yet, I make my best effort to learn as qu
         company: "CYMI Brazil",
         location: "Sete Lagoas, Minas Gerais · On-site",
         bullets: [
-          "Analysis and management of large volumes of technical and operational data.",
-          "Creation of dashboards and advanced spreadsheets for indicators and decision-making.",
-          "Automation of routines with Python and n8n for reports, alerts and deadline control.",
-          "Initial use of AI for data analysis and internal process automation.",
+          "Analysis of large volumes of technical and operational data to support decision-making.",
+          "Development of dashboards and reports using advanced Excel and Power BI for KPI monitoring.",
+          "Automation of routines with Python and n8n, significantly reducing manual tasks and rework.",
+          "Data structuring and standardization, improving consistency and reporting efficiency.",
         ],
       },
       {
@@ -207,10 +206,10 @@ I usually say that what I don’t know yet, I make my best effort to learn as qu
         company: "CYMI Brazil",
         location: "Sacramento, Minas Gerais · Hybrid",
         bullets: [
-          "Control and validation of data from materials applied in the field.",
-          "Management of invoices, financial documents and digital databases.",
-          "Creation of Excel dashboards to monitor production.",
-          "Organization of quality forms and generation of technical reports.",
+          "Validation and processing of field data, ensuring data quality and reliability.",
+          "Creation of Excel dashboards for production tracking and performance analysis.",
+          "Organization and structuring of data, facilitating queries and report generation.",
+          "Support in identifying operational improvements based on data analysis.",
         ],
       },
       {
@@ -219,10 +218,10 @@ I usually say that what I don’t know yet, I make my best effort to learn as qu
         company: "CYMI Brazil",
         location: "Santo Antônio da Patrulha, RS · On-site",
         bullets: [
-          "Digitization and organization of technical forms.",
-          "Control of materials, production and shipping through tracking spreadsheets.",
-          "Creation of spreadsheets with formulas, filters and automations.",
-          "Drone operation and production of technical audiovisual records.",
+          "Digitization and structuring of technical data, creating organized datasets for analysis.",
+          "Development of automated spreadsheets with formulas and validations, reducing operational errors.",
+          "Tracking of materials and production using structured spreadsheets and control systems.",
+          "Support in generating technical reports and organizing project information.",
         ],
       },
     ],
@@ -353,10 +352,10 @@ J’ai l’habitude de dire que ce que je ne sais pas encore, je fais de mon mie
         company: "CYMI Brésil",
         location: "Sete Lagoas, Minas Gerais · Présentiel",
         bullets: [
-          "Analyse et gestion de grands volumes de données techniques et opérationnelles.",
-          "Création de tableaux de bord et de feuilles de calcul avancées pour les indicateurs et la prise de décision.",
-          "Automatisation de routines avec Python et n8n pour les rapports, les alertes et le suivi des délais.",
-          "Première application de l’IA pour l’analyse de données et l’automatisation de processus internes.",
+          "Analyse de grands volumes de données techniques et opérationnelles pour appuyer la prise de décision.",
+          "Création de tableaux de bord et rapports avec Excel avancé et Power BI pour le suivi des indicateurs.",
+          "Automatisation de tâches avec Python et n8n, réduisant significativement le travail manuel et le retravail.",
+          "Structuration et standardisation des données, améliorant la cohérence et la rapidité des rapports.",
         ],
       },
       {
@@ -365,10 +364,10 @@ J’ai l’habitude de dire que ce que je ne sais pas encore, je fais de mon mie
         company: "CYMI Brésil",
         location: "Sacramento, Minas Gerais · Hybride",
         bullets: [
-          "Contrôle et validation des données des matériaux appliqués sur le terrain.",
-          "Gestion de factures, de documents financiers et de bases de données numériques.",
-          "Création de tableaux de bord Excel pour le suivi de la production.",
-          "Organisation de formulaires qualité et génération de rapports techniques.",
+          "Validation et traitement des données terrain, garantissant leur qualité et leur fiabilité.",
+          "Création de tableaux de bord Excel pour le suivi de production et l’analyse de performance.",
+          "Organisation et structuration des données pour faciliter les analyses et les rapports.",
+          "Support à l’identification d’améliorations opérationnelles basées sur les données.",
         ],
       },
       {
@@ -377,10 +376,10 @@ J’ai l’habitude de dire que ce que je ne sais pas encore, je fais de mon mie
         company: "CYMI Brésil",
         location: "Santo Antônio da Patrulha, RS · Présentiel",
         bullets: [
-          "Numérisation et organisation de formulaires techniques.",
-          "Contrôle des matériaux, de la production et de l’expédition à l’aide de feuilles de suivi.",
-          "Création de feuilles de calcul avec formules, filtres et automatisations.",
-          "Pilotage de drone et production d’enregistrements audiovisuels techniques.",
+          "Numérisation et structuration de données techniques, créant des bases organisées pour l’analyse.",
+          "Création de feuilles automatisées avec formules et validations, réduisant les erreurs.",
+          "Suivi des matériaux et de la production via des systèmes de contrôle et des feuilles structurées.",
+          "Support à la génération de rapports techniques et à l’organisation des données du projet.",
         ],
       },
     ],
@@ -505,10 +504,10 @@ Suelo decir que lo que aún no sé, me esfuerzo al máximo para aprenderlo lo m�
         company: "CYMI Brasil",
         location: "Sete Lagoas, Minas Gerais · Presencial",
         bullets: [
-          "Análisis y gestión de grandes volúmenes de datos técnicos y operativos.",
-          "Creación de dashboards y hojas de cálculo avanzadas para indicadores y toma de decisiones.",
-          "Automatización de rutinas con Python y n8n para informes, alertas y control de plazos.",
-          "Aplicación inicial de IA para análisis de datos y automatización de procesos internos.",
+          "Análisis de grandes volúmenes de datos técnicos y operativos para apoyar la toma de decisiones.",
+          "Desarrollo de dashboards e informes con Excel avanzado y Power BI para seguimiento de indicadores.",
+          "Automatización de tareas con Python y n8n, reduciendo significativamente el trabajo manual y retrabajo.",
+          "Estructuración y estandarización de datos, mejorando la consistencia y agilidad de los informes.",
         ],
       },
       {
@@ -517,10 +516,10 @@ Suelo decir que lo que aún no sé, me esfuerzo al máximo para aprenderlo lo m�
         company: "CYMI Brasil",
         location: "Sacramento, Minas Gerais · Híbrido",
         bullets: [
-          "Control y validación de datos de materiales aplicados en campo.",
-          "Gestión de facturas, documentos financieros y bases digitales.",
-          "Creación de dashboards en Excel para seguimiento de producción.",
-          "Organización de formularios de calidad y generación de informes técnicos.",
+          "Validación y tratamiento de datos de campo, garantizando calidad y confiabilidad.",
+          "Creación de dashboards en Excel para seguimiento de producción y análisis de desempeño.",
+          "Organización y estructuración de datos para facilitar consultas y generación de informes.",
+          "Apoyo en la identificación de mejoras operativas basadas en análisis de datos.",
         ],
       },
       {
@@ -529,10 +528,10 @@ Suelo decir que lo que aún no sé, me esfuerzo al máximo para aprenderlo lo m�
         company: "CYMI Brasil",
         location: "Santo Antônio da Patrulha, RS · Presencial",
         bullets: [
-          "Digitalización y organización de formularios técnicos.",
-          "Control de materiales, producción y expedición mediante hojas de seguimiento.",
-          "Creación de hojas de cálculo con fórmulas, filtros y automatizaciones.",
-          "Operación de drone y producción de registros audiovisuales técnicos.",
+          "Digitalización y estructuración de datos técnicos, creando bases organizadas para análisis.",
+          "Desarrollo de hojas automatizadas con fórmulas y validaciones, reduciendo errores operativos.",
+          "Control de materiales y producción mediante sistemas de seguimiento y hojas estructuradas.",
+          "Apoyo en la generación de informes técnicos y organización de datos del proyecto.",
         ],
       },
     ],
@@ -1564,11 +1563,11 @@ async function loadProjects() {
               </a>
 
               ${projectUrl
-                ? `<a class="btn-hover-effect-4782fghj btn-project" href="${projectUrl}" target="_blank">
+          ? `<a class="btn-hover-effect-4782fghj btn-project" href="${projectUrl}" target="_blank">
                     ${t.projectBtn}
                   </a>`
-                : ""
-              }
+          : ""
+        }
             </div>
           </div>
         </div>
