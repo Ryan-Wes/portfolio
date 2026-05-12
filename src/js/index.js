@@ -1373,7 +1373,6 @@ const featuredRepos = [
   "sniperprice-ai",
   "calculo-de-rescisao-estagio",
   "guia-de-saude-mental",
-  "pokedex-api-com-react",
   "expo-car",
   "jogoDaCobrinha-JS",
 ];
@@ -1392,7 +1391,7 @@ const projectsDisplay = {
       es: "Sistema financiero con IA para categorización automática y análisis de gastos."
     }
   },
-  
+
 
   "infiniteiq": {
   title: "InfiniteIQ",
@@ -1453,16 +1452,6 @@ const projectsDisplay = {
       en: "Tool that automates internship termination calculations, making the process faster, clearer and more reliable.",
       fr: "Outil qui automatise les calculs de fin de stage, rendant le processus plus rapide, clair et fiable.",
       es: "Herramienta que automatiza cálculos de finalización de prácticas, haciendo el proceso más rápido, claro y confiable."
-    }
-  },
-
-  "pokedex-api-com-react": {
-    title: "Pokédex com React",
-    description: {
-      pt: "Aplicação interativa para explorar dados de Pokémon, com navegação dinâmica e experiência fluida para o usuário.",
-      en: "Interactive application to explore Pokémon data, with dynamic navigation and a smooth user experience.",
-      fr: "Application interactive pour explorer les données Pokémon, avec navigation dynamique et expérience fluide.",
-      es: "Aplicación interactiva para explorar datos de Pokémon, con navegación dinámica y experiencia fluida."
     }
   },
 
