@@ -1367,6 +1367,7 @@ const GITHUB_USERNAME = "Ryan-Wes";
 
 const featuredRepos = [
   "velora-ai",
+  "infiniteiq", 
   "documind-ai",
   "botflix",
   "sniperprice-ai",
@@ -1391,6 +1392,17 @@ const projectsDisplay = {
       es: "Sistema financiero con IA para categorización automática y análisis de gastos."
     }
   },
+  
+
+  "infiniteiq": {
+  title: "InfiniteIQ",
+  description: {
+    pt: "Sistema de inteligência de suporte com RAG: analisa avaliações reais do InfinitePay e resolve problemas automaticamente via agente de IA.",
+    en: "AI support intelligence system with RAG: analyzes real InfinitePay reviews and resolves issues automatically via AI agent.",
+    fr: "Système d'intelligence de support avec RAG : analyse les avis réels d'InfinitePay et résout automatiquement les problèmes via agent IA.",
+    es: "Sistema de inteligencia de soporte con RAG: analiza reseñas reales de InfinitePay y resuelve problemas automáticamente con agente IA."
+  }
+},
 
 
   "documind-ai": {
