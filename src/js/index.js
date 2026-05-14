@@ -1367,14 +1367,14 @@ const GITHUB_USERNAME = "Ryan-Wes";
 
 const featuredRepos = [
   "velora-ai",
-  "infiniteiq", 
+  "infiniteiq",
   "documind-ai",
   "botflix",
   "sniperprice-ai",
   "calculo-de-rescisao-estagio",
   "guia-de-saude-mental",
   "expo-car",
-  "jogoDaCobrinha-JS",
+  "snake-python",
 ];
 
 const projectsDisplay = {
@@ -1394,14 +1394,14 @@ const projectsDisplay = {
 
 
   "infiniteiq": {
-  title: "InfiniteIQ",
-  description: {
-    pt: "Sistema de inteligência de suporte com RAG: analisa avaliações reais do InfinitePay e resolve problemas automaticamente via agente de IA.",
-    en: "AI support intelligence system with RAG: analyzes real InfinitePay reviews and resolves issues automatically via AI agent.",
-    fr: "Système d'intelligence de support avec RAG : analyse les avis réels d'InfinitePay et résout automatiquement les problèmes via agent IA.",
-    es: "Sistema de inteligencia de soporte con RAG: analiza reseñas reales de InfinitePay y resuelve problemas automáticamente con agente IA."
-  }
-},
+    title: "InfiniteIQ",
+    description: {
+      pt: "Sistema de inteligência de suporte com RAG: analisa avaliações reais do InfinitePay e resolve problemas automaticamente via agente de IA.",
+      en: "AI support intelligence system with RAG: analyzes real InfinitePay reviews and resolves issues automatically via AI agent.",
+      fr: "Système d'intelligence de support avec RAG : analyse les avis réels d'InfinitePay et résout automatiquement les problèmes via agent IA.",
+      es: "Sistema de inteligencia de soporte con RAG: analiza reseñas reales de InfinitePay y resuelve problemas automáticamente con agente IA."
+    }
+  },
 
 
   "documind-ai": {
@@ -1475,13 +1475,13 @@ const projectsDisplay = {
     }
   },
 
-  "jogoDaCobrinha-JS": {
-    title: "Jogo da Cobrinha",
+  "snake-python": {
+    title: "Snake Python",
     description: {
-      pt: "Recriação do clássico jogo da cobrinha, demonstrando lógica de programação, controle de eventos e interatividade.",
-      en: "Recreation of the classic snake game, demonstrating programming logic, event handling and interactivity.",
-      fr: "Recréation du jeu classique du serpent, mettant en avant logique, gestion d’événements et interactivité.",
-      es: "Recreación del clásico juego de la serpiente, demostrando lógica de programación, manejo de eventos e interactividad."
+      pt: "Jogo da cobrinha desenvolvido com Python e Pygame, com power-ups, obstáculos e persistência de highscore. Jogável no navegador via WebAssembly.",
+      en: "Snake game built with Python and Pygame, featuring power-ups, obstacles and highscore persistence. Playable in the browser via WebAssembly.",
+      fr: "Jeu serpent développé avec Python et Pygame, avec power-ups, obstacles et persistance du meilleur score. Jouable dans le navigateur via WebAssembly.",
+      es: "Juego de serpiente desarrollado con Python y Pygame, con power-ups, obstáculos y persistencia del puntaje máximo. Jugable en el navegador vía WebAssembly."
     }
   }
 };
